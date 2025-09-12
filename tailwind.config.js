@@ -21,8 +21,8 @@ module.exports = {
         'charcoal': '#374151',       // Professional charcoal
       },
       fontFamily: {
-        'sans': ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
-        'serif': ['Playfair Display', 'Georgia', 'serif'],
+        'sans': ['var(--font-inter)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        'serif': ['var(--font-playfair)', 'Georgia', 'serif'],
       },
     },
   },
