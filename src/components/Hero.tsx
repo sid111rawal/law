@@ -105,7 +105,7 @@ export default function Hero() {
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     If a tax notice is issued due to our error, we personally cover the fee payable. 
-                    That's our guarantee — subject to terms and an independent review.
+                    That&apos;s our guarantee — subject to terms and an independent review.
                   </p>
                   <div className="mt-4 flex items-center text-gold">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">

@@ -41,7 +41,7 @@ export default function Trust() {
               <div className="ml-4">
                 <h3 className="text-xl font-semibold text-white">100% Notice Coverage Guarantee</h3>
                 <p className="mt-2 text-gray-100">
-                  We personally pay the price of any notice that comes due to our error. That's our commitment to quality — subject to terms and independent review.
+                  We personally pay the price of any notice that comes due to our error. That&apos;s our commitment to quality — subject to terms and independent review.
                 </p>
               </div>
             </div>
