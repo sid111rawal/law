@@ -33,7 +33,6 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
-        
       >
         {children}
       </body>
