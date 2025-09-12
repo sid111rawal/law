@@ -1,17 +1,13 @@
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
-import Trust from '@/components/Trust';
+import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <Hero />
-        <Services />
-        <Trust />
+        <Contact />
       </main>
       <Footer />
     </div>
