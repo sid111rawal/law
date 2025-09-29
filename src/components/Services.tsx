@@ -13,8 +13,13 @@ export default function Services() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
         </svg>
       ),
-      title: "Business Accounting",
-      description: "Complete bookkeeping, financial statements, and accounting services for businesses of all sizes."
+      title: "Business Setup & Structuring",
+      tagline: "Start right, grow strong.",
+      features: [
+        "Incorporation of Pvt. Ltd., LLP, OPC, Partnerships",
+        "Smart structuring for tax efficiency & investor readiness",
+        "Founders' agreements & compliance roadmap"
+      ]
     },
     {
       icon: (
@@ -22,35 +27,41 @@ export default function Services() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
-      title: "Tax Filing",
-      description: "Income tax returns, TDS compliance, and tax planning to minimize your liability legally."
+      title: "Tax & Compliance Management",
+      tagline: "Stay compliant. Stay stress-free.",
+      features: [
+        "End-to-end GST, TDS, ROC & Income Tax compliance",
+        "Proactive planning to save penalties & optimize taxes",
+        "365-day compliance monitoring & support"
+      ]
     },
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
         </svg>
       ),
-      title: "GST Services",
-      description: "GST registration, return filing, compliance, and advisory services for seamless operations."
+      title: "Litigation & Dispute Resolution",
+      tagline: "When challenges arise, we represent you.",
+      features: [
+        "Expert defense for GST & Income Tax litigation",
+        "Handling of assessments, notices & appeals",
+        "Trusted representation before authorities"
+      ]
     },
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      title: "Audit Services",
-      description: "Statutory audits, internal audits, and due diligence with detailed reporting and compliance."
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-        </svg>
-      ),
-      title: "Payroll Services",
-      description: "Complete payroll management, compliance with labor laws, and employee benefits administration."
+      title: "Accounting & Virtual CFO Services",
+      tagline: "Numbers that tell your growth story.",
+      features: [
+        "Smart bookkeeping & real-time reporting",
+        "Payroll & vendor compliance",
+        "Virtual CFO for strategy, MIS & decision-making"
+      ]
     },
     {
       icon: (
@@ -58,8 +69,27 @@ export default function Services() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      title: "Advisory Services",
-      description: "Strategic business advisory, financial planning, and consultation for growth and compliance."
+      title: "Funding & Growth Advisory",
+      tagline: "Turn ideas into investment-ready businesses.",
+      features: [
+        "Investor pitch decks & financial modeling",
+        "ESOP structuring & cap table management",
+        "Compliance for fundraising & due diligence"
+      ]
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+      ),
+      title: "Specialized Business Solutions",
+      tagline: "For when your journey needs something extra.",
+      features: [
+        "Compliance health checks & restructuring",
+        "Exit strategy & company closure support",
+        "Cross-border taxation & FEMA advisory"
+      ]
     }
   ];
 
@@ -69,7 +99,7 @@ export default function Services() {
     
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % services.length);
-    }, 4000); // Auto-scroll every 4 seconds
+    }, 6000); // Auto-scroll every 6 seconds
 
     return () => clearInterval(interval);
   }, [isAutoPlaying, services.length]);
@@ -105,11 +135,10 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-serif font-bold text-slate sm:text-4xl lg:text-5xl">
-            Our Services
+            Your Business, Our Responsibility
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Direct and simple process for company registration, GST cases, income tax TDS, trademark, and more. 
-            Quality service with personal attention.
+            Looking for… ?
           </p>
         </div>
 
@@ -147,25 +176,43 @@ export default function Services() {
                 <div
                   key={`${currentIndex}-${index}`}
                   className={`
-                    transition-all duration-500 ease-in-out cursor-pointer
+                    transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] cursor-pointer transform-gpu
                     ${isCenter 
                       ? 'w-72 h-80 md:w-80 md:h-96 scale-110 z-20 shadow-2xl' 
-                      : 'w-56 h-64 md:w-64 md:h-80 scale-95 opacity-75 hover:opacity-90 hidden sm:block'
+                      : 'w-56 h-64 md:w-64 md:h-80 scale-95 opacity-75 hover:opacity-90 hover:scale-100 hidden sm:block'
                     }
-                    ${isLeft ? '-rotate-2' : isRight ? 'rotate-2' : 'rotate-0'}
+                    ${isLeft ? '-rotate-2 hover:rotate-0' : isRight ? 'rotate-2 hover:rotate-0' : 'rotate-0'}
                   `}
                   onClick={() => !isCenter && goToSlide((currentIndex + service.position + services.length) % services.length)}
                 >
-                  <div className="bg-soft-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-gold h-full flex flex-col">
-                    <div className="text-gold mb-4 flex justify-center">
+                  <div className="bg-soft-white p-6 md:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 ease-out border border-gray-100 hover:border-gold h-full flex flex-col group">
+                    <div className="text-gold mb-4 flex justify-center transition-transform duration-500 group-hover:scale-110">
                       {service.icon}
                     </div>
-                    <h3 className={`font-semibold text-slate mb-3 text-center ${isCenter ? 'text-lg md:text-xl' : 'text-base md:text-lg'}`}>
+                    <h3 className={`font-semibold text-slate mb-3 text-center transition-all duration-500 ${isCenter ? 'text-lg md:text-xl' : 'text-sm md:text-base'}`}>
                       {service.title}
                     </h3>
-                    <p className={`text-gray-600 leading-relaxed text-center flex-grow ${isCenter ? 'text-sm md:text-base' : 'text-xs md:text-sm'}`}>
-                      {service.description}
+                    <p className={`text-gold font-medium mb-4 text-center transition-all duration-500 ${isCenter ? 'text-sm md:text-base' : 'text-xs'}`}>
+                      💡 {service.tagline}
                     </p>
+                    <div className={`text-gray-600 leading-relaxed text-center flex-grow transition-all duration-500 ${isCenter ? 'text-sm md:text-base' : 'text-xs'}`}>
+                      {isCenter ? (
+                        <ul className="space-y-1 text-left">
+                          {service.features.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-start transition-all duration-300 delay-100">
+                              <span className="text-gold mr-2 mt-1">•</span>
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <div className="text-center">
+                          <p className="text-gray-500 text-xs transition-all duration-300">
+                            Click to view details
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
               );
@@ -178,10 +225,10 @@ export default function Services() {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-4 h-4 rounded-full transition-all duration-300 shadow-sm ${
+                className={`w-4 h-4 rounded-full transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] shadow-sm ${
                   index === currentIndex 
-                    ? 'bg-gold scale-125 shadow-lg' 
-                    : 'bg-slate-400 hover:bg-slate-500 hover:scale-110'
+                    ? 'bg-gold scale-125 shadow-lg ring-2 ring-gold ring-opacity-30' 
+                    : 'bg-slate-400 hover:bg-slate-500 hover:scale-110 hover:shadow-md'
                 }`}
                 aria-label={`Go to service ${index + 1}`}
               />

@@ -1,6 +1,30 @@
+'use client';
+
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function Hero() {
+  const [isITRSeason, setIsITRSeason] = useState(false);
+
+  useEffect(() => {
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth() + 1; // getMonth() returns 0-11, so add 1
+    // ITR season is typically April (4) to July (7)
+    setIsITRSeason(currentMonth >= 4 && currentMonth <= 7);
+  }, []);
+
+  const heroContent = isITRSeason ? {
+    headline: "File Your ITR With Experts — Save Taxes, Stay Stress-Free",
+    subtext: "No bots. No hidden fees. Just trusted professionals working for you.",
+    ctaText: "File with Lawgical",
+    ctaHref: "/itr-filing"
+  } : {
+    headline: "Lawgical Station — Where Your Business Finds Growth",
+    subtext: "From tax planning to compliance, we guide and protect your business every day of the year.",
+    ctaText: "Talk to a Consultant",
+    ctaHref: "/contact"
+  };
+
   return (
     <section className="bg-white pt-16 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -9,88 +33,73 @@ export default function Hero() {
           <div className="lg:col-span-7">
             <div className="text-center lg:text-left">
               <h1 className="text-4xl font-serif font-bold text-slate sm:text-5xl lg:text-6xl leading-tight">
-                Lawgical Station —
-                <span className="block text-gold">Chartered Accountants,</span>
-                <span className="block">Agra</span>
+                {heroContent.headline}
               </h1>
               
               <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0">
-                Personal CA touch, in-person consultation for large projects. 100% notice-free guarantee. 
-                1% to charity.
+                {heroContent.subtext}
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link 
-                  href="/contact"
-                  className="bg-gold text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  href={heroContent.ctaHref}
+                  className="group relative bg-gold text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-yellow-500 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-center"
                 >
-                  Book a Free Consultation
+                  <span className="relative z-10">{heroContent.ctaText}</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-gold rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </Link>
                 <Link 
                   href="#services"
-                  className="border-2 border-slate text-slate px-8 py-4 rounded-lg text-lg font-medium hover:bg-slate hover:text-white transition-all duration-200"
+                  className="group border-2 border-slate text-slate px-8 py-4 rounded-xl text-lg font-semibold hover:bg-slate hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center relative overflow-hidden"
                 >
-                  Our Services
+                  <span className="relative z-10">Our Services</span>
+                  <div className="absolute inset-0 bg-slate transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
                 </Link>
               </div>
             </div>
 
-            {/* Trust Indicators */}
-            <div className="mt-12 grid grid-cols-2 gap-6 lg:grid-cols-4">
+            {/* Impact Metrics */}
+            <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start">
-                  <div className="bg-gold p-2 rounded-full">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="mt-2">
-                  <p className="text-sm font-semibold text-slate">CA Licensed</p>
-                  <p className="text-xs text-gray-500">ICAI</p>
-                </div>
+                <div className="text-2xl font-bold text-gold">1000+</div>
+                <p className="text-sm font-semibold text-slate">Businesses Structured Right</p>
+                <p className="text-xs text-gray-500">From incorporation to compliance — startups built on solid foundations.</p>
               </div>
 
               <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start">
-                  <div className="bg-gold p-2 rounded-full">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="mt-2">
-                  <p className="text-sm font-semibold text-slate">10+ Years</p>
-                  <p className="text-xs text-gray-500">of Experience</p>
-                </div>
+                <div className="text-2xl font-bold text-gold">250+</div>
+                <p className="text-sm font-semibold text-slate">Companies Guided in Accounting & Books</p>
+                <p className="text-xs text-gray-500">End-to-end financial discipline for growing businesses.</p>
               </div>
 
               <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start">
-                  <div className="bg-gold p-2 rounded-full">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="mt-2">
-                  <p className="text-sm font-semibold text-slate">200+ Clients</p>
-                  <p className="text-xs text-gray-500">Served</p>
-                </div>
+                <div className="text-2xl font-bold text-gold">200+</div>
+                <p className="text-sm font-semibold text-slate">Complex Tax & Legal Cases Resolved</p>
+                <p className="text-xs text-gray-500">Trusted litigation support that protects entrepreneurs.</p>
               </div>
 
               <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start">
-                  <div className="bg-gold p-2 rounded-full">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="mt-2">
-                  <p className="text-sm font-semibold text-slate">1% to Charity</p>
-                  <p className="text-xs text-gray-500">Giving Back</p>
-                </div>
+                <div className="text-2xl font-bold text-gold">2.5 Cr+</div>
+                <p className="text-sm font-semibold text-slate">Taxes Saved Every Year</p>
+                <p className="text-xs text-gray-500">Smart planning that turns tax burdens into savings.</p>
+              </div>
+
+              <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-gold">1.2 Cr+</div>
+                <p className="text-sm font-semibold text-slate">Penalties Prevented</p>
+                <p className="text-xs text-gray-500">Shielding businesses from costly errors & notices.</p>
+              </div>
+
+              <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-gold">2000+</div>
+                <p className="text-sm font-semibold text-slate">ITRs Filed with Care in 2025</p>
+                <p className="text-xs text-gray-500">Accurate, stress-free, and always on time.</p>
+              </div>
+
+              <div className="text-center lg:text-left">
+                <div className="text-2xl font-bold text-gold">15+</div>
+                <p className="text-sm font-semibold text-slate">Years of Combined Expertise</p>
+                <p className="text-xs text-gray-500">Real professionals guiding real businesses, not bots.</p>
               </div>
             </div>
           </div>
