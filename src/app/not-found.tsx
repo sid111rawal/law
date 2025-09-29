@@ -30,8 +30,8 @@ export default function NotFound() {
               Oops! Page Not Found
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              The page you're looking for seems to have vanished into the digital void. 
-              Don't worry, our CA experts are here to help you find what you need.
+              The page you&apos;re looking for seems to have vanished into the digital void. 
+              Don&apos;t worry, our CA experts are here to help you find what you need.
             </p>
           </div>
 
