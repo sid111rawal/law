@@ -1,3 +1,5 @@
+'use client';
+
 export default function Trust() {
   const comparisonData = [
     {
@@ -128,7 +130,7 @@ export default function Trust() {
                 Join 200+ satisfied clients who chose quality over convenience. Get started with a free consultation today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="border-2 border-slate text-slate px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-slate hover:text-white transition-all duration-200 text-sm sm:text-base">
+                <button className="border-2 border-[#C9A34A] text-[#C9A34A] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-[#C9A34A] hover:text-white transition-all duration-200 text-sm sm:text-base">
                   View Our Services
                 </button>
               </div>
