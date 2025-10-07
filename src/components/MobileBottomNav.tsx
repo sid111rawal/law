@@ -1,9 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-
 export default function MobileBottomNav() {
-  const [isVisible, setIsVisible] = useState(true);
 
   const handleLoginClick = () => {
     window.location.href = '/login';
@@ -15,8 +12,6 @@ export default function MobileBottomNav() {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
-
-  if (!isVisible) return null;
 
   return (
     <>

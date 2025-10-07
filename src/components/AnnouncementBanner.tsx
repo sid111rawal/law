@@ -66,7 +66,7 @@ export default function AnnouncementBanner() {
 
   const currentAnnouncement = announcements[currentIndex];
 
-  const handleActionClick = (e) => {
+  const handleActionClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     e.stopPropagation();
     console.log('Action button clicked:', currentAnnouncement.action); // Debug log
