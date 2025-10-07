@@ -1,8 +1,10 @@
 import Header from '@/components/Header';
 import AnnouncementBanner from '@/components/AnnouncementBanner';
 import Hero from '@/components/Hero';
+import LittleStory from '@/components/LittleStory';
+import ClientTestimonials from '@/components/ClientTestimonials';
+import FAQSection from '@/components/FAQSection';
 import Services from '@/components/Services';
-import Trust from '@/components/Trust';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -13,7 +15,9 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
-        <Trust />
+        <LittleStory />
+        <ClientTestimonials />
+        <FAQSection />
       </main>
       <Footer />
     </div>

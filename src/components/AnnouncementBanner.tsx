@@ -1,43 +1,51 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function AnnouncementBanner() {
+  const router = useRouter();
+  
   const announcements = [
     {
       id: 1,
       icon: "📅",
       text: "ITR Filing Due Date: September 15, 2025 - File with us for hassle-free experience!",
       highlight: "September 15, 2025",
-      action: "File Now"
+      action: "File Now",
+      href: "/itr-filing"
     },
     {
       id: 2,
       icon: "💰",
       text: "Special Offer: 20% OFF on GST Registration - Limited time only!",
       highlight: "20% OFF",
-      action: "Claim Offer"
+      action: "Claim Offer",
+      href: "/contact"
     },
     {
       id: 3,
       icon: "📞",
       text: "Get 15 minutes FREE consultation - Call us at +91 98765 43210",
       highlight: "15 minutes FREE",
-      action: "Call Now"
+      action: "Call Now",
+      href: "tel:+919876543210"
     },
     {
       id: 4,
       icon: "🛡️",
       text: "100% Notice Coverage Guarantee - Your peace of mind is our priority",
       highlight: "100% Guarantee",
-      action: "Learn More"
+      action: "Learn More",
+      href: "/about"
     },
     {
       id: 5,
       icon: "⏰",
       text: "Quick Response Time: Get replies within 2 hours on all queries",
       highlight: "2 hours",
-      action: "Contact Us"
+      action: "Contact Us",
+      href: "/contact"
     }
   ];
 
@@ -57,6 +65,18 @@ export default function AnnouncementBanner() {
   }, [announcements.length]);
 
   const currentAnnouncement = announcements[currentIndex];
+
+  const handleActionClick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log('Action button clicked:', currentAnnouncement.action); // Debug log
+    
+    if (currentAnnouncement.href.startsWith('tel:')) {
+      window.location.href = currentAnnouncement.href;
+    } else {
+      router.push(currentAnnouncement.href);
+    }
+  };
 
   return (
     <div className="bg-gradient-to-r from-gold via-yellow-500 to-gold shadow-lg relative overflow-hidden">
@@ -93,16 +113,12 @@ export default function AnnouncementBanner() {
           </div>
 
           {/* Action Button */}
-          <div className="flex items-center space-x-3 ml-4">
-            <button className="bg-slate text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold hover:bg-opacity-90 transition-all duration-200 shadow-md hover:shadow-lg whitespace-nowrap">
+          <div className="flex items-center ml-4 relative z-10">
+            <button 
+              onClick={handleActionClick}
+              className="bg-white text-[#C9A34A] px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-50 hover:scale-105 transition-all duration-200 shadow-md hover:shadow-lg whitespace-nowrap border border-white/20 cursor-pointer relative z-20"
+            >
               {currentAnnouncement.action}
-            </button>
-            
-            {/* Close button */}
-            <button className="text-gray-700 hover:text-gray-900 transition-colors p-1">
-              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
             </button>
           </div>
         </div>
