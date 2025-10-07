@@ -134,10 +134,10 @@ export default function Services() {
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-serif font-bold text-slate sm:text-4xl lg:text-5xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-slate leading-tight px-4">
             Your Business, Our Responsibility
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4">
             Looking for… ?
           </p>
         </div>
@@ -166,7 +166,7 @@ export default function Services() {
           </button>
 
           {/* Carousel Cards */}
-          <div className="flex items-center justify-center gap-2 md:gap-4 px-8 md:px-16">
+          <div className="flex items-center justify-center gap-2 md:gap-4 px-4 md:px-16">
             {getVisibleServices().map((service, index) => {
               const isCenter = service.position === 0;
               const isLeft = service.position === -1;
@@ -178,8 +178,8 @@ export default function Services() {
                   className={`
                     transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] cursor-pointer transform-gpu
                     ${isCenter 
-                      ? 'w-72 h-80 md:w-80 md:h-96 scale-110 z-20 shadow-2xl' 
-                      : 'w-56 h-64 md:w-64 md:h-80 scale-95 opacity-75 hover:opacity-90 hover:scale-100 hidden sm:block'
+                      ? 'w-80 h-96 md:w-96 md:h-[28rem] scale-110 z-20 shadow-2xl' 
+                      : 'w-64 h-80 md:w-72 md:h-96 scale-95 opacity-75 hover:opacity-90 hover:scale-100 hidden sm:block'
                     }
                     ${isLeft ? '-rotate-2 hover:rotate-0' : isRight ? 'rotate-2 hover:rotate-0' : 'rotate-0'}
                   `}
@@ -189,13 +189,13 @@ export default function Services() {
                     <div className="text-gold mb-4 flex justify-center transition-transform duration-500 group-hover:scale-110">
                       {service.icon}
                     </div>
-                    <h3 className={`font-semibold text-slate mb-3 text-center transition-all duration-500 ${isCenter ? 'text-lg md:text-xl' : 'text-sm md:text-base'}`}>
+                    <h3 className={`font-semibold text-slate mb-3 text-center transition-all duration-500 break-words hyphens-auto ${isCenter ? 'text-base md:text-lg' : 'text-sm md:text-base'}`}>
                       {service.title}
                     </h3>
-                    <p className={`text-gold font-medium mb-4 text-center transition-all duration-500 ${isCenter ? 'text-sm md:text-base' : 'text-xs'}`}>
+                    <p className={`text-gold font-medium mb-4 text-center transition-all duration-500 break-words ${isCenter ? 'text-sm md:text-base' : 'text-xs'}`}>
                       💡 {service.tagline}
                     </p>
-                    <div className={`text-gray-600 leading-relaxed text-center flex-grow transition-all duration-500 ${isCenter ? 'text-sm md:text-base' : 'text-xs'}`}>
+                    <div className={`text-gray-600 leading-relaxed text-center flex-grow transition-all duration-500 break-words hyphens-auto ${isCenter ? 'text-sm md:text-base' : 'text-xs'}`}>
                       {isCenter ? (
                         <ul className="space-y-1 text-left">
                           {service.features.map((feature, featureIndex) => (
