@@ -6,6 +6,7 @@ import ClientTestimonials from '@/components/ClientTestimonials';
 import FAQSection from '@/components/FAQSection';
 import Services from '@/components/Services';
 import Footer from '@/components/Footer';
+import MobileBottomNav from '@/components/MobileBottomNav';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <FAQSection />
       </main>
       <Footer />
+      <MobileBottomNav />
     </div>
   );
 }
