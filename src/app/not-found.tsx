@@ -1,11 +1,8 @@
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 export default function NotFound() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <main className="flex items-center justify-center min-h-[80vh] px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           {/* 404 Illustration */}
@@ -153,7 +150,6 @@ export default function NotFound() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
