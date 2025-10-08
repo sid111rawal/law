@@ -1,5 +1,7 @@
 'use client';
 
+import siteConfig from '@/config/site';
+
 export default function MobileBottomNav() {
 
   const handleLoginClick = () => {
@@ -7,9 +9,7 @@ export default function MobileBottomNav() {
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '919876543210'; // Replace with actual WhatsApp number
-    const message = 'Hi! I would like to know more about your services.';
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/${siteConfig.contact.whatsapp}?text=${encodeURIComponent(siteConfig.whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
   };
 
