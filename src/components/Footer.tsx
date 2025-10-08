@@ -11,7 +11,7 @@ export default function Footer() {
               Lawgical Station
             </div>
             <p className="text-gray-100 mb-6 max-w-md">
-              Chartered Accountants in Agra providing personal CA touch with 100% notice coverage guarantee. 
+              Chartered Accountants providing personal CA touch with 100% notice coverage guarantee. 
               Direct and simple process for all your accounting and tax needs.
             </p>
             

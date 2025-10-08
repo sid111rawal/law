@@ -157,13 +157,7 @@ export default function Header() {
                             Blogs
                           </Link>
                           <Link href="/resources/calculators" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Tax Calculators
-              </Link>
-                          <Link href="/resources/guides" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Tax Guides
-              </Link>
-                          <Link href="/resources/updates" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Tax Updates
+                            Tools
               </Link>
                         </div>
                       </div>
@@ -193,9 +187,6 @@ export default function Header() {
                       </Link>
                       <Link href="/contact" className="block text-sm text-gray-600 hover:text-gold transition-colors py-2">
                         Contact Us
-                      </Link>
-                      <Link href="/careers" className="block text-sm text-gray-600 hover:text-gold transition-colors py-2">
-                        Careers
                       </Link>
                     </div>
                   </div>
@@ -311,9 +302,7 @@ export default function Header() {
                 {mobileActiveSection === 'resources' && (
                   <div className="pb-2 space-y-1 pl-4">
                     <Link href="/resources/blogs" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Blogs</Link>
-                    <Link href="/resources/calculators" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Tax Calculators</Link>
-                    <Link href="/resources/guides" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Tax Guides</Link>
-                    <Link href="/resources/updates" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Tax Updates</Link>
+                    <Link href="/resources/calculators" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Tools</Link>
                   </div>
                 )}
               </div>
@@ -339,7 +328,6 @@ export default function Header() {
                   <div className="pb-2 space-y-1 pl-4">
                     <Link href="/about" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>About Us</Link>
                     <Link href="/contact" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Contact Us</Link>
-                    <Link href="/careers" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Careers</Link>
                   </div>
                 )}
               </div>

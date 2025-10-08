@@ -5,7 +5,7 @@ export const siteConfig = {
   // Company Information
   name: 'Lawgical Station',
   tagline: 'Where Your Business Finds Growth',
-  description: 'Chartered Accountants in Agra providing personal CA touch with 100% notice coverage guarantee.',
+  description: 'Chartered Accountants providing personal CA touch with 100% notice coverage guarantee.',
   
   // Contact Information
   contact: {
