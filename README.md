@@ -1,6 +1,6 @@
 # Lawgical Station - Chartered Accountants Website
 
-A modern, professional Next.js website for Lawgical Station, a Chartered Accountants firm in Agra, India. Built with Next.js, TypeScript, and Tailwind CSS for optimal performance and SEO.
+A modern, professional Next.js website for Lawgical Station, a Chartered Accountants firm. Built with Next.js, TypeScript, and Tailwind CSS for optimal performance and SEO.
 
 ## 🌟 Features
 

@@ -19,7 +19,7 @@ export const siteConfig = {
   // Address
   address: {
     street: 'Your Street Address',
-    city: 'Agra',
+    city: ' ',
     state: 'Uttar Pradesh',
     pincode: '282001',
     country: 'India',
@@ -30,7 +30,7 @@ export const siteConfig = {
     facebook: '#',
     twitter: '#',
     linkedin: '#',
-    instagram: '#',
+    inst m: '#',
     youtube: '#',
   },
 

@@ -154,10 +154,6 @@ export default function Contact() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-slate">Office Address</h4>
-                    <p className="text-gray-600">Agra, Uttar Pradesh, India</p>
-                  </div>
                 </div>
 
                 <div className="flex items-start">
