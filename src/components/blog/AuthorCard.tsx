@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import { urlFor } from '@/lib/sanity/imageBuilder';
+import { SanityImage } from '@/types/sanity';
 
 interface Author {
   name: string;
   credentials?: string;
   bio?: string;
-  image?: any;
+  image?: SanityImage;
   social?: {
     linkedin?: string;
     twitter?: string;

@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { urlFor } from '@/lib/sanity/imageBuilder';
+import { SanityImage } from '@/types/sanity';
 
 interface Post {
   _id: string;
   title: string;
   slug: { current: string };
-  mainImage?: any;
+  mainImage?: SanityImage;
   category?: {
     title: string;
     color?: string;

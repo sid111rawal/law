@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { client } from '@/lib/sanity/client';
 import { postsByCategoryQuery } from '@/lib/sanity/queries';
 import { urlFor } from '@/lib/sanity/imageBuilder';
+import { Post } from '@/types/sanity';
 
 export const revalidate = 60;
 
@@ -18,9 +19,10 @@ async function getPostsByCategory(category: string) {
   }
 }
 
-export default async function CategoryPage({ params }: { params: { category: string } }) {
-  const posts = await getPostsByCategory(params.category);
-  const categoryTitle = posts[0]?.category?.title || params.category.replace('-', ' ');
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category } = await params;
+  const posts = await getPostsByCategory(category);
+  const categoryTitle = posts[0]?.category?.title || category.replace('-', ' ');
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-IN', {
@@ -65,7 +67,7 @@ export default async function CategoryPage({ params }: { params: { category: str
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {posts.map((post: any) => (
+                {posts.map((post: Post) => (
                   <Link
                     key={post._id}
                     href={`/resources/blogs/${post.slug.current}`}

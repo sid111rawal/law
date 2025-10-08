@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { client } from '@/lib/sanity/client';
 import { allPostsQuery, allCategoriesQuery } from '@/lib/sanity/queries';
 import { urlFor } from '@/lib/sanity/imageBuilder';
+import { Post, Category } from '@/types/sanity';
 
 export const revalidate = 60; // Revalidate every 60 seconds
 
@@ -65,7 +66,7 @@ export default async function BlogsPage() {
                 >
                   All Posts
                 </Link>
-                {categories.map((category: any) => (
+                {categories.map((category: Category) => (
                   <Link
                     key={category._id}
                     href={`/resources/blogs/category/${category.slug.current}`}
@@ -100,7 +101,7 @@ export default async function BlogsPage() {
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {posts.map((post: any) => (
+                {posts.map((post: Post) => (
                   <Link
                     key={post._id}
                     href={`/resources/blogs/${post.slug.current}`}

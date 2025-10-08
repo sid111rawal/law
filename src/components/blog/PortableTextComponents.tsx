@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { urlFor } from '@/lib/sanity/imageBuilder';
 import { PortableTextComponents } from '@portabletext/react';
+import { TableRow } from '@/types/sanity';
 
 export const portableTextComponents: PortableTextComponents = {
   types: {
@@ -31,7 +32,7 @@ export const portableTextComponents: PortableTextComponents = {
         <div className="my-8 overflow-x-auto">
           <table className="w-full border-collapse border border-gray-300">
             <tbody>
-              {value.rows.map((row: any, rowIndex: number) => (
+              {value.rows.map((row: TableRow, rowIndex: number) => (
                 <tr key={rowIndex} className={rowIndex === 0 ? 'bg-gray-50' : ''}>
                   {row.cells?.map((cell: string, cellIndex: number) => {
                     const Tag = rowIndex === 0 ? 'th' : 'td';

@@ -11,6 +11,7 @@ import TableOfContents from '@/components/blog/TableOfContents';
 import AuthorCard from '@/components/blog/AuthorCard';
 import BrowseTopics from '@/components/blog/BrowseTopics';
 import RelatedPosts from '@/components/blog/RelatedPosts';
+// Types imported for future use
 
 export const revalidate = 60;
 
@@ -28,7 +29,7 @@ async function getRelatedPosts(categoryId: string, currentSlug: string) {
   try {
     const posts = await client.fetch(relatedPostsQuery, { categoryId, currentSlug });
     return posts || [];
-  } catch (error) {
+  } catch {
     return [];
   }
 }
@@ -37,7 +38,7 @@ async function getPopularPosts() {
   try {
     const posts = await client.fetch(popularPostsQuery);
     return posts || [];
-  } catch (error) {
+  } catch {
     return [];
   }
 }
@@ -46,13 +47,14 @@ async function getCategories() {
   try {
     const categories = await client.fetch(allCategoriesQuery);
     return categories || [];
-  } catch (error) {
+  } catch {
     return [];
   }
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
-  const post = await getPost(params.slug);
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = await getPost(slug);
   
   if (!post) {
     return (
@@ -247,11 +249,10 @@ export default async function BlogPost({ params }: { params: { slug: string } })
   );
 }
 
-// Generate static params for all blog posts
 export async function generateStaticParams() {
   const posts = await client.fetch(`*[_type == "post" && !(_id in path("drafts.**"))]{slug}`);
   
-  return posts.map((post: any) => ({
+  return posts.map((post: { slug: { current: string } }) => ({
     slug: post.slug.current,
   }));
 }
