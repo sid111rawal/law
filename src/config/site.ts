@@ -30,7 +30,7 @@ export const siteConfig = {
     facebook: '#',
     twitter: '#',
     linkedin: '#',
-    inst m: '#',
+    instagram: '#',
     youtube: '#',
   },
 
