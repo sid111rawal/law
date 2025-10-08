@@ -17,7 +17,7 @@ export default function SWPCalculator() {
 
     let balance = P;
     let totalWithdrawn = 0;
-    let monthlyBalances = [];
+    const monthlyBalances = [];
 
     for (let month = 1; month <= n; month++) {
       // Apply return for the month

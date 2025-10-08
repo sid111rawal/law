@@ -11,7 +11,7 @@ export default function TaxAuditChecker() {
   const [cashSales, setCashSales] = useState<string>('');
   const [totalReceipts, setTotalReceipts] = useState<string>('');
   const [profitDeclared, setProfitDeclared] = useState<string>('');
-  const [prescribedProfit, setPrescribedProfit] = useState<string>('8');
+  const [prescribedProfit] = useState<string>('8');
 
   const formatCurrency = (num: number) => {
     return new Intl.NumberFormat('en-IN', {
@@ -29,7 +29,7 @@ export default function TaxAuditChecker() {
     const prescribed = parseFloat(prescribedProfit) || 0;
 
     let auditRequired = false;
-    let reasons: string[] = [];
+    const reasons: string[] = [];
     let threshold = 0;
 
     if (businessType === 'business') {
