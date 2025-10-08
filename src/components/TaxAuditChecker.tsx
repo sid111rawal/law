@@ -13,6 +13,14 @@ export default function TaxAuditChecker() {
   const [profitDeclared, setProfitDeclared] = useState<string>('');
   const [prescribedProfit, setPrescribedProfit] = useState<string>('8');
 
+  const formatCurrency = (num: number) => {
+    return new Intl.NumberFormat('en-IN', {
+      style: 'currency',
+      currency: 'INR',
+      maximumFractionDigits: 0,
+    }).format(num);
+  };
+
   const checkAuditRequirement = () => {
     const turnover = parseFloat(totalTurnover) || 0;
     const cash = parseFloat(cashSales) || 0;
@@ -84,14 +92,6 @@ export default function TaxAuditChecker() {
   };
 
   const result = checkAuditRequirement();
-
-  const formatCurrency = (num: number) => {
-    return new Intl.NumberFormat('en-IN', {
-      style: 'currency',
-      currency: 'INR',
-      maximumFractionDigits: 0,
-    }).format(num);
-  };
 
   const businessTypes = [
     { value: 'business' as BusinessType, label: 'Regular Business', description: 'Turnover limit: ₹1 Cr' },
