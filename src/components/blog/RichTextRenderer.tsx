@@ -10,7 +10,7 @@ import { ContentfulRichText, ContentfulRichTextNode } from '@/lib/contentful/typ
 // Custom render options for rich text
 const renderOptions = {
   renderNode: {
-    [BLOCKS.PAR PH]: (node: ContentfulRichTextNode, children: React.ReactNode) => (
+    [BLOCKS.PARAGRAPH]: (node: ContentfulRichTextNode, children: React.ReactNode) => (
       <p className="mb-4 text-gray-700 leading-relaxed">{children}</p>
     ),
     [BLOCKS.HEADING_1]: (node: ContentfulRichTextNode, children: React.ReactNode) => (
