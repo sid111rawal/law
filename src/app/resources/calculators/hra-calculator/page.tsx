@@ -1,13 +1,13 @@
 import Header from '@/components/Header';
-import AboutUsContent from '@/components/AboutUsContent';
+import HRACalculator from '@/components/HRACalculator';
 import Footer from '@/components/Footer';
 
-export default function AboutPage() {
+export default function HRACalculatorPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <AboutUsContent />
+        <HRACalculator />
       </main>
       <Footer />
     </div>

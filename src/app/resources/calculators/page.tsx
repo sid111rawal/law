@@ -18,50 +18,63 @@ export default function CalculatorsPage() {
       title: 'GST Calculator',
       description: 'Calculate GST on your goods and services with different tax rates',
       icon: '📊',
-      href: '#',
-      features: ['CGST, SGST, IGST', 'Multiple Tax Rates', 'Reverse Charge', 'Composition Scheme'],
-      color: 'from-gray-600 to-gray-700',
-      comingSoon: true
+      href: '/resources/calculators/gst-calculator',
+      features: ['CGST, SGST, IGST', 'Multiple Tax Rates', 'Inclusive/Exclusive', 'Intra & Inter-state'],
+      color: 'from-slate-600 to-slate-700'
     },
     {
       id: 'tds-calculator',
       title: 'TDS Calculator',
       description: 'Calculate Tax Deducted at Source for various income types',
       icon: '💰',
-      href: '#',
+      href: '/resources/calculators/tds-calculator',
       features: ['Salary TDS', 'Interest TDS', 'Rent TDS', 'Professional Fees'],
-      color: 'from-slate-500 to-slate-600',
-      comingSoon: true
+      color: 'from-slate-600 to-slate-700'
     },
     {
-      id: 'salary-calculator',
-      title: 'Salary Calculator',
-      description: 'Calculate take-home salary with all deductions and allowances',
-      icon: '💼',
-      href: '#',
-      features: ['Gross to Net', 'All Deductions', 'Allowances', 'PF & ESI'],
-      color: 'from-gray-500 to-gray-600',
-      comingSoon: true
+      id: 'sip-calculator',
+      title: 'SIP Calculator',
+      description: 'Calculate returns on your Systematic Investment Plan in mutual funds',
+      icon: '📈',
+      href: '/resources/calculators/sip-calculator',
+      features: ['Future Value', 'Total Returns', 'Wealth Creation', 'Investment Planning'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
+      id: 'swp-calculator',
+      title: 'SWP Calculator',
+      description: 'Plan Systematic Withdrawal from your mutual fund investments',
+      icon: '💸',
+      href: '/resources/calculators/swp-calculator',
+      features: ['Regular Income', 'Balance Tracking', 'Withdrawal Planning', 'Retirement Planning'],
+      color: 'from-slate-600 to-slate-700'
     },
     {
       id: 'hra-calculator',
       title: 'HRA Calculator',
       description: 'Calculate House Rent Allowance exemption for tax savings',
       icon: '🏠',
-      href: '#',
-      features: ['HRA Exemption', 'Rent Receipts', 'Metro vs Non-Metro', 'Tax Savings'],
-      color: 'from-slate-400 to-slate-500',
-      comingSoon: true
+      href: '/resources/calculators/hra-calculator',
+      features: ['HRA Exemption', 'Metro/Non-Metro', 'Tax Savings', 'Detailed Breakdown'],
+      color: 'from-slate-600 to-slate-700'
     },
     {
-      id: 'pf-calculator',
-      title: 'PF Calculator',
-      description: 'Calculate Employee Provident Fund contributions and maturity',
-      icon: '🏦',
-      href: '#',
-      features: ['Employee & Employer PF', 'Interest Calculation', 'Maturity Amount', 'Tax Benefits'],
-      color: 'from-gray-400 to-gray-500',
-      comingSoon: true
+      id: 'emi-calculator',
+      title: 'EMI Calculator',
+      description: 'Calculate Equated Monthly Installments for loans',
+      icon: '💼',
+      href: '/resources/calculators/emi-calculator',
+      features: ['Home Loan EMI', 'Car Loan EMI', 'Personal Loan', 'Interest Breakdown'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
+      id: 'tax-audit',
+      title: 'Tax Audit Checker',
+      description: 'Check if your business requires tax audit under Section 44AB',
+      icon: '📋',
+      href: '/resources/calculators/tax-audit',
+      features: ['Audit Threshold', 'Section 44AB', 'Compliance Check', 'Professional Help'],
+      color: 'from-slate-600 to-slate-700'
     }
   ];
 
@@ -83,13 +96,12 @@ export default function CalculatorsPage() {
             </div>
 
             {/* Calculators Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {calculators.map((calculator) => (
-                <div
+                <Link
                   key={calculator.id}
-                  className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden ${
-                    calculator.comingSoon ? 'opacity-75' : ''
-                  }`}
+                  href={calculator.href}
+                  className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden block"
                 >
                   {/* Card Header */}
                   <div className={`bg-gradient-to-r ${calculator.color} p-6 text-white`}>
@@ -97,11 +109,6 @@ export default function CalculatorsPage() {
                       <div className="text-3xl">{calculator.icon}</div>
                       <div>
                         <h3 className="text-xl font-bold">{calculator.title}</h3>
-                        {calculator.comingSoon && (
-                          <span className="text-xs bg-white/30 px-3 py-1 rounded-full font-medium">
-                            Coming Soon
-                          </span>
-                        )}
                       </div>
                     </div>
                   </div>
@@ -124,23 +131,11 @@ export default function CalculatorsPage() {
                     </div>
 
                     {/* Action Button */}
-                    {calculator.comingSoon ? (
-                      <button
-                        disabled
-                        className="w-full bg-gray-100 text-gray-500 px-4 py-3 rounded-lg font-medium cursor-not-allowed border border-gray-200"
-                      >
-                        Coming Soon
-                      </button>
-                    ) : (
-                      <Link
-                        href={calculator.href}
-                        className="block w-full bg-[#C9A34A] text-white px-4 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all duration-300 text-center"
-                      >
-                        Calculate Now
-                      </Link>
-                    )}
+                    <div className="w-full bg-[#C9A34A] text-white px-4 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all duration-300 text-center">
+                      Calculate Now
+                    </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
 

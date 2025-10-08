@@ -1,13 +1,13 @@
 import Header from '@/components/Header';
-import AboutUsContent from '@/components/AboutUsContent';
+import SIPCalculator from '@/components/SIPCalculator';
 import Footer from '@/components/Footer';
 
-export default function AboutPage() {
+export default function SIPCalculatorPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <AboutUsContent />
+        <SIPCalculator />
       </main>
       <Footer />
     </div>

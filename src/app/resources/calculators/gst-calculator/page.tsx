@@ -1,13 +1,13 @@
 import Header from '@/components/Header';
-import AboutUsContent from '@/components/AboutUsContent';
+import GSTCalculator from '@/components/GSTCalculator';
 import Footer from '@/components/Footer';
 
-export default function AboutPage() {
+export default function GSTCalculatorPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <AboutUsContent />
+        <GSTCalculator />
       </main>
       <Footer />
     </div>

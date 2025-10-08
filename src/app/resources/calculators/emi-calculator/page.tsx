@@ -1,13 +1,13 @@
 import Header from '@/components/Header';
-import AboutUsContent from '@/components/AboutUsContent';
+import EMICalculator from '@/components/EMICalculator';
 import Footer from '@/components/Footer';
 
-export default function AboutPage() {
+export default function EMICalculatorPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <AboutUsContent />
+        <EMICalculator />
       </main>
       <Footer />
     </div>

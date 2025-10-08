@@ -1,13 +1,13 @@
 import Header from '@/components/Header';
-import AboutUsContent from '@/components/AboutUsContent';
+import TaxAuditChecker from '@/components/TaxAuditChecker';
 import Footer from '@/components/Footer';
 
-export default function AboutPage() {
+export default function TaxAuditPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <AboutUsContent />
+        <TaxAuditChecker />
       </main>
       <Footer />
     </div>
