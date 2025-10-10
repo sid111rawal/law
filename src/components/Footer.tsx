@@ -100,9 +100,6 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <blockquote className="mt-6 text-sm italic text-gray-300 font-serif">
-              &quot;Because every compliant business starts with the right knowledge.&quot;
-            </blockquote>
           </div>
 
           {/* Knowledge Center */}
@@ -128,21 +125,78 @@ export default function Footer() {
           </div>
 
           {/* Contact Us */}
-          <div>
-            <h3 className="text-lg font-serif font-semibold text-white mb-4">Contact Us</h3>
-            <div className="space-y-3 text-sm">
-              <div className="text-gray-100">
-                C-23, S-4/14, Second Floor,<br />
-                Sanjay Place, Agra - 282002
+          <div className="relative">
+            <h3 className="text-lg font-serif font-semibold text-white mb-6 flex items-center">
+              Contact Us
+            </h3>
+            
+            {/* Contact Info Card */}
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-6 border border-gray-700 hover:border-[#C9A34A] transition-all duration-300 hover:shadow-lg hover:shadow-[#C9A34A]/20">
+              <div className="space-y-4">
+                {/* Address */}
+                <div className="flex items-start space-x-3 group">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#C9A34A] rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-[#C9A34A] transition-all duration-300">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-white font-medium mb-1">Office Address</h4>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      C-23, S-4/14, Second Floor,<br />
+                      Sanjay Place, Agra - 282002
+                    </p>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-center space-x-3 group">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#C9A34A] rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-[#C9A34A] transition-all duration-300">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-white font-medium mb-1">Email Us</h4>
+                    <a 
+                      href="mailto:info@lawgicalstation.com" 
+                      className="text-[#C9A34A] hover:text-white transition-colors duration-300 text-sm font-medium"
+                    >
+                      info@lawgicalstation.com
+                    </a>
+                  </div>
+                </div>
+
+                {/* Phone */}
+                <div className="flex items-center space-x-3 group">
+                  <div className="flex-shrink-0 w-10 h-10 bg-[#C9A34A] rounded-full flex items-center justify-center group-hover:bg-white group-hover:text-[#C9A34A] transition-all duration-300">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-white font-medium mb-1">Call Us</h4>
+                    <a 
+                      href="tel:+919045356687" 
+                      className="text-[#C9A34A] hover:text-white transition-colors duration-300 text-sm font-medium"
+                    >
+                      +91-90453 56687
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="text-gray-100">
-                <a href="mailto:info@lawgicalstation.com" className="hover:text-[#C9A34A] transition-colors">
-                  info@lawgicalstation.com
-                </a>
-              </div>
-              <div className="text-gray-100">
-                <a href="tel:+919045356687" className="hover:text-[#C9A34A] transition-colors">
-                  +91-90453 56687
+
+              {/* Call to Action */}
+              <div className="mt-6 pt-4 border-t border-gray-700">
+                <p className="text-gray-300 text-xs text-center mb-3">
+                  Ready to grow your business?
+                </p>
+                <a 
+                  href="mailto:info@lawgicalstation.com" 
+                  className="block w-full bg-gradient-to-r from-[#C9A34A] to-[#B8941F] hover:from-white hover:to-gray-100 hover:text-[#C9A34A] text-white text-center py-2 px-4 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-white/20 transform hover:-translate-y-0.5 border border-transparent hover:border-[#C9A34A]"
+                >
+                  Get Free Consultation
                 </a>
               </div>
             </div>
