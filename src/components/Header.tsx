@@ -188,6 +188,12 @@ export default function Header() {
                       <Link href="/contact" className="block text-sm text-gray-600 hover:text-gold transition-colors py-2">
                         Contact Us
                       </Link>
+                      <Link href="/privacy-policy" className="block text-sm text-gray-600 hover:text-gold transition-colors py-2">
+                        Privacy Policy
+                      </Link>
+                      <Link href="/terms-and-conditions" className="block text-sm text-gray-600 hover:text-gold transition-colors py-2">
+                        Terms & Conditions
+                      </Link>
                     </div>
                   </div>
                 )}
@@ -328,6 +334,8 @@ export default function Header() {
                   <div className="pb-2 space-y-1 pl-4">
                     <Link href="/about" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>About Us</Link>
                     <Link href="/contact" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Contact Us</Link>
+                    <Link href="/privacy-policy" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Privacy Policy</Link>
+                    <Link href="/terms-and-conditions" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Terms & Conditions</Link>
                   </div>
                 )}
               </div>

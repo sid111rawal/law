@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 
 export default function Footer() {
@@ -103,12 +105,24 @@ export default function Footer() {
             </div>
             
             <div className="flex items-center space-x-6 text-sm">
-              <Link href="#" className="text-gray-100 hover:text-gold transition-colors">
+              <Link href="/privacy-policy" className="text-gray-100 hover:text-gold transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-gray-100 hover:text-gold transition-colors">
-                Terms of Service
+              <Link href="/terms-and-conditions" className="text-gray-100 hover:text-gold transition-colors">
+                Terms & Conditions
               </Link>
+              <Link href="/cookie-policy" className="text-gray-100 hover:text-gold transition-colors">
+                Cookie Policy
+              </Link>
+              <button 
+                onClick={() => {
+                  localStorage.removeItem('cookieConsent');
+                  window.location.reload();
+                }}
+                className="text-gray-100 hover:text-gold transition-colors"
+              >
+                Cookie Settings
+              </button>
               <div className="flex items-center text-gold">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
