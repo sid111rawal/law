@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import siteConfig from '@/config/site';
 
 export default function Contact() {
@@ -456,12 +457,12 @@ export default function Contact() {
                   Continue Browsing
                 </button>
                 
-                <a
+                <Link
                   href="/"
                   className="flex-1 bg-white border-2 border-[#C9A34A] text-[#C9A34A] py-3 px-6 rounded-lg font-semibold transition-all duration-300 text-center hover:bg-[#C9A34A] hover:text-white"
                 >
                   Back to Home
-                </a>
+                </Link>
               </div>
             </div>
           </div>
