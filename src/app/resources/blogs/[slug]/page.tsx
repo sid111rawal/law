@@ -116,22 +116,22 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       )}
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="lg:grid lg:grid-cols-4 lg:gap-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-8">
+        <div className="lg:grid lg:grid-cols-12 lg:gap-6">
           {/* Table of Contents */}
-          <div className="lg:col-span-1 mb-8 lg:mb-0">
+          <div className="lg:col-span-2 mb-8 lg:mb-0">
             <TableOfContents headings={headings} />
           </div>
 
           {/* Main Content */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-7">
             <article className="bg-white rounded-lg shadow-sm p-8">
               <RichTextRenderer content={fields.content} />
             </article>
           </div>
 
           {/* Sidebar */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-3">
             <div className="bg-white rounded-lg shadow-sm p-6 sticky top-8">
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Related Posts</h3>
               <div className="space-y-4">

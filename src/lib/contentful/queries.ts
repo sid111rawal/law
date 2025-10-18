@@ -1,14 +1,22 @@
 // Contentful API queries
 import { getContentfulClient } from './client';
 import { ContentfulBlogPost } from './types';
+import { 
+  getAllStaticBlogPosts, 
+  getStaticBlogPostBySlug, 
+  getStaticBlogPostsByCategory, 
+  getAllStaticCategories, 
+  getFeaturedStaticBlogPosts 
+} from '../blog/static-posts';
 
 // Get all blog posts
 export async function getAllBlogPosts(): Promise<ContentfulBlogPost[]> {
   const client = getContentfulClient();
+  const staticPosts = getAllStaticBlogPosts();
   
-  // Return empty array if Contentful is not configured
+  // Return static posts if Contentful is not configured
   if (!process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID || !process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN) {
-    return [];
+    return staticPosts;
   }
   
   try {
@@ -17,10 +25,19 @@ export async function getAllBlogPosts(): Promise<ContentfulBlogPost[]> {
       order: ['-fields.publishedDate'],
     });
     
-    return response.items as unknown as ContentfulBlogPost[];
+    const contentfulPosts = response.items as unknown as ContentfulBlogPost[];
+    
+    // Combine Contentful posts with static posts
+    const allPosts = [...contentfulPosts, ...staticPosts];
+    
+    // Sort by published date (newest first)
+    return allPosts.sort((a, b) => 
+      new Date(b.fields.publishedDate).getTime() - new Date(a.fields.publishedDate).getTime()
+    );
   } catch (error) {
     console.error('Error fetching blog posts:', error);
-    return [];
+    // Fall back to static posts on error
+    return staticPosts;
   }
 }
 
@@ -28,9 +45,9 @@ export async function getAllBlogPosts(): Promise<ContentfulBlogPost[]> {
 export async function getBlogPostBySlug(slug: string): Promise<ContentfulBlogPost | null> {
   const client = getContentfulClient();
   
-  // Return null if Contentful is not configured
+  // Return static post if Contentful is not configured
   if (!process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID || !process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN) {
-    return null;
+    return getStaticBlogPostBySlug(slug);
   }
   
   try {
@@ -40,20 +57,28 @@ export async function getBlogPostBySlug(slug: string): Promise<ContentfulBlogPos
       limit: 1,
     });
     
-    return (response.items[0] as unknown as ContentfulBlogPost) || null;
+    // If Contentful has the post, return it
+    if (response.items && response.items.length > 0) {
+      return (response.items[0] as unknown as ContentfulBlogPost) || null;
+    }
+    
+    // Otherwise, check static posts
+    return getStaticBlogPostBySlug(slug);
   } catch (error) {
     console.error('Error fetching blog post:', error);
-    return null;
+    // Fall back to static posts on error
+    return getStaticBlogPostBySlug(slug);
   }
 }
 
 // Get blog posts by category
 export async function getBlogPostsByCategory(category: string): Promise<ContentfulBlogPost[]> {
   const client = getContentfulClient();
+  const staticPosts = getStaticBlogPostsByCategory(category);
   
-  // Return empty array if Contentful is not configured
+  // Return static posts if Contentful is not configured
   if (!process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID || !process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN) {
-    return [];
+    return staticPosts;
   }
   
   try {
@@ -63,10 +88,19 @@ export async function getBlogPostsByCategory(category: string): Promise<Contentf
       order: ['-fields.publishedDate'],
     });
     
-    return response.items as unknown as ContentfulBlogPost[];
+    const contentfulPosts = response.items as unknown as ContentfulBlogPost[];
+    
+    // Combine Contentful posts with static posts for this category
+    const allPosts = [...contentfulPosts, ...staticPosts];
+    
+    // Sort by published date (newest first)
+    return allPosts.sort((a, b) => 
+      new Date(b.fields.publishedDate).getTime() - new Date(a.fields.publishedDate).getTime()
+    );
   } catch (error) {
     console.error('Error fetching blog posts by category:', error);
-    return [];
+    // Fall back to static posts on error
+    return staticPosts;
   }
 }
 
@@ -74,9 +108,9 @@ export async function getBlogPostsByCategory(category: string): Promise<Contentf
 export async function getFeaturedBlogPosts(): Promise<ContentfulBlogPost[]> {
   const client = getContentfulClient();
   
-  // Return empty array if Contentful is not configured
+  // Return static posts if Contentful is not configured
   if (!process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID || !process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN) {
-    return [];
+    return getFeaturedStaticBlogPosts();
   }
   
   try {
@@ -87,20 +121,27 @@ export async function getFeaturedBlogPosts(): Promise<ContentfulBlogPost[]> {
       limit: 3,
     });
     
+    // If Contentful returns no posts, fall back to static posts
+    if (!response.items || response.items.length === 0) {
+      return getFeaturedStaticBlogPosts();
+    }
+    
     return response.items as unknown as ContentfulBlogPost[];
   } catch (error) {
     console.error('Error fetching featured blog posts:', error);
-    return [];
+    // Fall back to static posts on error
+    return getFeaturedStaticBlogPosts();
   }
 }
 
 // Get all categories
 export async function getAllCategories(): Promise<string[]> {
   const client = getContentfulClient();
+  const staticCategories = getAllStaticCategories();
   
-  // Return empty array if Contentful is not configured
+  // Return static categories if Contentful is not configured
   if (!process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID || !process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN) {
-    return [];
+    return staticCategories;
   }
   
   try {
@@ -109,16 +150,21 @@ export async function getAllCategories(): Promise<string[]> {
       select: ['fields.category'],
     });
     
-    // Extract unique categories
-    const categories = response.items
+    // Extract unique categories from Contentful
+    const contentfulCategories = response.items
       .map((item) => (item as unknown as ContentfulBlogPost)?.fields?.category)
       .filter((category: string, index: number, self: string[]) => 
         category && self.indexOf(category) === index
       );
     
-    return categories;
+    // Combine Contentful categories with static categories
+    const allCategories = [...contentfulCategories, ...staticCategories];
+    
+    // Remove duplicates
+    return [...new Set(allCategories)];
   } catch (error) {
     console.error('Error fetching categories:', error);
-    return [];
+    // Fall back to static categories on error
+    return staticCategories;
   }
 }

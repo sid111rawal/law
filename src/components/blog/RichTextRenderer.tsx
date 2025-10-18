@@ -10,9 +10,62 @@ import { ContentfulRichText, ContentfulRichTextNode } from '@/lib/contentful/typ
 // Custom render options for rich text
 const renderOptions = {
   renderNode: {
-    [BLOCKS.PARAGRAPH]: (node: ContentfulRichTextNode, children: React.ReactNode) => (
-      <p className="mb-4 text-gray-700 leading-relaxed">{children}</p>
-    ),
+    [BLOCKS.PARAGRAPH]: (node: ContentfulRichTextNode, children: React.ReactNode) => {
+      const text = (node as { content?: Array<{ value?: string }> }).content?.[0]?.value || '';
+      
+      // Check if this is a markdown table
+      if (text.includes(' | ') && text.includes('---')) {
+        const lines = text.split('\n');
+        const tableLines = lines.filter((line: string) => line.trim() !== '');
+        
+        if (tableLines.length >= 2) {
+          const headers = tableLines[0].split(' | ').map((h: string) => h.replace(/\*\*/g, '').trim());
+          const dataRows = tableLines.slice(2).map((line: string) => 
+            line.split(' | ').map((cell: string) => cell.trim())
+          );
+          
+          return (
+            <div className="overflow-x-auto my-6">
+              <table className="min-w-full border-collapse border border-gray-300 bg-white rounded-lg shadow-sm">
+                <thead>
+                  <tr className="bg-gray-50">
+                    {headers.map((header: string, index: number) => (
+                      <th 
+                        key={index} 
+                        className="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-900"
+                      >
+                        {header}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {dataRows.map((row: string[], rowIndex: number) => (
+                    <tr 
+                      key={rowIndex} 
+                      className={`hover:bg-gray-50 transition-colors ${
+                        rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-25'
+                      }`}
+                    >
+                      {row.map((cell: string, cellIndex: number) => (
+                        <td 
+                          key={cellIndex} 
+                          className="border border-gray-300 px-4 py-3 text-gray-700"
+                        >
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+      }
+      
+      return <p className="mb-4 text-gray-700 leading-relaxed">{children}</p>;
+    },
     [BLOCKS.HEADING_1]: (node: ContentfulRichTextNode, children: React.ReactNode) => (
       <h1 className="text-3xl font-bold mb-6 text-gray-900">{children}</h1>
     ),
