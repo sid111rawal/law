@@ -13,7 +13,7 @@ export default function WhatsAppButton() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 group">
+    <div className="fixed bottom-6 right-6 z-50 group hidden md:block">
       {/* Tooltip */}
       {(isHovered || showTooltip) && (
         <div className="absolute bottom-full right-0 mb-2 animate-fade-in-up">

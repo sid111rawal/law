@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function AboutUsContent() {
   const [currentComparisonIndex, setCurrentComparisonIndex] = useState(0);
@@ -53,28 +54,28 @@ export default function AboutUsContent() {
       credentials: 'CS, LLB, MBA',
       role: 'Co-Founder | Corporate Legal Advisor',
       description: 'Rahul built Lawgical Station on a foundation of trust — to ensure every entrepreneur takes the right steps with the right professionals. He guides founders through each stage of their journey, from incorporation to governance, making sure businesses grow in the right direction.',
-      image: '/images/team/rahul.jpg'
+      image: '/images/rahul_cs.jpg'
     },
     {
       name: 'CA Kapish Agarwal',
       credentials: 'ACA, B.Com, M.Com',
       role: 'Tax Expert | 10+ Years Experience',
       description: 'Kapish is the backbone for taxpayers navigating complex income tax matters. With strategic planning and hands-on defense against notices, he has saved clients lakhs while ensuring stress-free compliance.',
-      image: '/images/team/kapish.jpg'
+      image: '/images/kapish_ca.jpg'
     },
     {
       name: 'CA Bhavya Valechha',
       credentials: 'ACA, B.Com',
       role: 'GST & Investment Expert',
       description: 'Bhavya empowers businesses with accurate GST compliance while also guiding clients in smart investment planning. By combining tax-saving strategies with long-term financial vision, she helps clients maximize value and safeguard their future wealth.',
-      image: '/images/team/bhavya.jpg'
+      image: '/images/bhavya_ca.jpg'
     },
     {
       name: 'CA Harsh Agarwal',
       credentials: 'ACA, B.Com',
       role: 'Audit & Compliance Expert',
       description: 'Harsh partners with startups and established businesses to build strong foundations. From choosing the right structure to handling audits and corporate compliance, he ensures companies stay resilient and compliant at every stage.',
-      image: '/images/team/harsh.jpg'
+      image: '/images/harsh_ca.jpg'
     },
   ];
 
@@ -365,30 +366,36 @@ export default function AboutUsContent() {
       </section>
 
       {/* Core Team */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate mb-4">
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-slate mb-6">
               Advisors Who Stand With You
             </h2>
-            <p className="text-lg text-gray-600">Our Expert Team</p>
+            <p className="text-xl text-gray-600">Our Expert Team</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {team.map((member, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
-                <div className="p-8">
-                  <div className="flex items-start space-x-4 mb-4">
-                    <div className="w-20 h-20 bg-gradient-to-br from-[#C9A34A] to-yellow-500 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
-                      {member.name.split(' ').map(n => n[0]).join('')}
+              <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+                <div className="p-10">
+                  <div className="flex items-start space-x-6 mb-6">
+                    <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
+                      <Image 
+                        src={member.image} 
+                        alt={member.name}
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-slate mb-1">{member.name}</h3>
-                      <p className="text-sm text-[#C9A34A] font-medium mb-1">{member.credentials}</p>
-                      <p className="text-sm text-gray-600">{member.role}</p>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-slate mb-2">{member.name}</h3>
+                      <p className="text-base text-[#C9A34A] font-medium mb-2">{member.credentials}</p>
+                      <p className="text-base text-gray-600">{member.role}</p>
                     </div>
                   </div>
-                  <p className="text-gray-700 leading-relaxed italic">
+                  <p className="text-lg text-gray-700 leading-relaxed italic">
                     &ldquo;{member.description}&rdquo;
                   </p>
                 </div>
@@ -397,8 +404,8 @@ export default function AboutUsContent() {
           </div>
 
           {/* Unified Closing */}
-          <div className="mt-12 bg-gradient-to-r from-[#C9A34A]/10 to-yellow-400/10 rounded-2xl p-8 text-center">
-            <p className="text-lg text-gray-700 italic">
+          <div className="mt-16 bg-gradient-to-r from-[#C9A34A]/10 to-yellow-400/10 rounded-3xl p-10 text-center">
+            <p className="text-xl text-gray-700 italic">
               &ldquo;Together, our experts combine legal, tax, GST, compliance, and investment expertise to give entrepreneurs and taxpayers one trusted platform — solving problems, saving money, and guiding businesses toward sustainable growth.&rdquo;
             </p>
           </div>
@@ -425,7 +432,7 @@ export default function AboutUsContent() {
               {/* Impact Stats */}
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="bg-white rounded-xl shadow-lg p-4 text-center">
-                  <div className="text-2xl font-bold text-[#C9A34A] mb-1">₹X</div>
+                  <div className="text-2xl font-bold text-[#C9A34A] mb-1">₹1,00,000+</div>
                   <div className="text-sm text-gray-600">Contributed This Year</div>
                 </div>
                 <div className="bg-white rounded-xl shadow-lg p-4 text-center">

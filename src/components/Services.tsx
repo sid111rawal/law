@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Services() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,16 +11,32 @@ export default function Services() {
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        </svg>
+      ),
+      title: "Personal Tax & Individual Advisory",
+      tagline: "Clarity. Compliance. Confidence.",
+      features: [
+        "ITR filing for Salaried, Business, NRI & Freelance",
+        "Tax planning & investment advisory",
+        "Capital gains & property transactions"
+      ],
+      href: "/services/personal-tax"
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
         </svg>
       ),
-      title: "Business Setup & Structuring",
-      tagline: "Start right, grow strong.",
+      title: "Business Tax & Corporate Advisory",
+      tagline: "Precision in Planning. Protection in Practice.",
       features: [
-        "Incorporation of Pvt. Ltd., LLP, OPC, Partnerships",
-        "Smart structuring for tax efficiency & investor readiness",
-        "Founders' agreements & compliance roadmap"
-      ]
+        "Corporate tax planning & compliance",
+        "Transfer pricing & international taxation",
+        "Tax-efficient business structuring"
+      ],
+      href: "/services/business-tax"
     },
     {
       icon: (
@@ -27,27 +44,74 @@ export default function Services() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
-      title: "Tax & Compliance Management",
-      tagline: "Stay compliant. Stay stress-free.",
+      title: "GST Services & Litigation Support",
+      tagline: "From Returns to Rescues — Your Complete GST Partner.",
       features: [
-        "End-to-end GST, TDS, ROC & Income Tax compliance",
-        "Proactive planning to save penalties & optimize taxes",
-        "365-day compliance monitoring & support"
-      ]
+        "GST registration, filing & reconciliation",
+        "GST litigation & notice handling",
+        "ITC optimization & compliance monitoring"
+      ],
+      href: "/services/gst"
     },
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
         </svg>
       ),
-      title: "Litigation & Dispute Resolution",
-      tagline: "When challenges arise, we represent you.",
+      title: "Statutory Audit & Assurance Services",
+      tagline: "Integrity in Numbers. Insight in Every Report.",
       features: [
-        "Expert defense for GST & Income Tax litigation",
-        "Handling of assessments, notices & appeals",
-        "Trusted representation before authorities"
-      ]
+        "Independent statutory audits",
+        "Financial statement verification",
+        "Compliance & governance reporting"
+      ],
+      href: "/services/statutory-audit"
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      ),
+      title: "Internal Audit & Risk Advisory",
+      tagline: "Beyond Numbers. Building Systems of Trust.",
+      features: [
+        "Risk assessment & control testing",
+        "Process improvement & efficiency",
+        "Governance & compliance frameworks"
+      ],
+      href: "/services/internal-audit"
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+        </svg>
+      ),
+      title: "ROC Compliance & Corporate Governance",
+      tagline: "Because a Company's Real Strength Lies in Its Discipline.",
+      features: [
+        "Annual compliance filing (AOC-4, MGT-7)",
+        "Event-based compliances & XBRL",
+        "Strike-off revival & legal representation"
+      ],
+      href: "/services/roc-compliance"
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+      ),
+      title: "Labour Law Registration & Compliance",
+      tagline: "Because Every Business Runs Better When It Runs Right.",
+      features: [
+        "EPF, ESIC & Professional Tax registration",
+        "Labour welfare fund compliance",
+        "Contract labour & factory act compliance"
+      ],
+      href: "/services/labour-law"
     },
     {
       icon: (
@@ -55,27 +119,29 @@ export default function Services() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      title: "Accounting & Virtual CFO Services",
-      tagline: "Numbers that tell your growth story.",
+      title: "Bookkeeping & Accounting Services",
+      tagline: "Where Numbers Make Sense — and Businesses Make Profit.",
       features: [
-        "Smart bookkeeping & real-time reporting",
-        "Payroll & vendor compliance",
-        "Virtual CFO for strategy, MIS & decision-making"
-      ]
+        "Monthly bookkeeping & reconciliation",
+        "MIS & financial reporting",
+        "CFO-lite advisory & cost optimization"
+      ],
+      href: "/services/bookkeeping"
     },
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
         </svg>
       ),
-      title: "Funding & Growth Advisory",
-      tagline: "Turn ideas into investment-ready businesses.",
+      title: "Payroll Services & HR Compliance",
+      tagline: "Because Paying Right Builds Trust — and Great Teams.",
       features: [
-        "Investor pitch decks & financial modeling",
-        "ESOP structuring & cap table management",
-        "Compliance for fundraising & due diligence"
-      ]
+        "Monthly payroll processing",
+        "PF, ESIC, TDS & Professional Tax filing",
+        "Employee tax support & Form 16 generation"
+      ],
+      href: "/services/payroll"
     },
     {
       icon: (
@@ -83,13 +149,29 @@ export default function Services() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
         </svg>
       ),
-      title: "Specialized Business Solutions",
-      tagline: "For when your journey needs something extra.",
+      title: "Business Advisory & Strategic Consulting",
+      tagline: "Where Logic Meets Vision — and Strategy Meets Execution.",
       features: [
-        "Compliance health checks & restructuring",
-        "Exit strategy & company closure support",
-        "Cross-border taxation & FEMA advisory"
-      ]
+        "Business structure & strategy advisory",
+        "Financial planning & growth consulting",
+        "Startup & investor readiness consulting"
+      ],
+      href: "/services/business-advisory"
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+        </svg>
+      ),
+      title: "Company Registration & Business Formation",
+      tagline: "Because How You Start — Decides How Far You Go.",
+      features: [
+        "Pvt Ltd, LLP, OPC registration",
+        "Business structure consultation",
+        "Post-incorporation compliance support"
+      ],
+      href: "/services/company-registration"
     }
   ];
 
@@ -197,14 +279,25 @@ export default function Services() {
                     </p>
                     <div className={`text-gray-600 leading-relaxed text-center flex-grow transition-all duration-500 break-words hyphens-auto ${isCenter ? 'text-sm md:text-base' : 'text-xs'}`}>
                       {isCenter ? (
-                        <ul className="space-y-1 text-left">
-                          {service.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-start transition-all duration-300 delay-100">
-                              <span className="text-gold mr-2 mt-1">•</span>
-                              <span>{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
+                        <div className="space-y-4">
+                          <ul className="space-y-1 text-left">
+                            {service.features.map((feature, featureIndex) => (
+                              <li key={featureIndex} className="flex items-start transition-all duration-300 delay-100">
+                                <span className="text-gold mr-2 mt-1">•</span>
+                                <span>{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                          <div className="pt-2">
+                            <Link 
+                              href={service.href}
+                              className="inline-block bg-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-yellow-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                              style={{ color: 'white' }}
+                            >
+                              Learn More →
+                            </Link>
+                          </div>
+                        </div>
                       ) : (
                         <div className="text-center">
                           <p className="text-gray-500 text-xs transition-all duration-300">

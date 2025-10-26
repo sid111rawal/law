@@ -70,64 +70,71 @@ export default function Header() {
                 </button>
                 
                 {activeDropdown === 'services' && (
-                  <div className="absolute left-0 mt-1 w-96 bg-white rounded-xl shadow-xl border border-gray-100 py-4 z-50">
-                    <div className="grid grid-cols-3 gap-4 px-6">
+                  <div className="absolute left-0 mt-1 w-96 bg-white rounded-xl shadow-xl border border-gray-100 py-6 z-50">
+                    <div className="px-6">
+                      <div className="grid grid-cols-3 gap-8">
+                        {/* Taxation Column */}
+                        <div>
+                          <h3 className="font-semibold text-slate text-sm mb-3">Taxation</h3>
+                          <div className="space-y-2">
+                            <Link href="/services/personal-tax" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              Personal Tax
+                            </Link>
+                            <Link href="/services/business-tax" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              Business Tax
+                            </Link>
+                            <Link href="/services/gst" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              GST Services
+                            </Link>
+                            <Link href="/services/bookkeeping" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              TDS Compliance
+                            </Link>
+                          </div>
+                        </div>
+
+                        {/* Compliance Column */}
+                        <div>
+                          <h3 className="font-semibold text-slate text-sm mb-3">Compliance</h3>
+                          <div className="space-y-2">
+                            <Link href="/services/statutory-audit" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              Statutory Audit
+                            </Link>
+                            <Link href="/services/internal-audit" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              Internal Audit
+                            </Link>
+                            <Link href="/services/roc-compliance" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              ROC Compliance
+                            </Link>
+                            <Link href="/services/labour-law" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              Labor Law
+                            </Link>
+                          </div>
+                        </div>
+
+                        {/* Others Column */}
+                        <div>
+                          <h3 className="font-semibold text-slate text-sm mb-3">Others</h3>
+                          <div className="space-y-2">
+                            <Link href="/services/bookkeeping" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              Bookkeeping
+                            </Link>
+                            <Link href="/services/payroll" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              Payroll Services
+                            </Link>
+                            <Link href="/services/business-advisory" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              Business Advisory
+                            </Link>
+                            <Link href="/services/company-registration" className="block text-sm text-gray-600 hover:text-gold transition-colors py-1">
+                              Company Registration
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
                       
-                      {/* Taxation */}
-                      <div className="space-y-3">
-                        <h3 className="text-sm font-semibold text-slate border-b border-gray-100 pb-2">Taxation</h3>
-                        <div className="space-y-2">
-                          <Link href="/services/taxation/personal" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Personal Tax
-                          </Link>
-                          <Link href="/services/taxation/business" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Business Tax
-                          </Link>
-                          <Link href="/services/taxation/gst" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            GST Services
-                          </Link>
-                          <Link href="/services/taxation/tds" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            TDS Compliance
-                          </Link>
-                        </div>
-                      </div>
-
-                      {/* Compliance */}
-                      <div className="space-y-3">
-                        <h3 className="text-sm font-semibold text-slate border-b border-gray-100 pb-2">Compliance</h3>
-                        <div className="space-y-2">
-                          <Link href="/services/compliance/statutory" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Statutory Audit
-                          </Link>
-                          <Link href="/services/compliance/internal" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Internal Audit
-                          </Link>
-                          <Link href="/services/compliance/roc" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            ROC Compliance
-                          </Link>
-                          <Link href="/services/compliance/labor" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Labor Law
-                          </Link>
-                        </div>
-                      </div>
-
-                      {/* Others */}
-                      <div className="space-y-3">
-                        <h3 className="text-sm font-semibold text-slate border-b border-gray-100 pb-2">Others</h3>
-                        <div className="space-y-2">
-                          <Link href="/services/others/bookkeeping" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Bookkeeping
-                          </Link>
-                          <Link href="/services/others/payroll" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Payroll Services
-                          </Link>
-                          <Link href="/services/others/advisory" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Business Advisory
-                          </Link>
-                          <Link href="/services/others/registration" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Company Registration
-                          </Link>
-                        </div>
+                      <div className="mt-6 pt-4 border-t border-gray-100">
+                        <Link href="/services" className="block text-sm text-gold hover:text-gold transition-colors font-medium text-center">
+                          View All Services →
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -251,38 +258,20 @@ export default function Header() {
                 </button>
                 
                 {mobileActiveSection === 'services' && (
-                  <div className="pb-2 space-y-1">
-                    {/* Taxation Subsection */}
-                    <div className="pl-4">
-                      <h4 className="text-sm font-medium text-slate py-2 border-b border-gray-50">Taxation</h4>
-                      <div className="space-y-1 py-2">
-                        <Link href="/services/taxation/personal" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Personal Tax</Link>
-                        <Link href="/services/taxation/business" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Business Tax</Link>
-                        <Link href="/services/taxation/gst" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>GST Services</Link>
-                        <Link href="/services/taxation/tds" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>TDS Compliance</Link>
-                      </div>
-                    </div>
-                    
-                    {/* Compliance Subsection */}
-                    <div className="pl-4">
-                      <h4 className="text-sm font-medium text-slate py-2 border-b border-gray-50">Compliance</h4>
-                      <div className="space-y-1 py-2">
-                        <Link href="/services/compliance/statutory" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Statutory Audit</Link>
-                        <Link href="/services/compliance/internal" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Internal Audit</Link>
-                        <Link href="/services/compliance/roc" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>ROC Compliance</Link>
-                        <Link href="/services/compliance/labor" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Labor Law</Link>
-                      </div>
-                    </div>
-                    
-                    {/* Others Subsection */}
-                    <div className="pl-4">
-                      <h4 className="text-sm font-medium text-slate py-2 border-b border-gray-50">Others</h4>
-                      <div className="space-y-1 py-2">
-                        <Link href="/services/others/bookkeeping" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Bookkeeping</Link>
-                        <Link href="/services/others/payroll" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Payroll Services</Link>
-                        <Link href="/services/others/advisory" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Business Advisory</Link>
-                        <Link href="/services/others/registration" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Company Registration</Link>
-                      </div>
+                  <div className="pb-2 space-y-1 pl-4">
+                    <div className="space-y-1 py-2">
+                      <Link href="/services/personal-tax" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Personal Tax</Link>
+                      <Link href="/services/business-tax" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Business Tax</Link>
+                      <Link href="/services/gst" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>GST Services</Link>
+                      <Link href="/services/statutory-audit" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Statutory Audit</Link>
+                      <Link href="/services/internal-audit" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Internal Audit</Link>
+                      <Link href="/services/roc-compliance" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>ROC Compliance</Link>
+                      <Link href="/services/labour-law" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Labour Law</Link>
+                      <Link href="/services/bookkeeping" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Bookkeeping</Link>
+                      <Link href="/services/payroll" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Payroll Services</Link>
+                      <Link href="/services/business-advisory" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Business Advisory</Link>
+                      <Link href="/services/company-registration" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Company Registration</Link>
+                      <Link href="/services" className="block text-sm text-gold hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors font-medium" onClick={closeMobileMenu}>View All Services →</Link>
                     </div>
                   </div>
                 )}

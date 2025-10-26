@@ -9,43 +9,35 @@ export default function AnnouncementBanner() {
   const announcements = [
     {
       id: 1,
-      icon: "📅",
-      text: "ITR Filing Due Date: September 15, 2025 - File with us for hassle-free experience!",
-      highlight: "September 15, 2025",
-      action: "File Now",
-      href: "/itr-filing"
+      icon: "💬",
+      text: "Speak to Real Experts, Not Bots — Because Compliance Is a Partnership, Not a Transaction.",
+      highlight: "Real Experts",
+      action: "Talk to Expert",
+      href: "/contact"
     },
     {
       id: 2,
-      icon: "💰",
-      text: "Special Offer: 20% OFF on GST Registration - Limited time only!",
-      highlight: "20% OFF",
-      action: "Claim Offer",
-      href: "/contact"
+      icon: "🛡️",
+      text: "We handle your compliance like it's our own — because your peace of mind is our duty.",
+      highlight: "Our Duty",
+      action: "Get Started",
+      href: "/services"
     },
     {
       id: 3,
-      icon: "📞",
-      text: "Get 15 minutes FREE consultation - Call us at +91 98765 43210",
-      highlight: "15 minutes FREE",
-      action: "Call Now",
-      href: "tel:+919876543210"
+      icon: "🚀",
+      text: "Where startups find clarity in taxes and compliance.",
+      highlight: "Startups",
+      action: "Start Here",
+      href: "/services/company-registration"
     },
     {
       id: 4,
-      icon: "🛡️",
-      text: "100% Notice Coverage Guarantee - Your peace of mind is our priority",
-      highlight: "100% Guarantee",
-      action: "Learn More",
-      href: "/about"
-    },
-    {
-      id: 5,
-      icon: "⏰",
-      text: "Quick Response Time: Get replies within 2 hours on all queries",
-      highlight: "2 hours",
-      action: "Contact Us",
-      href: "/contact"
+      icon: "🏗️",
+      text: "Every great company starts with a Lawgical foundation.",
+      highlight: "Lawgical Foundation",
+      action: "Build Yours",
+      href: "/services"
     }
   ];
 

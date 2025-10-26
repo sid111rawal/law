@@ -41,24 +41,17 @@ export default function Footer() {
                   ₹2.5 Cr+ Taxes Saved Every Year
                 </div>
               </div>
-            </div>
-
-            {/* SSL Security Badge */}
-            <div className="mt-auto">
-              <div className="flex items-center space-x-4 bg-gray-800/50 rounded-lg p-4 hover:bg-gray-800/70 transition-colors duration-300">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#C9A34A] to-[#B8941F] rounded-full flex items-center justify-center shadow-lg">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div className="flex-1">
-                  <h5 className="text-white font-medium text-sm">SSL Secured</h5>
-                  <p className="text-gray-400 text-xs">256-bit encryption</p>
-                </div>
+              
+              {/* Trusted Partners Image */}
+              <div className="mt-6">
+                <img 
+                  src="/images/trusted.png" 
+                  alt="Trusted Partners" 
+                  className="h-30 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
+                />
               </div>
             </div>
           </div>
-
           {/* Our Expertise */}
           <div className="flex flex-col h-full">
             <div className="flex-1">
