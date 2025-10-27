@@ -15,7 +15,6 @@ export default function ServiceHero({
   title,
   subtitle,
   description,
-  imageSrc,
   ctaPrimary,
   ctaSecondary,
   onPrimaryClick,

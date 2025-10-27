@@ -14,57 +14,38 @@ export default function CTASection({
   primaryCTA,
   secondaryCTA,
   onPrimaryClick,
-  onSecondaryClick,
-  backgroundImage
+  onSecondaryClick
 }: CTASectionProps) {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-gold via-yellow-500 to-gold overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }}></div>
-      </div>
-
-      {/* Background Image Overlay */}
-      {backgroundImage && (
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: `url(${backgroundImage})` }}
-        ></div>
-      )}
-
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-white leading-tight">
-              {title}
-            </h2>
-            <p className="text-xl text-white/90">
-              {subtitle}
-            </p>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={onPrimaryClick}
-              className="bg-white text-slate px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 hover:text-slate transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              {primaryCTA}
-            </button>
-            <button
-              onClick={onSecondaryClick}
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            >
-              {secondaryCTA}
-            </button>
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div className="bg-soft-white px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+            <div className="text-center">
+              <h3 className="text-lg sm:text-xl font-serif font-bold text-slate mb-4">
+                {title}
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 mb-6 max-w-2xl mx-auto">
+                {subtitle}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                  onClick={onPrimaryClick}
+                  className="bg-[#C9A34A] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all duration-200 text-sm sm:text-base shadow-lg hover:shadow-xl"
+                >
+                  {primaryCTA}
+                </button>
+                <button
+                  onClick={onSecondaryClick}
+                  className="border-2 border-[#C9A34A] text-[#C9A34A] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-[#C9A34A] hover:text-white transition-all duration-200 text-sm sm:text-base"
+                >
+                  {secondaryCTA}
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Floating Elements */}
-      <div className="absolute top-10 left-10 w-20 h-20 bg-white/20 rounded-full blur-xl"></div>
-      <div className="absolute bottom-10 right-10 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
     </section>
   );
 }

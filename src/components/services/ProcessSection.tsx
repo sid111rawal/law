@@ -11,6 +11,16 @@ interface ProcessSectionProps {
 }
 
 export default function ProcessSection({ title, steps }: ProcessSectionProps) {
+  // Dynamic grid classes based on number of steps
+  const getGridClasses = () => {
+    const stepCount = steps.length;
+    if (stepCount <= 2) return "grid-cols-1 md:grid-cols-2";
+    if (stepCount <= 3) return "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+    if (stepCount <= 4) return "grid-cols-1 md:grid-cols-2 lg:grid-cols-4";
+    if (stepCount <= 5) return "grid-cols-1 md:grid-cols-2 lg:grid-cols-5";
+    return "grid-cols-1 md:grid-cols-2 lg:grid-cols-5"; // Max 5 columns
+  };
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,7 +34,7 @@ export default function ProcessSection({ title, steps }: ProcessSectionProps) {
           {/* Connection Line */}
           <div className="hidden lg:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-500 via-yellow-500 to-yellow-500/50"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className={`grid ${getGridClasses()} gap-8`}>
             {steps.map((step, index) => (
               <div key={index} className="relative">
                 {/* Step Number Circle */}

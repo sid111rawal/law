@@ -164,8 +164,8 @@ export default function Header() {
                             Blogs
                           </Link>
                           <Link href="/resources/calculators" className="block text-sm text-gray-600 hover:text-gold transition-colors">
-                            Tools
-              </Link>
+                            All Tools
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -297,7 +297,7 @@ export default function Header() {
                 {mobileActiveSection === 'resources' && (
                   <div className="pb-2 space-y-1 pl-4">
                     <Link href="/resources/blogs" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Blogs</Link>
-                    <Link href="/resources/calculators" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>Tools</Link>
+                    <Link href="/resources/calculators" className="block text-sm text-gray-600 hover:text-gold py-2 pl-3 rounded hover:bg-gray-50 transition-colors" onClick={closeMobileMenu}>All Tools</Link>
                   </div>
                 )}
               </div>

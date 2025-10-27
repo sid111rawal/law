@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -44,9 +45,11 @@ export default function Footer() {
               
               {/* Trusted Partners Image */}
               <div className="mt-6">
-                <img 
+                <Image 
                   src="/images/trusted.png" 
                   alt="Trusted Partners" 
+                  width={400}
+                  height={120}
                   className="h-30 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>

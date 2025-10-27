@@ -5,6 +5,13 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    'lg:grid-cols-5',
+    'lg:grid-cols-4',
+    'lg:grid-cols-3',
+    'md:grid-cols-2',
+    'grid-cols-1'
+  ],
   theme: {
     extend: {
       colors: {

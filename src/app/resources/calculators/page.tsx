@@ -48,15 +48,6 @@ export default function CalculatorsPage() {
       color: 'from-slate-600 to-slate-700'
     },
     {
-      id: 'hra-calculator',
-      title: 'HRA Calculator',
-      description: 'Calculate House Rent Allowance exemption for tax savings',
-      icon: '🏠',
-      href: '/resources/calculators/hra-calculator',
-      features: ['HRA Exemption', 'Metro/Non-Metro', 'Tax Savings', 'Detailed Breakdown'],
-      color: 'from-slate-600 to-slate-700'
-    },
-    {
       id: 'emi-calculator',
       title: 'EMI Calculator',
       description: 'Calculate Equated Monthly Installments for loans',
@@ -72,6 +63,78 @@ export default function CalculatorsPage() {
       icon: '📋',
       href: '/resources/calculators/tax-audit',
       features: ['Audit Threshold', 'Section 44AB', 'Compliance Check', 'Professional Help'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
+      id: 'margin-calculator',
+      title: 'Margin Calculator',
+      description: 'Calculate profit margins using multiple methods and optimize pricing strategies',
+      icon: '📊',
+      href: '/calculators/margin-calculator',
+      features: ['Revenue/Cost Mode', 'Markup Calculations', 'Margin Calculations', 'Pricing Optimization'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
+      id: 'depreciation-calculator',
+      title: 'Depreciation Calculator',
+      description: 'Calculate asset depreciation using SLM, Declining Balance, and Sum of Years methods',
+      icon: '📉',
+      href: '/calculators/depreciation-calculator',
+      features: ['Straight Line Method', 'Declining Balance', 'Sum of Years', 'Depreciation Schedule'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
+      id: 'networth-calculator',
+      title: 'Net Worth Calculator',
+      description: 'Calculate your net worth and project future financial growth with detailed asset and liability tracking',
+      icon: '💰',
+      href: '/calculators/networth-calculator',
+      features: ['Asset Tracking', 'Liability Management', 'Growth Projections', 'Financial Planning'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
+      id: 'gratuity-calculator',
+      title: 'Gratuity Calculator',
+      description: 'Calculate your gratuity amount based on salary and years of service with tax implications',
+      icon: '🎯',
+      href: '/calculators/gratuity-calculator',
+      features: ['Dual Calculation Methods', 'Tax Implications', 'Investment Guidance', 'Retirement Planning'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
+      id: 'stepup-sip-calculator',
+      title: 'Step Up SIP Calculator',
+      description: 'Calculate returns on your SIP investments with annual step-up increments for wealth creation',
+      icon: '📈',
+      href: '/calculators/stepup-sip-calculator',
+      features: ['Annual Step Up', 'Growth Projections', 'Investment Strategies', 'Wealth Building'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
+      id: 'net-profit-calculator',
+      title: 'Net Profit Calculator',
+      description: 'Calculate net profit with comprehensive adjustments for provisions, expenses, and capital gains',
+      icon: '📊',
+      href: '/calculators/net-profit-calculator',
+      features: ['Tax Adjustments', 'Capital Gains', 'Provision Handling', 'Financial Analysis'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
+      id: 'hra-calculator',
+      title: 'HRA Calculator',
+      description: 'Calculate House Rent Allowance exemption for tax savings with monthly breakdowns',
+      icon: '🏠',
+      href: '/calculators/hra-calculator',
+      features: ['Monthly Calculations', 'Metro/Non-Metro', 'Tax Exemption', 'Rent Optimization'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
+      id: 'effective-capital-calculator',
+      title: 'Effective Capital Calculator',
+      description: 'Calculate effective capital using conservative and operating perspectives with scenario comparisons',
+      icon: '💼',
+      href: '/calculators/effective-capital-calculator',
+      features: ['Conservative Mode', 'Operating Mode', 'Scenario Comparison', 'Financial Analysis'],
       color: 'from-slate-600 to-slate-700'
     }
   ];

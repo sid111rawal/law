@@ -215,28 +215,32 @@ export default function ServicesOverview() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-gold via-yellow-500 to-gold">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-8">
-            <h2 className="text-4xl sm:text-5xl font-serif font-bold text-white leading-tight">
-              Ready to Get Started?
-            </h2>
-            <p className="text-xl text-white/90">
-              Let&apos;s discuss your requirements and find the perfect solution for your business.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="bg-white text-slate px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 hover:text-slate transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Talk to an Expert
-              </Link>
-              <Link
-                href="/contact"
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Book a Free Consultation
-              </Link>
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="bg-soft-white px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
+              <div className="text-center">
+                <h3 className="text-lg sm:text-xl font-serif font-bold text-slate mb-4">
+                  Ready to Get Started?
+                </h3>
+                <p className="text-sm sm:text-base text-gray-600 mb-6 max-w-2xl mx-auto">
+                  Let&apos;s discuss your requirements and find the perfect solution for your business.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link
+                    href="/contact"
+                    className="bg-[#C9A34A] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all duration-200 text-sm sm:text-base shadow-lg hover:shadow-xl"
+                  >
+                    Talk to an Expert
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="border-2 border-[#C9A34A] text-[#C9A34A] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-[#C9A34A] hover:text-white transition-all duration-200 text-sm sm:text-base"
+                  >
+                    Book a Free Consultation
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
