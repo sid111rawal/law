@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AboutUsContent() {
   const [currentComparisonIndex, setCurrentComparisonIndex] = useState(0);
@@ -486,12 +487,18 @@ export default function AboutUsContent() {
             Join 200+ satisfied clients who chose quality over convenience. Start your journey with Lawgical Station today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-[#C9A34A] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-yellow-500 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+            <Link 
+              href="/contact#form"
+              className="bg-[#C9A34A] text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-yellow-500 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 inline-block text-center"
+            >
               Get Started Today
-            </button>
-            <button className="border-2 border-[#C9A34A] text-[#C9A34A] px-8 py-4 rounded-xl text-lg font-semibold hover:bg-[#C9A34A] hover:text-white transition-all duration-300">
+            </Link>
+            <Link 
+              href="/contact#form"
+              className="border-2 border-[#C9A34A] bg-transparent text-[#C9A34A] px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 inline-block text-center hover:bg-[#C9A34A] [&:hover]:!text-white"
+            >
               Schedule Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </section>
