@@ -344,7 +344,7 @@ export default function Contact() {
                         className="w-5 h-5 border-2 border-gray-300 rounded text-[#C9A34A] focus:ring-2 focus:ring-[#C9A34A] mr-3"
                       />
                       <span className="text-gray-700 text-lg group-hover:text-[#C9A34A] transition-colors">
-                        ☐ {service}
+                        {service}
                       </span>
                     </label>
                   ))}
