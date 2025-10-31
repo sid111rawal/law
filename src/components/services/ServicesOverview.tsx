@@ -229,13 +229,13 @@ export default function ServicesOverview() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link
                     href="/contact"
-                    className="bg-[#C9A34A] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all duration-200 text-sm sm:text-base shadow-lg hover:shadow-xl"
+                    className="bg-[#C9A34A] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all duration-200 text-sm sm:text-base shadow-lg hover:shadow-xl cursor-pointer"
                   >
                     Talk to an Expert
                   </Link>
                   <Link
                     href="/contact"
-                    className="border-2 border-[#C9A34A] text-[#C9A34A] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-[#C9A34A] hover:text-white transition-all duration-200 text-sm sm:text-base"
+                    className="border-2 border-[#C9A34A] bg-transparent text-[#C9A34A] px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base cursor-pointer hover:bg-[#C9A34A] [&:hover]:!text-white"
                   >
                     Book a Free Consultation
                   </Link>

@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import ServiceHero from './ServiceHero';
 import TrustStats from './TrustStats';
 import ProblemSection from './ProblemSection';
@@ -9,12 +10,14 @@ import WhyChooseUs from './WhyChooseUs';
 import CTASection from './CTASection';
 
 export default function StatutoryAuditService() {
+  const router = useRouter();
+
   const handlePrimaryCTA = () => {
-    console.log('Primary CTA clicked');
+    router.push('/contact');
   };
 
   const handleSecondaryCTA = () => {
-    console.log('Secondary CTA clicked');
+    router.push('/contact');
   };
 
   const stats = [
