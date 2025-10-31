@@ -29,15 +29,15 @@ export default function EffectiveCapitalCalculator() {
   const [mode, setMode] = useState<'conservative' | 'operating'>('conservative');
   const [showScenario, setShowScenario] = useState(false);
   const [inputs, setInputs] = useState<CalculationInputs>({
-    paidCapital: 1000000,
-    sharePremium: 200000,
-    reserves: 300000,
-    ltLoans: 500000,
-    deposits: 100000,
-    investments: 200000,
+    paidCapital: 0,
+    sharePremium: 0,
+    reserves: 0,
+    ltLoans: 0,
+    deposits: 0,
+    investments: 0,
     investType: 'nonstrategic',
-    accLosses: 400000,
-    prelim: 50000,
+    accLosses: 0,
+    prelim: 0,
     mode: 'conservative'
   });
 

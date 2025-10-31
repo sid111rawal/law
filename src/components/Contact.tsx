@@ -1,13 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import siteConfig from '@/config/site';
 
 export default function Contact() {
   const router = useRouter();
-  const IS_TESTING = true;
   
   const [formData, setFormData] = useState({
     name: '',
@@ -120,14 +117,14 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center space-y-8">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-slate leading-tight">
-              Consultancy isn't about numbers —<br />
-              <span className="text-[#C9A34A]">it's about saving dreams from drowning in compliance.</span>
+              Consultancy isn&apos;t about numbers —<br />
+              <span className="text-[#C9A34A]">it&apos;s about saving dreams from drowning in compliance.</span>
             </h1>
             
             <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
-              Whether you're a startup founder fighting to stay compliant or a taxpayer buried under notices —<br />
+              Whether you&apos;re a startup founder fighting to stay compliant or a taxpayer buried under notices —<br />
               <strong>Lawgical Station stands beside you.</strong><br />
-              We don't just file forms — we protect futures, simplify chaos, and help you grow with confidence.
+              We don&apos;t just file forms — we protect futures, simplify chaos, and help you grow with confidence.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
@@ -180,7 +177,7 @@ export default function Contact() {
           </div>
 
           <p className="text-center text-lg text-gray-600 mt-12 max-w-3xl mx-auto">
-            And while you're busy building your business,<br />
+            And while you&apos;re busy building your business,<br />
             the system keeps building more paperwork.
           </p>
         </div>
@@ -231,7 +228,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-slate mb-6">
-              In Every Business Story, There's a Hero — <span className="text-[#C9A34A]">That's You.</span>
+              In Every Business Story, There&apos;s a Hero — <span className="text-[#C9A34A]">That&apos;s You.</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto mb-12">
               But even heroes need a guide when the villains are:
@@ -255,11 +252,11 @@ export default function Contact() {
 
           <div className="bg-gradient-to-r from-[#C9A34A] to-[#B8923A] rounded-2xl p-8 md:p-12 text-white text-center">
             <p className="text-xl md:text-2xl leading-relaxed mb-6">
-              We've been that guide for over <strong className="text-3xl">250+</strong> businesses —<br />
+              We&apos;ve been that guide for over <strong className="text-3xl">250+</strong> businesses —<br />
               simplifying, fixing, and future-proofing their journey toward success.
             </p>
             <p className="text-lg md:text-xl font-semibold">
-              With Lawgical Station, you don't walk alone — you walk with a plan.
+              With Lawgical Station, you don&apos;t walk alone — you walk with a plan.
             </p>
           </div>
         </div>
@@ -270,8 +267,8 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate mb-4">
-              Let's Start With What's Stressing You Out —<br />
-              <span className="text-[#C9A34A]">We'll Handle the Rest.</span>
+              Let&apos;s Start With What&apos;s Stressing You Out —<br />
+              <span className="text-[#C9A34A]">We&apos;ll Handle the Rest.</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Fill this small form. Our experts will reach out personally —<br />
@@ -354,7 +351,7 @@ export default function Contact() {
               {/* Concern */}
               <div>
                 <label className="block text-lg font-semibold text-slate mb-2">
-                  Tell us what's troubling you:
+                  Tell us what&apos;s troubling you:
                 </label>
                 <textarea
                   name="concern"
@@ -487,7 +484,7 @@ export default function Contact() {
 
           <div className="mt-8 bg-gray-50 rounded-xl p-6 text-center">
             <p className="text-lg text-gray-700 italic">
-              <span className="text-2xl text-[#C9A34A]">🟩</span> "They didn't just fix my taxes — they gave me peace of mind."<br />
+              <span className="text-2xl text-[#C9A34A]">🟩</span> &quot;They didn&apos;t just fix my taxes — they gave me peace of mind.&quot;<br />
               <span className="font-semibold">— Amit S., Startup Founder</span>
             </p>
           </div>
