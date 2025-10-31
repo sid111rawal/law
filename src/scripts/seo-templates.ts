@@ -110,3 +110,4 @@ export default function ${calculatorKey.split('-').map(word => word.charAt(0).to
 }`;
 
 export { servicePageTemplate, calculatorPageTemplate, servicePages, calculatorPages };
+

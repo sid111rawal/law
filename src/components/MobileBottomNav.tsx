@@ -5,7 +5,7 @@ import siteConfig from '@/config/site';
 export default function MobileBottomNav() {
 
   const handleLoginClick = () => {
-    window.location.href = '/login';
+    window.open('https://bnpsyassociates.practive.link/me/login', '_blank');
   };
 
   const handleWhatsAppClick = () => {
