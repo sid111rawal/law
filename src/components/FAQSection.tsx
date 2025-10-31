@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function FAQSection() {
   const faqs = [
     {
@@ -108,12 +110,18 @@ export default function FAQSection() {
               Join 2000+ satisfied clients who chose quality over convenience. Get started with a free consultation today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-[#C9A34A] text-white px-8 py-3 rounded-xl font-semibold hover:bg-yellow-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <Link 
+                href="/contact#form"
+                className="bg-[#C9A34A] text-white px-8 py-3 rounded-xl font-semibold hover:bg-yellow-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block text-center"
+              >
                 Schedule Free Consultation
-              </button>
-              <button className="border-2 border-[#C9A34A] text-[#C9A34A] px-8 py-3 rounded-xl font-semibold hover:bg-[#C9A34A] hover:text-white transition-all duration-300">
+              </Link>
+              <Link 
+                href="/services"
+                className="border-2 border-[#C9A34A] bg-transparent text-[#C9A34A] px-8 py-3 rounded-xl font-semibold transition-all duration-300 inline-block text-center hover:bg-[#C9A34A] [&:hover]:!text-white"
+              >
                 Learn More About Our Services
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -303,7 +303,7 @@ export default function Contact() {
 
           <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-10">
             <form 
-              action="https://formsubmit.co/sidrawal1200@gmail.com" 
+              action="https://formsubmit.co/info.lawgicalstation@gmail.com" 
               method="POST" 
               onSubmit={handleSubmit} 
               className="space-y-8"
