@@ -209,7 +209,7 @@ export default function Header() {
               {/* Auth Button */}
               <div className="ml-6">
                 <a 
-                  href="https://bnpsyassociates.practive.link/me/login" 
+                  href="https://login.lawgicalstation.com/me/login" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gold text-white px-6 py-2 rounded-lg text-base font-medium hover:bg-opacity-90 transition-all duration-200 shadow-sm hover:shadow-md"
@@ -334,7 +334,7 @@ export default function Header() {
               {/* Mobile Auth Button */}
               <div className="pt-4">
               <a 
-                  href="https://bnpsyassociates.practive.link/me/login" 
+                  href="https://login.lawgicalstation.com/me/login" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block bg-gold text-white px-6 py-3 rounded-lg text-base font-medium hover:bg-opacity-90 transition-all duration-200 shadow-sm hover:shadow-md text-center"
