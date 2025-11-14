@@ -40,9 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# large original video files - exclude from Git
+# large original video files - exclude from Git (100MB+)
 /public/Testimonials/*.mp4
 /public/Testimonials/**/*.mp4
 
-# compressed videos can be committed (they're under 100MB)
-# /public/Testimonials_Compressed/
+# compressed videos (10-20MB) can be committed to Git
+# /public/Testimonials_Compressed/ - commented out, so compressed videos WILL be tracked
