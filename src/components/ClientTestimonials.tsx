@@ -29,7 +29,7 @@ export default function ClientTestimonials() {
       company: "Styllete Salon",
       savings: "₹2.5L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "/Testimonials/Styllete Salon.mp4",
+      videoUrl: "/Testimonials_Compressed/Styllete Salon.mp4",
       hasPlayButton: true
     },
     {
@@ -39,7 +39,7 @@ export default function ClientTestimonials() {
       company: "Mantra Advertising",
       savings: "₹2.1L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "/Testimonials/Mantra Ad.mp4",
+      videoUrl: "/Testimonials_Compressed/Mantra Ad.mp4",
       hasPlayButton: true
     },
     {
@@ -49,7 +49,7 @@ export default function ClientTestimonials() {
       company: "Qube Production",
       savings: "₹2.7L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "/Testimonials/Qube.mp4",
+      videoUrl: "/Testimonials_Compressed/Qube.mp4",
       hasPlayButton: true
     },
     {
@@ -59,7 +59,7 @@ export default function ClientTestimonials() {
       company: "Smart Chaser Pvt Ltd",
       savings: "₹2.3L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "/Testimonials/Smart chasser 2.mp4",
+      videoUrl: "/Testimonials_Compressed/Smart chasser 2.mp4",
       hasPlayButton: true
     },
     {
@@ -69,7 +69,7 @@ export default function ClientTestimonials() {
       company: "Money Essence Pvt Ltd",
       savings: "₹1.9L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "/Testimonials/Money essence.mp4",
+      videoUrl: "/Testimonials_Compressed/Money essence.mp4",
       hasPlayButton: true
     },
     {
@@ -79,7 +79,7 @@ export default function ClientTestimonials() {
       company: "RB Sons",
       savings: "₹3.2L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "/Testimonials/RB Sons.mp4",
+      videoUrl: "/Testimonials_Compressed/RB Sons.mp4",
       hasPlayButton: true
     },
     {
@@ -89,7 +89,7 @@ export default function ClientTestimonials() {
       company: "Shivansh Enterprises",
       savings: "₹1.8L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "/Testimonials/Shivansh.mp4",
+      videoUrl: "/Testimonials_Compressed/Shivansh.mp4",
       hasPlayButton: true
     },
     {
@@ -99,7 +99,7 @@ export default function ClientTestimonials() {
       company: "Homzy (Click & Buy Enterprises)",
       savings: "₹2.4L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "/Testimonials/Homzy.mp4",
+      videoUrl: "/Testimonials_Compressed/Homzy.mp4",
       hasPlayButton: true
     }
   ];
