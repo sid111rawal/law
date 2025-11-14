@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large original video files - exclude from Git
+/public/Testimonials/*.mp4
+/public/Testimonials/**/*.mp4
+
+# compressed videos can be committed (they're under 100MB)
+# /public/Testimonials_Compressed/
