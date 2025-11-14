@@ -31,9 +31,9 @@ export default function LittleStory() {
 
           {/* Image */}
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-4/5 lg:w-3/4">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-3/4 lg:w-3/5">
               <Image 
-                src="/images/litte_story.png" 
+                src="/images/little_story.jpg" 
                 alt="Lawgical Station Team - Personal Touch in Professional Service"
                 width={500}
                 height={400}

@@ -131,8 +131,8 @@ export default function Hero() {
             <Image 
               src="/images/hero_img.png" 
               alt="Lawgical Station - Professional Chartered Accountants"
-              width={600}
-              height={400}
+              width={350}
+              height={250}
               className="w-full h-auto max-w-md mx-auto md:max-w-none"
             />
             

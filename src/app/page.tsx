@@ -2,7 +2,7 @@ import AnnouncementBanner from '@/components/AnnouncementBanner';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import LittleStory from '@/components/LittleStory';
-import ClientTestimonialsNew from '@/components/ClientTestimonialsNew';
+import ClientTestimonials from '@/components/ClientTestimonials';
 import FAQSection from '@/components/FAQSection';
 import MobileBottomNav from '@/components/MobileBottomNav';
 import { generatePageMetadata, generateJsonLd } from '@/utils/seo';
@@ -81,7 +81,7 @@ export default function Home() {
           <Hero />
           <Services />
           <LittleStory />
-          <ClientTestimonialsNew />
+          <ClientTestimonials />
           <FAQSection />
         </main>
         <MobileBottomNav />
