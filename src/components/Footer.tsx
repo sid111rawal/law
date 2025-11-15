@@ -15,8 +15,8 @@ export default function Footer() {
                 <Image 
                   src="/images/Lawgical logo (1).png" 
                   alt="Lawgical Station"
-                  width={200}
-                  height={60}
+                  width={120}
+                  height={36}
                   className="h-auto"
                 />
               </div>
