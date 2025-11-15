@@ -102,25 +102,41 @@ export default function AboutUsContent() {
 
       {/* Our Story */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate mb-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate mb-12 text-center">
             Our Story
           </h2>
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-            <p className="text-lg leading-relaxed">
-              At Lawgical Station, trust is not a buzzword — it&apos;s the foundation.
-            </p>
-            <p className="text-lg leading-relaxed">
-              In today&apos;s world, where online platforms turn tax and legal services into faceless transactions, many people end up with the wrong advice, hidden charges, or worse, no professional accountability. We saw this gap. And we knew India needed something better.
-            </p>
-            <p className="text-lg leading-relaxed">
-              That&apos;s why CS Adv. Rahul Khushlani created Lawgical Station — a platform built to be your long-term partner, not just another service vendor. Here, every business, founder, and taxpayer gets genuine guidance from qualified experts who stay with you as you grow.
-            </p>
-            <p className="text-lg leading-relaxed font-medium text-slate">
-              Because we believe your finances are not files to be pushed around.<br />
-              They are the story of your future.<br />
-              And we&apos;re here to protect it.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Text Content - Left */}
+            <div className="text-left space-y-6">
+              <p className="text-lg leading-relaxed text-gray-700">
+                At Lawgical Station, trust is not a buzzword — it&apos;s the foundation.
+              </p>
+              <p className="text-lg leading-relaxed text-gray-700">
+                In today&apos;s world, where online platforms turn tax and legal services into faceless transactions, many people end up with the wrong advice, hidden charges, or worse, no professional accountability. We saw this gap. And we knew India needed something better.
+              </p>
+              <p className="text-lg leading-relaxed text-gray-700">
+                That&apos;s why CS Adv. Rahul Khushlani created Lawgical Station — a platform built to be your long-term partner, not just another service vendor. Here, every business, founder, and taxpayer gets genuine guidance from qualified experts who stay with you as you grow.
+              </p>
+              <p className="text-lg leading-relaxed font-medium text-slate">
+                Because we believe your finances are not files to be pushed around.<br />
+                They are the story of your future.<br />
+                And we&apos;re here to protect it.
+              </p>
+            </div>
+
+            {/* Image - Right */}
+            <div className="relative flex justify-center lg:justify-end">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full lg:w-full">
+                <Image 
+                  src="/images/Group-Photo.jpg" 
+                  alt="Lawgical Station Team"
+                  width={700}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
