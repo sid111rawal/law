@@ -11,8 +11,14 @@ export default function Footer() {
           {/* Lawgical Station */}
           <div className="flex flex-col h-full">
             <div className="flex-1">
-              <div className="text-3xl font-serif font-bold text-white mb-4">
-                Lawgical Station
+              <div className="mb-4">
+                <Image 
+                  src="/images/Lawgical logo (1).png" 
+                  alt="Lawgical Station"
+                  width={200}
+                  height={60}
+                  className="h-auto"
+                />
               </div>
               <p className="text-sm text-gray-300 mb-6">
                 Where trust meets expertise.
