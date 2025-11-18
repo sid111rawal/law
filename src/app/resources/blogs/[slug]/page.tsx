@@ -1,12 +1,15 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Metadata } from 'next';
 import { getBlogPostBySlug, getAllBlogPosts } from '@/lib/contentful/queries';
 import RichTextRenderer from '@/components/blog/RichTextRenderer';
 import TableOfContents from '@/components/blog/TableOfContents';
 import { getContentfulImageUrl, formatDate } from '@/lib/contentful/utils';
 import { ContentfulBlogPost } from '@/lib/contentful/types';
 import { Document, BLOCKS } from '@contentful/rich-text-types';
+import { generateBlogMetadata, generateJsonLd } from '@/utils/seo';
+import { seoConfig } from '@/config/seo';
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -28,6 +31,28 @@ export async function generateStaticParams() {
     .map((post: ContentfulBlogPost) => ({
       slug: post.fields.slug,
     }));
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await getBlogPostBySlug(slug);
+  
+  if (!post) {
+    return {
+      title: 'Blog Post Not Found | Lawgical Station',
+    };
+  }
+
+  const { fields } = post;
+  
+  return generateBlogMetadata({
+    title: fields.title,
+    description: fields.excerpt || fields.title,
+    slug: fields.slug,
+    publishDate: fields.publishedDate,
+    category: fields.category,
+    tags: fields.tags,
+  });
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
@@ -62,8 +87,52 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const headings = extractHeadings(fields.content);
 
+  // Generate structured data for the blog post
+  const structuredData = generateJsonLd({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": fields.title,
+    "description": fields.excerpt || fields.title,
+    "url": `${seoConfig.site.url}/resources/blogs/${fields.slug}`,
+    "datePublished": fields.publishedDate,
+    "dateModified": post.sys.updatedAt,
+    "author": {
+      "@type": "Organization",
+      "name": "Lawgical Station",
+      "url": seoConfig.site.url
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lawgical Station",
+      "url": seoConfig.site.url,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${seoConfig.site.url}/images/Lawgical logo (1).png`
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${seoConfig.site.url}/resources/blogs/${fields.slug}`
+    },
+    "articleSection": fields.category || "General",
+    "keywords": fields.tags?.join(', ') || '',
+    ...(fields.featuredImage && {
+      "image": {
+        "@type": "ImageObject",
+        "url": getContentfulImageUrl(fields.featuredImage, 1200, 630),
+        "width": 1200,
+        "height": 630
+      }
+    })
+  });
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: structuredData }}
+      />
+      <div className="min-h-screen bg-gray-50">
       {/* Page Header */}
       <div className="bg-white shadow-sm">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -159,5 +228,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </div>
     </div>
+    </>
   );
 }

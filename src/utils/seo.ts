@@ -111,13 +111,64 @@ export function generateBlogMetadata(blogData: {
   slug: string;
   publishDate: string;
   category?: string;
+  tags?: string[];
 }): Metadata {
-  return generateMetadata({
-    title: blogData.title,
+  const keywords = [
+    ...seoConfig.blogs.default.keywords,
+    ...(blogData.category ? [blogData.category] : []),
+    ...(blogData.tags || [])
+  ];
+  
+  const fullTitle = blogData.title.includes('Lawgical Station') ? blogData.title : `${blogData.title} | Lawgical Station`;
+  const canonical = `${seoConfig.site.url}/resources/blogs/${blogData.slug}`;
+  
+  return {
+    title: fullTitle,
     description: blogData.description,
-    keywords: [...seoConfig.blogs.default.keywords, ...(blogData.category ? [blogData.category] : [])],
-    canonical: `${seoConfig.site.url}/resources/blogs/${blogData.slug}`
-  });
+    keywords: keywords.join(', '),
+    authors: [{ name: seoConfig.site.author }],
+    creator: seoConfig.site.author,
+    publisher: seoConfig.site.name,
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    openGraph: {
+      type: 'article',
+      locale: seoConfig.site.locale,
+      url: canonical,
+      siteName: seoConfig.site.name,
+      title: fullTitle,
+      description: blogData.description,
+      publishedTime: blogData.publishDate,
+      images: [{
+        url: `${seoConfig.site.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: fullTitle,
+      }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: fullTitle,
+      description: blogData.description,
+      images: [`${seoConfig.site.url}/og-image.jpg`],
+      creator: '@lawgicalstation',
+    },
+    alternates: {
+      canonical: canonical,
+    },
+    other: {
+      'google-site-verification': 'your-google-verification-code',
+    },
+  };
 }
 
 // Page metadata generator

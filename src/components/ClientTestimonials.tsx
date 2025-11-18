@@ -74,6 +74,36 @@ export default function ClientTestimonials() {
     },
     {
       id: 6,
+      name: "Pooja Khushlani",
+      title: "Proprietor",
+      company: "Homzy (Click & Buy Enterprises)",
+      savings: "₹2.4L+",
+      videoThumbnail: "/images/hero_img.png",
+      videoUrl: "/Testimonials_Compressed/Homzy.mp4",
+      hasPlayButton: true
+    },
+    {
+      id: 7,
+      name: "Hari Om Constructions",
+      title: "Client",
+      company: "Hari Om Constructions",
+      savings: "₹2.6L+",
+      videoThumbnail: "/images/hero_img.png",
+      videoUrl: "/Testimonials_Compressed/Hari Om Constructions.mp4",
+      hasPlayButton: true
+    },
+    {
+      id: 8,
+      name: "Quelle Jewels",
+      title: "Client",
+      company: "Quelle Jewels",
+      savings: "₹2.8L+",
+      videoThumbnail: "/images/hero_img.png",
+      videoUrl: "/Testimonials_Compressed/Quelle Jewels.mp4",
+      hasPlayButton: true
+    },
+    {
+      id: 9,
       name: "Prakash Motwani",
       title: "Proprietor",
       company: "RB Sons",
@@ -83,23 +113,13 @@ export default function ClientTestimonials() {
       hasPlayButton: true
     },
     {
-      id: 7,
+      id: 10,
       name: "Ankur Gautam",
       title: "Proprietor",
       company: "Shivansh Enterprises",
       savings: "₹1.8L+",
       videoThumbnail: "/images/hero_img.png",
       videoUrl: "/Testimonials_Compressed/Shivansh.mp4",
-      hasPlayButton: true
-    },
-    {
-      id: 8,
-      name: "Pooja Khushlani",
-      title: "Proprietor",
-      company: "Homzy (Click & Buy Enterprises)",
-      savings: "₹2.4L+",
-      videoThumbnail: "/images/hero_img.png",
-      videoUrl: "/Testimonials_Compressed/Homzy.mp4",
       hasPlayButton: true
     }
   ];

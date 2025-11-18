@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
 import { seoConfig } from '@/config/seo'
+import { getAllBlogPosts } from '@/lib/contentful/queries'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = seoConfig.site.url
   
   // Static pages
@@ -60,8 +61,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...servicePages, ...calculatorPages]
+  // Blog posts
+  const blogPosts = await getAllBlogPosts();
+  const blogPostPages = blogPosts
+    .filter(post => post.fields?.slug)
+    .map(post => ({
+      url: `${baseUrl}/resources/blogs/${post.fields.slug}`,
+      lastModified: new Date(post.fields.publishedDate),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }))
+
+  return [...staticPages, ...servicePages, ...calculatorPages, ...blogPostPages]
 }
+
 
 
 
