@@ -44,5 +44,6 @@ next-env.d.ts
 /public/Testimonials/*.mp4
 /public/Testimonials/**/*.mp4
 
-# compressed videos (10-20MB) can be committed to Git
-# /public/Testimonials_Compressed/ - commented out, so compressed videos WILL be tracked
+# compressed videos - now using Cloudinary, exclude from Git
+/public/Testimonials_Compressed/*.mp4
+/public/Testimonials_Compressed/**/*.mp4
