@@ -1,0 +1,65 @@
+{
+  "redirects": [
+    {
+      "source": "/contact.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/tools.html",
+      "destination": "/resources/calculators/",
+      "permanent": true
+    },
+    {
+      "source": "/services.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/services/:service.html",
+      "destination": "/services/:service/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/calculators/:calculator.html",
+      "destination": "/resources/calculators/:calculator/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blogs.html",
+      "destination": "/resources/blogs/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/blogs/:slug.html",
+      "destination": "/resources/blogs/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy.html",
+      "destination": "/privacy-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions.html",
+      "destination": "/terms-and-conditions/",
+      "permanent": true
+    },
+    {
+      "source": "/cookie-policy.html",
+      "destination": "/cookie-policy/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*.html",
+      "destination": "/:path*/",
+      "permanent": true
+    }
+  ]
+}
+
