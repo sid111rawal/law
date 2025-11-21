@@ -178,11 +178,21 @@ export function generatePageMetadata(pageKey: string): Metadata {
     throw new Error(`Page ${pageKey} not found in SEO config`);
   }
 
+  // Map page keys to their actual URLs
+  const urlMap: Record<string, string> = {
+    'home': '',
+    'blogs': 'resources/blogs',
+    'calculators': 'resources/calculators',
+  };
+
+  const urlPath = urlMap[pageKey] || pageKey;
+  const canonical = `${seoConfig.site.url}/${urlPath}`;
+
   return generateMetadata({
     title: page.title,
     description: page.description,
     keywords: page.keywords,
-    canonical: `${seoConfig.site.url}/${pageKey === 'home' ? '' : pageKey}`,
+    canonical: canonical,
   });
 }
 
