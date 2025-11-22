@@ -16,6 +16,16 @@
       "permanent": true
     },
     {
+      "source": "/tools/:calculator",
+      "destination": "/resources/calculators/:calculator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/:calculator/",
+      "destination": "/resources/calculators/:calculator/",
+      "permanent": true
+    },
+    {
       "source": "/services.html",
       "destination": "/services/",
       "permanent": true
