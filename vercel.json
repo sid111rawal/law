@@ -46,6 +46,47 @@
       "permanent": true
     },
     {
+      "source": "/blogs.php",
+      "destination": "/resources/blogs/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs.php",
+      "destination": "/resources/blogs/category/compliance",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "compliance"
+        }
+      ]
+    },
+    {
+      "source": "/blogs.php",
+      "destination": "/resources/blogs/category/tax-planning",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "tax-planning"
+        }
+      ]
+    },
+    {
+      "source": "/blogs.php",
+      "destination": "/resources/blogs/category/business-formation",
+      "permanent": true,
+      "has": [
+        {
+          "type": "query",
+          "key": "category",
+          "value": "business-formation"
+        }
+      ]
+    },
+    {
       "source": "/resources/blogs/:slug.html",
       "destination": "/resources/blogs/:slug/",
       "permanent": true
