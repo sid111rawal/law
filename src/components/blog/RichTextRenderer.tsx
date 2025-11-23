@@ -66,15 +66,21 @@ const renderOptions = {
       
       return <p className="mb-4 text-gray-700 leading-relaxed">{children}</p>;
     },
-    [BLOCKS.HEADING_1]: (node: ContentfulRichTextNode, children: React.ReactNode) => (
-      <h1 className="text-3xl font-bold mb-6 text-gray-900">{children}</h1>
-    ),
-    [BLOCKS.HEADING_2]: (node: ContentfulRichTextNode, children: React.ReactNode) => (
-      <h2 className="text-2xl font-bold mb-4 mt-8 text-gray-900">{children}</h2>
-    ),
-    [BLOCKS.HEADING_3]: (node: ContentfulRichTextNode, children: React.ReactNode) => (
-      <h3 className="text-xl font-semibold mb-3 mt-6 text-gray-900">{children}</h3>
-    ),
+    [BLOCKS.HEADING_1]: (node: ContentfulRichTextNode, children: React.ReactNode) => {
+      const text = (node as { content?: Array<{ value?: string }> }).content?.[0]?.value || '';
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return <h1 id={id} className="text-3xl font-bold mb-6 text-gray-900">{children}</h1>;
+    },
+    [BLOCKS.HEADING_2]: (node: ContentfulRichTextNode, children: React.ReactNode) => {
+      const text = (node as { content?: Array<{ value?: string }> }).content?.[0]?.value || '';
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return <h2 id={id} className="text-2xl font-bold mb-4 mt-8 text-gray-900">{children}</h2>;
+    },
+    [BLOCKS.HEADING_3]: (node: ContentfulRichTextNode, children: React.ReactNode) => {
+      const text = (node as { content?: Array<{ value?: string }> }).content?.[0]?.value || '';
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return <h3 id={id} className="text-xl font-semibold mb-3 mt-6 text-gray-900">{children}</h3>;
+    },
     [BLOCKS.UL_LIST]: (node: ContentfulRichTextNode, children: React.ReactNode) => (
       <ul className="mb-4 pl-6 list-disc space-y-2">{children}</ul>
     ),

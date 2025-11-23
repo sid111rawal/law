@@ -70,14 +70,28 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const extractHeadings = (content: Document): Array<{id: string, text: string, level: number}> => {
     const headings: Array<{id: string, text: string, level: number}> = [];
     
+    // Helper to extract all text from a node (handles nested content)
+    const extractText = (node: { nodeType?: string; value?: string; content?: unknown[] }): string => {
+      if (!node) return '';
+      if (node.nodeType === 'text' && 'value' in node) {
+        return (node.value as string) || '';
+      }
+      if (node.content && Array.isArray(node.content)) {
+        return node.content.map((child: unknown) => extractText(child as { nodeType?: string; value?: string; content?: unknown[] })).join('');
+      }
+      return '';
+    };
+    
     if (content?.content) {
       content.content.forEach((node) => {
         if (node.nodeType === BLOCKS.HEADING_1 || node.nodeType === BLOCKS.HEADING_2 || node.nodeType === BLOCKS.HEADING_3) {
-          const text = node.content?.[0]?.nodeType === 'text' ? node.content[0].value : '';
-          const level = parseInt(node.nodeType.split('_')[1]);
-          const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-          
-          headings.push({ id, text, level });
+          const text = extractText(node).trim();
+          if (text) {
+            const level = parseInt(node.nodeType.split('_')[1]);
+            const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+            
+            headings.push({ id, text, level });
+          }
         }
       });
     }

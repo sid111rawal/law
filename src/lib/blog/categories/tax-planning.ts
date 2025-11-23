@@ -7,35 +7,194 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-1',
     title: 'Understanding Tax Deductions for Small Businesses',
     slug: 'tax-deductions-small-businesses',
-    content: [
-      'As a small business owner, understanding tax deductions is crucial for maximizing your savings and staying compliant with tax regulations.',
-      'Common deductible expenses include office supplies, business meals, travel expenses, and professional development courses.',
-      'It\'s important to keep detailed records of all business expenses throughout the year to ensure you can claim these deductions when filing your taxes.',
-      'Consider working with a tax professional to identify all eligible deductions specific to your industry and business structure.'
-    ],
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'As a small business owner, understanding tax deductions is crucial for maximizing your savings and staying compliant with tax regulations. Properly identifying and claiming eligible deductions can significantly reduce your taxable income and lower your overall tax liability.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What Are Tax Deductions?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Tax deductions are legitimate business expenses that you can subtract from your gross income to reduce your taxable income. Unlike tax credits, which directly reduce your tax bill, deductions reduce the amount of income that is subject to taxation. This means deductions lower your tax liability by reducing the income on which taxes are calculated.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Common Business Deductions'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Office Expenses and Supplies'
+      },
+      {
+        type: 'paragraph',
+        text: 'Office supplies, equipment, furniture, and rent for business premises are fully deductible. This includes computers, printers, stationery, and any other items necessary for your business operations. If you work from home, you may be eligible for a home office deduction based on the portion of your home used exclusively for business purposes.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Business Meals and Entertainment'
+      },
+      {
+        type: 'paragraph',
+        text: 'Business meals with clients, partners, or employees are generally deductible up to 50% of the cost. To qualify, the meal must be directly related to your business, and you must maintain proper documentation including receipts, the date, location, attendees, and business purpose of the meal.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Travel Expenses'
+      },
+      {
+        type: 'paragraph',
+        text: 'Business travel expenses including airfare, hotel accommodations, car rentals, and meals while traveling for business are fully deductible. Personal travel mixed with business travel requires careful allocation to ensure only business-related expenses are claimed.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Professional Development'
+      },
+      {
+        type: 'paragraph',
+        text: 'Costs for professional development courses, certifications, workshops, conferences, and training programs that enhance your business skills are deductible. This includes registration fees, travel to attend these events, and related materials.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Record Keeping Requirements'
+      },
+      {
+        type: 'paragraph',
+        text: 'Maintaining detailed records of all business expenses throughout the year is essential for claiming deductions. Keep receipts, invoices, bank statements, and credit card statements organized by category. Digital record-keeping systems can help streamline this process and ensure you have proper documentation if audited.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Industry-Specific Deductions'
+      },
+      {
+        type: 'paragraph',
+        text: 'Different industries have unique deductible expenses. For example, retail businesses can deduct inventory costs, manufacturing businesses can deduct equipment depreciation, and service-based businesses can deduct professional fees and software subscriptions. Understanding your industry\'s specific deductions is crucial for maximizing tax savings.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Working with Tax Professionals'
+      },
+      {
+        type: 'paragraph',
+        text: 'Consider working with a qualified tax professional or Chartered Accountant to identify all eligible deductions specific to your industry and business structure. They can help ensure compliance, maximize your deductions, and provide guidance on complex tax situations. Professional tax preparation fees are also deductible business expenses.'
+      }
+    ]),
     publishedDate: '2024-01-15T10:00:00Z',
     category: 'Tax Planning',
     excerpt: 'Learn about essential tax deductions that can help small businesses save money and stay compliant.',
     featured: true,
-    author: 'Lawgical Team',
-    tags: ['tax deductions', 'small business', 'tax planning']
+    author: '',
+    tags: ['tax deductions', 'small business', 'tax planning', 'business expenses', 'tax compliance', 'deductible expenses']
   }),
   createBlogPost({
     id: 'tax-post-2',
     title: 'Quarterly Tax Payments: What You Need to Know',
     slug: 'quarterly-tax-payments-guide',
-    content: [
-      'Quarterly tax payments are required for many self-employed individuals and business owners.',
-      'These payments help you stay current with your tax obligations throughout the year.',
-      'Missing quarterly payments can result in penalties and interest charges.',
-      'Use Form 1040-ES to calculate and pay your estimated quarterly taxes.'
-    ],
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'Quarterly tax payments, also known as estimated tax payments, are required for many self-employed individuals, freelancers, and business owners who don\'t have taxes withheld from their income. Understanding how to calculate and pay these taxes is essential for avoiding penalties and staying compliant with tax regulations.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Who Needs to Pay Quarterly Taxes?'
+      },
+      {
+        type: 'paragraph',
+        text: 'You generally need to make quarterly tax payments if you expect to owe at least Rs. 10,000 in taxes for the year after subtracting withholding and refundable credits. This typically applies to self-employed individuals, independent contractors, freelancers, business owners, and anyone with significant income from investments, rental properties, or other sources not subject to withholding.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Quarterly Payment Deadlines'
+      },
+      {
+        type: 'paragraph',
+        text: 'Quarterly tax payments are due four times per year: April 15 (for Q1: January-March), June 15 (for Q2: April-June), September 15 (for Q3: July-September), and January 15 of the following year (for Q4: October-December). If a deadline falls on a weekend or holiday, the due date is moved to the next business day.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Calculate Quarterly Taxes'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Annualized Income Installment Method'
+      },
+      {
+        type: 'paragraph',
+        text: 'This method calculates your estimated tax based on your actual income for each quarter. You estimate your annual income based on year-to-date earnings and calculate the tax accordingly. This method is beneficial if your income varies significantly throughout the year.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Prior Year Safe Harbor Method'
+      },
+      {
+        type: 'paragraph',
+        text: 'If your prior year\'s adjusted gross income was Rs. 1,50,000 or less, you can pay 100% of your prior year\'s tax liability. If your prior year\'s income exceeded Rs. 1,50,000, you must pay 110% of your prior year\'s tax liability to avoid penalties.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Penalties for Missing Payments'
+      },
+      {
+        type: 'paragraph',
+        text: 'Missing quarterly payments or paying less than required can result in penalties and interest charges. The penalty is calculated based on the underpayment amount and the time period until the payment is made. To avoid penalties, ensure you pay at least 90% of your current year\'s tax liability or 100% (110% for higher earners) of your prior year\'s tax liability.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Make Quarterly Tax Payments'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Online Payment Methods'
+      },
+      {
+        type: 'paragraph',
+        text: 'The most convenient way to pay quarterly taxes is through the Income Tax Department\'s online portal. You can make payments using net banking, credit cards, or debit cards. The portal provides instant confirmation and maintains a record of all your payments.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Challan ITNS 280'
+      },
+      {
+        type: 'paragraph',
+        text: 'You can also pay using Challan ITNS 280 at authorized bank branches. Fill out the challan with your PAN, assessment year, and payment details. Keep the receipt as proof of payment for your records.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Tips for Managing Quarterly Taxes'
+      },
+      {
+        type: 'paragraph',
+        text: 'Set aside a portion of each payment you receive (typically 25-30% for self-employed individuals) to cover your quarterly tax obligations. Use accounting software to track your income and expenses throughout the year. Consider working with a tax professional to ensure accurate calculations and compliance. Keep detailed records of all payments made and maintain receipts for your records.'
+      }
+    ]),
     publishedDate: '2024-01-05T09:15:00Z',
     category: 'Tax Planning',
     excerpt: 'Everything you need to know about quarterly tax payments for business owners.',
     featured: false,
-    author: 'Lawgical Team',
-    tags: ['quarterly taxes', 'estimated payments', 'tax planning']
+    author: '',
+    tags: ['quarterly taxes', 'estimated payments', 'tax planning', 'self-employed taxes', 'tax compliance', 'advance tax']
   }),
   createBlogPost({
     id: 'partnership-firm-tax-return-filing',
