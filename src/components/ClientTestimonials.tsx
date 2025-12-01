@@ -24,6 +24,16 @@ export default function ClientTestimonials() {
   const testimonials = [
     {
       id: 1,
+      name: "Vijay Kheslani",
+      title: "Youtuber",
+      company: "Techperiments",
+      savings: "₹2.5L+",
+      videoThumbnail: "/images/hero_img.png",
+      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1764628879/Vijay_YT_t20zgp.mp4",
+      hasPlayButton: true
+    },
+    {
+      id: 2,
       name: "Avi Rajput & Alam",
       title: "Partner",
       company: "Styllete Salon",
@@ -33,33 +43,23 @@ export default function ClientTestimonials() {
       hasPlayButton: true
     },
     {
-      id: 2,
-      name: "Puneet Grover",
-      title: "Partner",
-      company: "Mantra Advertising",
-      savings: "₹2.1L+",
-      videoThumbnail: "/images/hero_img.png",
-      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1763497511/Mantra_Ad_euzt9n.mp4",
-      hasPlayButton: true
-    },
-    {
       id: 3,
-      name: "Shubham Gupta",
-      title: "Proprietor",
-      company: "Qube Production",
-      savings: "₹2.7L+",
+      name: "Deepak Tyagi",
+      title: "Co-Founder",
+      company: "Sanskriti Foundation",
+      savings: "₹2.5L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1763497536/Qube_ksehla.mp4",
+      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1764628276/Sanskriti_foundation_compressed_wdhwve.mp4",
       hasPlayButton: true
     },
     {
       id: 4,
-      name: "Ajit Jain",
-      title: "Director",
-      company: "Smart Chaser Pvt Ltd",
-      savings: "₹2.3L+",
+      name: "Quelle Jewels",
+      title: "Client",
+      company: "Quelle Jewels",
+      savings: "₹2.8L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1763497543/Smart_chasser_2_kmvbul.mp4",
+      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1763497530/Quelle_Jewels_qw4d1r.mp4",
       hasPlayButton: true
     },
     {
@@ -74,16 +74,6 @@ export default function ClientTestimonials() {
     },
     {
       id: 6,
-      name: "Pooja Khushlani",
-      title: "Proprietor",
-      company: "Homzy (Click & Buy Enterprises)",
-      savings: "₹2.4L+",
-      videoThumbnail: "/images/hero_img.png",
-      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1763497516/Homzy_lxcxe9.mp4",
-      hasPlayButton: true
-    },
-    {
-      id: 7,
       name: "Hari Om Constructions",
       title: "Client",
       company: "Hari Om Constructions",
@@ -93,17 +83,47 @@ export default function ClientTestimonials() {
       hasPlayButton: true
     },
     {
-      id: 8,
-      name: "Quelle Jewels",
-      title: "Client",
-      company: "Quelle Jewels",
-      savings: "₹2.8L+",
+      id: 7,
+      name: "Pooja Khushlani",
+      title: "Proprietor",
+      company: "Homzy (Click & Buy Enterprises)",
+      savings: "₹2.4L+",
       videoThumbnail: "/images/hero_img.png",
-      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1763497530/Quelle_Jewels_qw4d1r.mp4",
+      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1763497516/Homzy_lxcxe9.mp4",
+      hasPlayButton: true
+    },
+    {
+      id: 8,
+      name: "Puneet Grover",
+      title: "Partner",
+      company: "Mantra Advertising",
+      savings: "₹2.1L+",
+      videoThumbnail: "/images/hero_img.png",
+      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1763497511/Mantra_Ad_euzt9n.mp4",
       hasPlayButton: true
     },
     {
       id: 9,
+      name: "Shubham Gupta",
+      title: "Proprietor",
+      company: "Qube Production",
+      savings: "₹2.7L+",
+      videoThumbnail: "/images/hero_img.png",
+      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1763497536/Qube_ksehla.mp4",
+      hasPlayButton: true
+    },
+    {
+      id: 10,
+      name: "Ajit Jain",
+      title: "Director",
+      company: "Smart Chaser Pvt Ltd",
+      savings: "₹2.3L+",
+      videoThumbnail: "/images/hero_img.png",
+      videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1763497543/Smart_chasser_2_kmvbul.mp4",
+      hasPlayButton: true
+    },
+    {
+      id: 11,
       name: "Prakash Motwani",
       title: "Proprietor",
       company: "RB Sons",
@@ -113,7 +133,7 @@ export default function ClientTestimonials() {
       hasPlayButton: true
     },
     {
-      id: 10,
+      id: 12,
       name: "Ankur Gautam",
       title: "Proprietor",
       company: "Shivansh Enterprises",
