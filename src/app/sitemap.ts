@@ -2,6 +2,8 @@ import { MetadataRoute } from 'next'
 import { seoConfig } from '@/config/seo'
 import { getAllBlogPosts } from '@/lib/contentful/queries'
 
+export const dynamic = 'force-static'
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = seoConfig.site.url
   
