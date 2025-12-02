@@ -8,6 +8,12 @@ export function getContentfulImageUrl(image: ContentfulImage | undefined, width?
     ? `https:${image.fields.file.url}` 
     : image.fields.file.url;
   
+  // For Cloudinary URLs or when unoptimized mode is used, return the URL as-is
+  // Cloudinary URLs should use Cloudinary's transformation syntax, not query parameters
+  if (baseUrl.includes('cloudinary.com') || baseUrl.includes('res.cloudinary.com')) {
+    return baseUrl;
+  }
+  
   if (!width && !height) return baseUrl;
   
   const params = new URLSearchParams();

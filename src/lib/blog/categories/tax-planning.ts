@@ -7,10 +7,16 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-1',
     title: 'Understanding Tax Deductions for Small Businesses',
     slug: 'tax-deductions-small-businesses',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1764699526/Understanding_Tax_Deduction_h0f9yn.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
         text: 'As a small business owner, understanding tax deductions is crucial for maximizing your savings and staying compliant with tax regulations. Properly identifying and claiming eligible deductions can significantly reduce your taxable income and lower your overall tax liability.'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1764699526/Understanding_Tax_Deduction_h0f9yn.png',
+        imageAlt: 'Understanding Tax Deductions for Small Businesses'
       },
       {
         type: 'heading',
@@ -101,10 +107,16 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-2',
     title: 'Quarterly Tax Payments: What You Need to Know',
     slug: 'quarterly-tax-payments-guide',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1764699526/Quarterly_Tax_Payments_pnrjxs.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
         text: 'Quarterly tax payments, also known as estimated tax payments, are required for many self-employed individuals, freelancers, and business owners who don\'t have taxes withheld from their income. Understanding how to calculate and pay these taxes is essential for avoiding penalties and staying compliant with tax regulations.'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1764699526/Quarterly_Tax_Payments_pnrjxs.png',
+        imageAlt: 'Quarterly Tax Payments Guide'
       },
       {
         type: 'heading',

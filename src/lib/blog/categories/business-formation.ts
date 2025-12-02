@@ -7,10 +7,16 @@ export const businessFormationPosts: ContentfulBlogPost[] = [
     id: 'business-post-1',
     title: 'Business Entity Selection: LLC vs Corporation',
     slug: 'business-entity-selection-llc-corporation',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1764699526/Business_Entity_Selection_vwtnf9.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
         text: 'Choosing the right business entity is one of the most important decisions you\'ll make as an entrepreneur. The entity type you select affects your liability protection, tax obligations, management structure, and ability to raise capital. Understanding the differences between Limited Liability Companies (LLCs) and Corporations is essential for making an informed decision.'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1764699526/Business_Entity_Selection_vwtnf9.png',
+        imageAlt: 'Business Entity Selection Guide'
       },
       {
         type: 'heading',
@@ -138,10 +144,16 @@ export const businessFormationPosts: ContentfulBlogPost[] = [
     id: 'startup-registration-india',
     title: 'Startup Registration India - 7 Steps to Register your Startup',
     slug: 'startup-registration-india-7-steps-register-startup',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1764699526/7_steps_etpg0x.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
         text: 'India\'s startup ecosystem is experiencing unprecedented growth, with the government actively encouraging young entrepreneurs to establish innovative businesses. Startups play a crucial role in driving economic development and creating employment opportunities. A startup is defined as a business entity that introduces innovative products, services, or processes that address existing problems in society, or significantly improves upon current solutions in the market.'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1764699526/7_steps_etpg0x.png',
+        imageAlt: '7 Steps to Register Your Startup'
       },
       {
         type: 'heading',

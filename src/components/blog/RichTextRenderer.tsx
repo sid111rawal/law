@@ -12,6 +12,38 @@ const renderOptions = {
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node: ContentfulRichTextNode, children: React.ReactNode) => {
       const text = (node as { content?: Array<{ value?: string }> }).content?.[0]?.value || '';
+      const imageUrl = (node as { data?: { imageUrl?: string } }).data?.imageUrl;
+      const imageAlt = (node as { data?: { imageAlt?: string } }).data?.imageAlt;
+      
+      // Check if this is an image block
+      if (imageUrl || text.startsWith('[IMAGE:')) {
+        let url = imageUrl;
+        let alt = imageAlt || 'Blog image';
+        
+        // Parse image marker if URL not in data
+        if (!url && text.startsWith('[IMAGE:')) {
+          const match = text.match(/\[IMAGE:(.+?):(.+?)\]/);
+          if (match) {
+            url = match[1];
+            alt = match[2];
+          }
+        }
+        
+        if (url) {
+          return (
+            <div className="my-6">
+              <Image
+                src={url}
+                alt={alt}
+                width={800}
+                height={600}
+                className="rounded-lg shadow-md w-full h-auto"
+                unoptimized
+              />
+            </div>
+          );
+        }
+      }
       
       // Check if this is a markdown table
       if (text.includes(' | ') && text.includes('---')) {

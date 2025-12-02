@@ -12,6 +12,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   eslint: {
@@ -20,3 +26,5 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
 };
+
+export default nextConfig;

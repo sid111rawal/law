@@ -1,5 +1,5 @@
 // Helper functions for creating blog posts
-import { ContentfulBlogPost } from '@/lib/contentful/types';
+import { ContentfulBlogPost, ContentfulImage } from '@/lib/contentful/types';
 import { Document, BLOCKS } from '@contentful/rich-text-types';
 
 // Helper function to create rich text content from simple paragraphs
@@ -22,9 +22,11 @@ export function createRichTextContent(paragraphs: string[]): Document {
 
 // Helper function to create rich text content with headings for table of contents
 export function createRichTextWithHeadings(contentBlocks: Array<{
-  type: 'heading' | 'paragraph';
+  type: 'heading' | 'paragraph' | 'image';
   level?: 1 | 2 | 3;
-  text: string;
+  text?: string;
+  imageUrl?: string;
+  imageAlt?: string;
 }>): Document {
   return {
     nodeType: BLOCKS.DOCUMENT,
@@ -40,7 +42,23 @@ export function createRichTextWithHeadings(contentBlocks: Array<{
           data: {},
           content: [{
             nodeType: 'text',
-            value: block.text,
+            value: block.text || '',
+            marks: [],
+            data: {}
+          }]
+        };
+      } else if (block.type === 'image') {
+        // Create a custom image block with external URL
+        // We'll use a special paragraph marker that the renderer can detect
+        return {
+          nodeType: BLOCKS.PARAGRAPH,
+          data: {
+            imageUrl: block.imageUrl,
+            imageAlt: block.imageAlt || 'Blog image'
+          },
+          content: [{
+            nodeType: 'text',
+            value: `[IMAGE:${block.imageUrl}:${block.imageAlt || 'Blog image'}]`,
             marks: [],
             data: {}
           }]
@@ -51,7 +69,7 @@ export function createRichTextWithHeadings(contentBlocks: Array<{
           data: {},
           content: [{
             nodeType: 'text',
-            value: block.text,
+            value: block.text || '',
             marks: [],
             data: {}
           }]
@@ -72,7 +90,8 @@ export function createBlogPost({
   excerpt,
   featured = false,
   author = 'Lawgical Team',
-  tags = []
+  tags = [],
+  featuredImage
 }: {
   id: string;
   title: string;
@@ -84,6 +103,7 @@ export function createBlogPost({
   featured?: boolean;
   author?: string;
   tags?: string[];
+  featuredImage?: ContentfulImage | string; // ContentfulImage object or URL string
 }): ContentfulBlogPost {
   // Handle both string array and Document content
   const processedContent = Array.isArray(content) 
@@ -96,6 +116,11 @@ export function createBlogPost({
       ? content[0]?.substring(0, 160) + '...'
       : 'Read more about this topic...'
   );
+
+  // Handle featuredImage - convert string URL to ContentfulImage if needed
+  const processedFeaturedImage = featuredImage 
+    ? (typeof featuredImage === 'string' ? createContentfulImage(featuredImage, title) : featuredImage)
+    : undefined;
 
   return {
     sys: {
@@ -112,7 +137,8 @@ export function createBlogPost({
       excerpt: generatedExcerpt,
       featured,
       author,
-      tags
+      tags,
+      featuredImage: processedFeaturedImage
     }
   };
 }
@@ -130,4 +156,22 @@ export function generateSlug(title: string): string {
 // Helper function to generate a unique ID
 export function generateId(prefix: string = 'static-post'): string {
   return `${prefix}-${Date.now()}`;
+}
+
+// Helper function to create ContentfulImage from URL string
+export function createContentfulImage(imageUrl: string, title?: string): ContentfulImage {
+  return {
+    fields: {
+      file: {
+        url: imageUrl.startsWith('http') ? imageUrl : `https:${imageUrl}`,
+        details: {
+          image: {
+            width: 1200,
+            height: 630
+          }
+        }
+      },
+      title: title || 'Blog featured image'
+    }
+  };
 }
