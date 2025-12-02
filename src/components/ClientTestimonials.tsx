@@ -24,7 +24,7 @@ export default function ClientTestimonials() {
   const testimonials = [
     {
       id: 1,
-      name: "Vijay Kheslani",
+      name: "Vijay Kheskani",
       title: "Youtuber",
       company: "Techperiments",
       savings: "₹2.5L+",
@@ -46,7 +46,7 @@ export default function ClientTestimonials() {
       id: 3,
       name: "Deepak Tyagi",
       title: "Co-Founder",
-      company: "Sanskriti Foundation",
+      company: "Sanskriti Youth Foundation",
       savings: "₹2.5L+",
       videoThumbnail: "/images/hero_img.png",
       videoUrl: "https://res.cloudinary.com/ddxgw6emd/video/upload/v1764628276/Sanskriti_foundation_compressed_wdhwve.mp4",
@@ -54,8 +54,8 @@ export default function ClientTestimonials() {
     },
     {
       id: 4,
-      name: "Quelle Jewels",
-      title: "Client",
+      name: "CA Parul Makhija",
+      title: "Owner",
       company: "Quelle Jewels",
       savings: "₹2.8L+",
       videoThumbnail: "/images/hero_img.png",
@@ -74,8 +74,8 @@ export default function ClientTestimonials() {
     },
     {
       id: 6,
-      name: "Hari Om Constructions",
-      title: "Client",
+      name: "Anand Shridhar",
+      title: "Owner",
       company: "Hari Om Constructions",
       savings: "₹2.6L+",
       videoThumbnail: "/images/hero_img.png",
