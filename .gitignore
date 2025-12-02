@@ -47,3 +47,4 @@ next-env.d.ts
 # compressed videos - now using Cloudinary, exclude from Git
 /public/Testimonials_Compressed/*.mp4
 /public/Testimonials_Compressed/**/*.mp4
+*.mp4
