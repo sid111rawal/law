@@ -129,6 +129,15 @@ export default function CalculatorsPage() {
       color: 'from-slate-600 to-slate-700'
     },
     {
+      id: 'advance-tax-calculator',
+      title: 'Advance Tax Calculator',
+      description: 'Calculate advance tax liability and payment schedule for FY 2024-25 with installment breakdown',
+      icon: '📅',
+      href: '/resources/calculators/advance-tax-calculator',
+      features: ['Payment Schedule', 'Old vs New Regime', 'Installment Calculator', 'TDS Adjustment'],
+      color: 'from-slate-600 to-slate-700'
+    },
+    {
       id: 'effective-capital-calculator',
       title: 'Effective Capital Calculator',
       description: 'Calculate effective capital using conservative and operating perspectives with scenario comparisons',

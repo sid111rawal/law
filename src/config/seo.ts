@@ -140,6 +140,11 @@ export const seoConfig = {
       title: "HRA Calculator | House Rent Allowance Calculator | Lawgical Station",
       description: "Free HRA calculator to calculate House Rent Allowance exemption under Section 10(13A) of Income Tax Act.",
       keywords: ["HRA calculator", "house rent allowance", "HRA exemption", "rent calculator", "tax exemption", "Section 10(13A)"]
+    },
+    "advance-tax-calculator": {
+      title: "Advance Tax Calculator 2024-25 | Payment Schedule & Installments | Lawgical Station",
+      description: "Free advance tax calculator for FY 2024-25. Calculate advance tax liability, payment schedule, and instalments based on old and new tax regimes.",
+      keywords: ["advance tax calculator", "advance tax due date 2025", "how to calculate advance tax", "advance tax interest 234b 234c", "advance tax for freelancers", "advance tax slabs", "advance tax schedule", "advance tax penalty", "advance tax India", "advance tax online payment"]
     }
   },
 
