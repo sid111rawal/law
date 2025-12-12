@@ -131,10 +131,10 @@ export default function CalculatorsPage() {
     {
       id: 'advance-tax-calculator',
       title: 'Advance Tax Calculator',
-      description: 'Calculate advance tax liability and payment schedule for FY 2024-25 with installment breakdown',
+      description: 'Calculate advance tax liability and payment schedule for FY 2025-26 with installment breakdown',
       icon: '📅',
       href: '/resources/calculators/advance-tax-calculator',
-      features: ['Payment Schedule', 'Old vs New Regime', 'Installment Calculator', 'TDS Adjustment'],
+      features: ['Payment Schedule', 'Old vs New Regime', 'Installment Calculator', 'TDS Adjustment', 'Interest Estimation', 'Standard Deduction'],
       color: 'from-slate-600 to-slate-700'
     },
     {
