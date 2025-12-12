@@ -7,8 +7,8 @@ export default function AdvanceTaxCalculatorPage() {
   const structuredData = generateJsonLd({
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Advance Tax Calculator 2024-25",
-    "description": "Free advance tax calculator for FY 2024-25. Calculate advance tax liability, payment schedule, and instalments based on old and new tax regimes.",
+    "name": "Advance Tax Calculator 2025-26",
+    "description": "Free advance tax calculator for FY 2025-26. Calculate advance tax liability, payment schedule, instalments, and interest estimates based on old and new tax regimes.",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web Browser",
     "offers": {
@@ -23,7 +23,10 @@ export default function AdvanceTaxCalculatorPage() {
       "Installment Calculator",
       "TDS Adjustment",
       "Interest Calculation",
-      "FY 2024-25 Tax Slabs"
+      "FY 2025-26 Tax Slabs",
+      "Standard Deduction",
+      "Presumptive Scheme",
+      "Interest Estimation"
     ],
     "provider": {
       "@type": "Organization",
