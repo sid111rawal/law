@@ -379,10 +379,16 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'income-tax-notice-haircuts-groceries-2025',
     title: 'Why Income Tax Notices Are Asking About Haircuts, Groceries & Daily Expenses in 2025 — Full Guide',
     slug: 'income-tax-notice-haircuts-groceries-daily-expenses-2025',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1765649049/daily_expense_m98i6u.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
         text: 'In early 2025, a unique Income Tax notice went viral after the taxpayer was asked to justify extremely personal expenses — including monthly haircut costs, perfume purchases, grocery details like rice and oil, clothing, electricity bills, restaurant visits, gifting expenses, and even day-to-day household items. Millions of people started asking: Can Income Tax really ask this? Why are such small expenses being questioned? Does this mean everyone will receive such notices? This blog explains exactly why such notices are issued, the legal basis behind them, and what you should do to avoid potential tax penalties in 2025.'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1765649049/daily_expense_m98i6u.png',
+        imageAlt: 'Income Tax Notice Asking About Daily Expenses'
       },
       {
         type: 'heading',
@@ -580,10 +586,16 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'income-tax-notice-section-142-reply-guide',
     title: 'Income Tax Notice Asking About Haircuts, Groceries & Daily Expenses — Full Guide (Section 142 Reply, Templates, Proofs + Examples)',
     slug: 'income-tax-notice-section-142-reply-guide-templates-proofs',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1765649049/section_142_cgkc1e.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
         text: 'Recently, many taxpayers have received scrutiny notices asking for highly detailed personal expense breakups — from rice and spices to haircuts, perfumes and restaurant bills. These queries feel intrusive, but they follow legal powers under Section 142 of the Income Tax Act. If you get such a notice, immediate action is essential: incorrect or late replies can lead to estimated additions (sometimes assumed expenses like ₹10 lakh) → resulting tax, interest and penalties. This article gives you a practical, step-by-step plan: what to do now, how to prepare a reply, exact proofs to collect, and a ready template you can copy and send.'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1765649049/section_142_cgkc1e.png',
+        imageAlt: 'Section 142 Income Tax Notice Reply Guide'
       },
       {
         type: 'heading',
