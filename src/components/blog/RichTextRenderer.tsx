@@ -1,7 +1,7 @@
 'use client';
 
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import { BLOCKS, INLINES } from '@contentful/rich-text-types';
+import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getContentfulImageUrl } from '@/lib/contentful/utils';
@@ -153,6 +153,12 @@ const renderOptions = {
         {children}
       </Link>
     ),
+  },
+  renderMark: {
+    [MARKS.BOLD]: (text: React.ReactNode) => <strong className="font-bold text-gray-900">{text}</strong>,
+    [MARKS.ITALIC]: (text: React.ReactNode) => <em className="italic">{text}</em>,
+    [MARKS.UNDERLINE]: (text: React.ReactNode) => <u className="underline">{text}</u>,
+    [MARKS.CODE]: (text: React.ReactNode) => <code className="bg-gray-100 px-1 py-0.5 rounded text-sm font-mono">{text}</code>,
   },
 };
 

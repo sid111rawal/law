@@ -22,11 +22,12 @@ export function createRichTextContent(paragraphs: string[]): Document {
 
 // Helper function to create rich text content with headings for table of contents
 export function createRichTextWithHeadings(contentBlocks: Array<{
-  type: 'heading' | 'paragraph' | 'image';
+  type: 'heading' | 'paragraph' | 'image' | 'orderedList' | 'unorderedList';
   level?: 1 | 2 | 3;
   text?: string;
   imageUrl?: string;
   imageAlt?: string;
+  items?: string[]; // For lists
 }>): Document {
   return {
     nodeType: BLOCKS.DOCUMENT,
@@ -63,13 +64,92 @@ export function createRichTextWithHeadings(contentBlocks: Array<{
             data: {}
           }]
         };
+      } else if (block.type === 'orderedList') {
+        return {
+          nodeType: BLOCKS.OL_LIST,
+          data: {},
+          content: (block.items || []).map(item => ({
+            nodeType: BLOCKS.LIST_ITEM,
+            data: {},
+            content: [{
+              nodeType: BLOCKS.PARAGRAPH,
+              data: {},
+              content: [{
+                nodeType: 'text',
+                value: item,
+                marks: [],
+                data: {}
+              }]
+            }]
+          }))
+        };
+      } else if (block.type === 'unorderedList') {
+        return {
+          nodeType: BLOCKS.UL_LIST,
+          data: {},
+          content: (block.items || []).map(item => ({
+            nodeType: BLOCKS.LIST_ITEM,
+            data: {},
+            content: [{
+              nodeType: BLOCKS.PARAGRAPH,
+              data: {},
+              content: [{
+                nodeType: 'text',
+                value: item,
+                marks: [],
+                data: {}
+              }]
+            }]
+          }))
+        };
       } else {
+        // Handle paragraph - support markdown-style **bold** syntax
+        const text = block.text || '';
+        
+        // Check for markdown-style bold (**text**)
+        if (text.includes('**')) {
+          const parts = text.split(/(\*\*[^*]+\*\*)/g);
+          const content: any[] = [];
+          
+          parts.forEach(part => {
+            if (part.startsWith('**') && part.endsWith('**')) {
+              // Bold text
+              const boldText = part.slice(2, -2);
+              content.push({
+                nodeType: 'text',
+                value: boldText,
+                marks: [{ type: 'bold' }],
+                data: {}
+              });
+            } else if (part.trim()) {
+              // Regular text
+              content.push({
+                nodeType: 'text',
+                value: part,
+                marks: [],
+                data: {}
+              });
+            }
+          });
+          
+          return {
+            nodeType: BLOCKS.PARAGRAPH,
+            data: {},
+            content: content.length > 0 ? content : [{
+              nodeType: 'text',
+              value: text,
+              marks: [],
+              data: {}
+            }]
+          };
+        }
+        
         return {
           nodeType: BLOCKS.PARAGRAPH,
           data: {},
           content: [{
             nodeType: 'text',
-            value: block.text || '',
+            value: text,
             marks: [],
             data: {}
           }]

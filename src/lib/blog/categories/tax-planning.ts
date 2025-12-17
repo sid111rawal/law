@@ -397,7 +397,28 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'The viral scrutiny notice demanded a detailed monthly breakdown of: Rice, oil & grocery costs; Gas & electricity; Clothing & footwear; Haircuts & grooming; Cosmetics and perfumes; Restaurant & food delivery spending; Gift expenses to relatives; Car running and insurance; Life & building insurance; Students\' fees and books; Social events & gatherings; Daily household expenses. While such depth of inquiry feels intrusive, it is rooted in Section 142 of the Income Tax Act.'
+        text: 'The viral scrutiny notice demanded a detailed monthly breakdown of the following items:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Rice, oil & grocery costs',
+          'Gas & electricity',
+          'Clothing & footwear',
+          'Haircuts & grooming',
+          'Cosmetics and perfumes',
+          'Restaurant & food delivery spending',
+          'Gift expenses to relatives',
+          'Car running and insurance',
+          'Life & building insurance',
+          'Students\' fees and books',
+          'Social events & gatherings',
+          'Daily household expenses'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'While such depth of inquiry feels intrusive, it is rooted in **Section 142** of the Income Tax Act.'
       },
       {
         type: 'heading',
@@ -406,7 +427,21 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Yes — legally they can. Under Section 142(1), the Income Tax Department has the authority to request: Income details; Expense details; Supporting bills, receipts, or digital proofs; Bank statements; Clarification of spending habits. This is part of a formal scrutiny assessment to ensure that the taxpayer\'s declared income matches their lifestyle and spending patterns.'
+        text: '**Yes — legally they can.** Under **Section 142(1)**, the Income Tax Department has the authority to request:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Income details',
+          'Expense details',
+          'Supporting bills, receipts, or digital proofs',
+          'Bank statements',
+          'Clarification of spending habits'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'This is part of a formal scrutiny assessment to ensure that the taxpayer\'s declared income matches their lifestyle and spending patterns.'
       },
       {
         type: 'heading',
@@ -415,7 +450,18 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'The department compares two key numbers: Your declared income and Your lifestyle expenses observed through bank statements, UPI payments, and digital records. If these two don\'t match, the system triggers a red flag.'
+        text: 'The department compares two key numbers:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Your declared income',
+          'Your lifestyle expenses observed through bank statements, UPI payments, and digital records'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'If these two don\'t match, the system triggers a red flag.'
       },
       {
         type: 'heading',
@@ -423,8 +469,17 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'Typical Mismatch Examples'
       },
       {
+        type: 'unorderedList',
+        items: [
+          'A person earns ₹12 lakh annually but shows almost no personal expenses in bank records',
+          'High-value purchases but no corresponding cash withdrawals',
+          'Business owners putting personal expenses into business accounts',
+          'Irregular or extremely low household spending that seems unrealistic'
+        ]
+      },
+      {
         type: 'paragraph',
-        text: 'A person earns ₹12 lakh annually but shows almost no personal expenses in bank records. High-value purchases but no corresponding cash withdrawals. Business owners putting personal expenses into business accounts. Irregular or extremely low household spending that seems unrealistic. This suggests possible unreported or cash income, leading to detailed questioning.'
+        text: 'This suggests possible unreported or cash income, leading to detailed questioning.'
       },
       {
         type: 'heading',
@@ -469,7 +524,19 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'This is the part most taxpayers are unaware of: If you fail to justify your expenses, the Income Tax Officer can estimate your annual household expenses — sometimes assuming ₹10 lakh per year. This estimated amount may be added to your taxable income. This leads to: Additional tax; Interest under Sections 234A/B/C; Penalty for underreporting or misreporting. Thus, poor record-keeping can cost lakhs.'
+        text: '**This is the part most taxpayers are unaware of:** If you fail to justify your expenses, the Income Tax Officer can estimate your annual household expenses — sometimes assuming **₹10 lakh per year**. This estimated amount may be added to your taxable income. This leads to:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Additional tax',
+          'Interest under **Sections 234A/B/C**',
+          'Penalty for underreporting or misreporting'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: '**Thus, poor record-keeping can cost lakhs.**'
       },
       {
         type: 'heading',
@@ -478,7 +545,22 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Based on scrutiny patterns, notices often go to: Freelancers & self-employed professionals; Small business owners; People with very low household withdrawals; Individuals showing personal expenses inside business accounts; Those with irregular or unusually low spending patterns; High-income earners showing almost no expenses. If your spending looks unrealistically low or invisible, the department suspects undisclosed cash.'
+        text: 'Based on scrutiny patterns, notices often go to:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Freelancers & self-employed professionals',
+          'Small business owners',
+          'People with very low household withdrawals',
+          'Individuals showing personal expenses inside business accounts',
+          'Those with irregular or unusually low spending patterns',
+          'High-income earners showing almost no expenses'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'If your spending looks unrealistically low or invisible, the department suspects undisclosed cash.'
       },
       {
         type: 'heading',
@@ -550,7 +632,19 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Not necessarily. Most such notices are routine scrutiny cases, not mass notices. They are issued only when: Data doesn\'t add up; Spending appears unrealistic; The system detects anomalies. For genuine taxpayers with transparent records, these queries are easy to respond to.'
+        text: '**Not necessarily.** Most such notices are routine scrutiny cases, not mass notices. They are issued only when:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Data doesn\'t add up',
+          'Spending appears unrealistic',
+          'The system detects anomalies'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'For genuine taxpayers with transparent records, these queries are easy to respond to.'
       },
       {
         type: 'heading',
@@ -559,7 +653,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'The goal of the Income Tax Department is not to audit shampoo bottles or grooming habits. Their goal is to ensure that: Your declared income + your lifestyle = consistent and believable. A mismatch invites scrutiny. Good record keeping avoids issues.'
+        text: 'The goal of the Income Tax Department is **not** to audit shampoo bottles or grooming habits. Their goal is to ensure that: **Your declared income + your lifestyle = consistent and believable.** A mismatch invites scrutiny. **Good record keeping avoids issues.**'
       }
     ]),
     publishedDate: '2025-01-15T10:00:00Z',
@@ -590,7 +684,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
-        text: 'Recently, many taxpayers have received scrutiny notices asking for highly detailed personal expense breakups — from rice and spices to haircuts, perfumes and restaurant bills. These queries feel intrusive, but they follow legal powers under Section 142 of the Income Tax Act. If you get such a notice, immediate action is essential: incorrect or late replies can lead to estimated additions (sometimes assumed expenses like ₹10 lakh) → resulting tax, interest and penalties. This article gives you a practical, step-by-step plan: what to do now, how to prepare a reply, exact proofs to collect, and a ready template you can copy and send.'
+        text: 'Recently, many taxpayers have received scrutiny notices asking for highly detailed personal expense breakups — from rice and spices to haircuts, perfumes and restaurant bills. These queries feel intrusive, but they follow legal powers under **Section 142** of the Income Tax Act. If you get such a notice, **immediate action is essential:** incorrect or late replies can lead to estimated additions (sometimes assumed expenses like **₹10 lakh**) → resulting tax, interest and penalties. This article gives you a practical, step-by-step plan: what to do now, how to prepare a reply, exact proofs to collect, and a ready template you can copy and send.'
       },
       {
         type: 'image',
@@ -604,7 +698,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Section 142(1) allows the Income Tax Officer (ITO) to ask for information or documents to verify your return or income. Notices under Section 142 are part of scrutiny assessment — they are not always accusations, but you must respond accurately and promptly.'
+        text: '**Section 142(1)** allows the Income Tax Officer (ITO) to ask for information or documents to verify your return or income. Notices under Section 142 are part of scrutiny assessment — they are not always accusations, but you must respond accurately and promptly.'
       },
       {
         type: 'heading',
@@ -613,7 +707,18 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'The tax department compares: Declared income (tax returns, salary, business income) vs Spending pattern visible from bank statements, UPI logs and card transactions. If spending appears higher than declared income, or personal expenses are not reflected consistently, authorities may suspect undisclosed cash income and ask for details.'
+        text: 'The tax department compares:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Declared income (tax returns, salary, business income)',
+          'Spending pattern visible from bank statements, UPI logs and card transactions'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'If spending appears higher than declared income, or personal expenses are not reflected consistently, authorities may suspect undisclosed cash income and ask for details.'
       },
       {
         type: 'heading',
@@ -621,8 +726,14 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'First Actions When You Receive the Notice (Do This Within 7 Days)'
       },
       {
-        type: 'paragraph',
-        text: '1. Read the notice carefully. Note deadline, specific items requested and the assessment year. 2. Don\'t panic. Most notices are routine; a clear reply solves them. 3. Collect basics immediately: PAN, last 3 years\' ITR, bank statements, UPI statements, business books (if any). 4. Contact your Chartered Accountant (CA) or tax professional immediately. If you don\'t have one, prepare the documents described below and consider hiring a tax adviser. 5. If deadline is very near, request time extension with a short formal letter/email (ITO usually grants reasonable time).'
+        type: 'orderedList',
+        items: [
+          'Read the notice carefully. Note deadline, specific items requested and the assessment year.',
+          'Don\'t panic. Most notices are routine; a clear reply solves them.',
+          'Collect basics immediately: PAN, last 3 years\' ITR, bank statements, UPI statements, business books (if any).',
+          'Contact your Chartered Accountant (CA) or tax professional immediately. If you don\'t have one, prepare the documents described below and consider hiring a tax adviser.',
+          'If deadline is very near, request time extension with a short formal letter/email (ITO usually grants reasonable time).'
+        ]
       },
       {
         type: 'heading',
@@ -639,8 +750,14 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'Essential Documents'
       },
       {
-        type: 'paragraph',
-        text: 'Bank statements (all accounts) for the period requested; UPI transaction history / app statements (Google Pay, PhonePe, Paytm); Credit/debit card statements; Salary slips / Form 16 / business invoices; Rent receipts or rent agreement (if applicable).'
+        type: 'unorderedList',
+        items: [
+          'Bank statements (all accounts) for the period requested',
+          'UPI transaction history / app statements (Google Pay, PhonePe, Paytm)',
+          'Credit/debit card statements',
+          'Salary slips / Form 16 / business invoices',
+          'Rent receipts or rent agreement (if applicable)'
+        ]
       },
       {
         type: 'heading',
@@ -648,8 +765,19 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'Expense Proofs (As Asked in the Notice)'
       },
       {
-        type: 'paragraph',
-        text: 'Grocery bills / supermarket invoices (monthly); Utility bills: electricity, gas, water, internet; Restaurant / food delivery bills / app invoices; Salon / haircut invoices or monthly summary (if available); Perfume / cosmetics bills; Gift receipts, event invoices, social gathering bills; School / tuition fee receipts; Insurance premium receipts (health, life, vehicle); Car run/repair bills, fuel receipts; Medical bills & prescriptions (if applicable).'
+        type: 'unorderedList',
+        items: [
+          'Grocery bills / supermarket invoices (monthly)',
+          'Utility bills: electricity, gas, water, internet',
+          'Restaurant / food delivery bills / app invoices',
+          'Salon / haircut invoices or monthly summary (if available)',
+          'Perfume / cosmetics bills',
+          'Gift receipts, event invoices, social gathering bills',
+          'School / tuition fee receipts',
+          'Insurance premium receipts (health, life, vehicle)',
+          'Car run/repair bills, fuel receipts',
+          'Medical bills & prescriptions (if applicable)'
+        ]
       },
       {
         type: 'heading',
@@ -657,8 +785,13 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'Other Supporting Proofs'
       },
       {
-        type: 'paragraph',
-        text: 'Affidavit (if some expenses were paid in cash and no receipts exist) — signed and dated with explanation; Bank letters showing cash withdrawals, if used for household expenses; Business accounting entries (if you recorded any personal expenses in business books); Letters from family members/household for shared expenses (if needed).'
+        type: 'unorderedList',
+        items: [
+          'Affidavit (if some expenses were paid in cash and no receipts exist) — signed and dated with explanation',
+          'Bank letters showing cash withdrawals, if used for household expenses',
+          'Business accounting entries (if you recorded any personal expenses in business books)',
+          'Letters from family members/household for shared expenses (if needed)'
+        ]
       },
       {
         type: 'heading',
@@ -675,8 +808,12 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'Common Formula Approach (Simple & Defensible)'
       },
       {
-        type: 'paragraph',
-        text: '1. Total Cash Withdrawals (TW) during the period — sum of ATM withdrawals + cash withdrawals from bank. 2. Business Cash Withdrawals (BW) — cash withdrawals directly used for business (evidenced by business purchases, petty cash ledger). 3. Household Withdrawals (HW) = TW − BW'
+        type: 'orderedList',
+        items: [
+          'Total Cash Withdrawals (TW) during the period — sum of ATM withdrawals + cash withdrawals from bank',
+          'Business Cash Withdrawals (BW) — cash withdrawals directly used for business (evidenced by business purchases, petty cash ledger)',
+          'Household Withdrawals (HW) = TW − BW'
+        ]
       },
       {
         type: 'heading',
@@ -685,11 +822,23 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Total cash withdrawals in the year (TW) = ₹3,00,000. Business cash withdrawals (BW) supported by invoices = ₹1,50,000. Household Withdrawals (HW) = ₹3,00,000 − ₹1,50,000 = ₹1,50,000. Now compare HW with your bank UPI/card household spending record. If HW > recorded household spending, prepare an explanation (e.g., cash purchases from neighbourhood kirana, cash payments to domestic help, gifts).'
+        text: '**Total cash withdrawals in the year (TW)** = ₹3,00,000'
       },
       {
         type: 'paragraph',
-        text: 'Tip: Prepare a months-wise summary (Month | Cash Withdrawals | Business Portion | Household Portion | Bank/UPI Household Spending).'
+        text: '**Business cash withdrawals (BW)** supported by invoices = ₹1,50,000'
+      },
+      {
+        type: 'paragraph',
+        text: '**Household Withdrawals (HW)** = ₹3,00,000 − ₹1,50,000 = ₹1,50,000'
+      },
+      {
+        type: 'paragraph',
+        text: 'Now compare HW with your bank UPI/card household spending record. If HW > recorded household spending, prepare an explanation (e.g., cash purchases from neighbourhood kirana, cash payments to domestic help, gifts).'
+      },
+      {
+        type: 'paragraph',
+        text: '**Tip:** Prepare a months-wise summary (Month | Cash Withdrawals | Business Portion | Household Portion | Bank/UPI Household Spending).'
       },
       {
         type: 'heading',
@@ -698,7 +847,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Be factual and concise. Provide a covering letter that explains how you computed household withdrawals and why any mismatch exists. Attach evidence in a clear order (index your documents: Doc 1 – bank statement Jan, Doc 2 – grocery bills Feb, etc.). If something is missing, give a brief reason and attach an affidavit if necessary. Never fabricate documents. If you don\'t have receipts, explain with reasonable details and backup by bank cash withdrawal logs.'
+        text: '**Be factual and concise.** Provide a covering letter that explains how you computed household withdrawals and why any mismatch exists. Attach evidence in a clear order (index your documents: Doc 1 – bank statement Jan, Doc 2 – grocery bills Feb, etc.). If something is missing, give a brief reason and attach an affidavit if necessary. **Never fabricate documents.** If you don\'t have receipts, explain with reasonable details and backup by bank cash withdrawal logs.'
       },
       {
         type: 'heading',
@@ -722,28 +871,15 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'In response to the notice dated [DD/MM/YYYY] seeking clarification regarding monthly personal expenses, I submit the following:'
       },
       {
-        type: 'paragraph',
-        text: '1. Basic details: Name: [Your Name], PAN: [XXXXX], ITR filed for AY: [YYYY-YY] on [Date].'
-      },
-      {
-        type: 'paragraph',
-        text: '2. Bank & digital transactions: I have attached bank statements for all accounts (Annexure A) and UPI / card statements (Annexure B).'
-      },
-      {
-        type: 'paragraph',
-        text: '3. Household withdrawals calculation: Total cash withdrawals during the year: ₹[TW]. Business withdrawals (supported by invoices): ₹[BW]. Household withdrawals thus: ₹[HW]. (Computation sheet attached as Annexure C).'
-      },
-      {
-        type: 'paragraph',
-        text: '4. Expense breakup: Monthly household spend (groceries, utilities, food, grooming etc.) as per submitted bills / receipts is attached (Annexure D). Where no formal receipt existed (local kirana / vegetable purchases), I have provided cash withdrawal references and an explanation affidavit (Annexure E).'
-      },
-      {
-        type: 'paragraph',
-        text: '5. Other supporting documents: Salary slips/Form 16/business books/invoices/insurance receipts — Annexure F.'
-      },
-      {
-        type: 'paragraph',
-        text: '6. Declaration: I declare that to the best of my knowledge these details are true & correct. I request you to consider the attached documents and oblige.'
+        type: 'orderedList',
+        items: [
+          'Basic details: Name: [Your Name], PAN: [XXXXX], ITR filed for AY: [YYYY-YY] on [Date].',
+          'Bank & digital transactions: I have attached bank statements for all accounts (Annexure A) and UPI / card statements (Annexure B).',
+          'Household withdrawals calculation: Total cash withdrawals during the year: ₹[TW]. Business withdrawals (supported by invoices): ₹[BW]. Household withdrawals thus: ₹[HW]. (Computation sheet attached as Annexure C).',
+          'Expense breakup: Monthly household spend (groceries, utilities, food, grooming etc.) as per submitted bills / receipts is attached (Annexure D). Where no formal receipt existed (local kirana / vegetable purchases), I have provided cash withdrawal references and an explanation affidavit (Annexure E).',
+          'Other supporting documents: Salary slips/Form 16/business books/invoices/insurance receipts — Annexure F.',
+          'Declaration: I declare that to the best of my knowledge these details are true & correct. I request you to consider the attached documents and oblige.'
+        ]
       },
       {
         type: 'paragraph',
@@ -755,32 +891,16 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'Sample Annexure Index (How to Present Attachments)'
       },
       {
-        type: 'paragraph',
-        text: '1. Annexure A — Bank statements (Jan–Dec YYYY) — Account 1 (Page1-10)'
-      },
-      {
-        type: 'paragraph',
-        text: '2. Annexure B — UPI / Card statements (monthly screenshots)'
-      },
-      {
-        type: 'paragraph',
-        text: '3. Annexure C — Household withdrawal computation sheet (Excel snapshot)'
-      },
-      {
-        type: 'paragraph',
-        text: '4. Annexure D — Grocery / Restaurant / Salon bills (month wise)'
-      },
-      {
-        type: 'paragraph',
-        text: '5. Annexure E — Affidavit explaining cash purchases (if necessary)'
-      },
-      {
-        type: 'paragraph',
-        text: '6. Annexure F — Salary slips / Form 16 / Business invoices'
-      },
-      {
-        type: 'paragraph',
-        text: '7. Annexure G — Rent agreement & rent receipts (if applicable)'
+        type: 'orderedList',
+        items: [
+          'Annexure A — Bank statements (Jan–Dec YYYY) — Account 1 (Page1-10)',
+          'Annexure B — UPI / Card statements (monthly screenshots)',
+          'Annexure C — Household withdrawal computation sheet (Excel snapshot)',
+          'Annexure D — Grocery / Restaurant / Salon bills (month wise)',
+          'Annexure E — Affidavit explaining cash purchases (if necessary)',
+          'Annexure F — Salary slips / Form 16 / Business invoices',
+          'Annexure G — Rent agreement & rent receipts (if applicable)'
+        ]
       },
       {
         type: 'heading',
@@ -788,8 +908,14 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'Common Red Flags to Avoid (So You Don\'t Get Noticed)'
       },
       {
-        type: 'paragraph',
-        text: 'Mixing personal expenses in business accounts without entries. Showing very low cash withdrawals but a high lifestyle. No supporting bills/receipts while spending appears high. Sudden unexplained large purchases. Not filing returns or late filing.'
+        type: 'unorderedList',
+        items: [
+          'Mixing personal expenses in business accounts without entries',
+          'Showing very low cash withdrawals but a high lifestyle',
+          'No supporting bills/receipts while spending appears high',
+          'Sudden unexplained large purchases',
+          'Not filing returns or late filing'
+        ]
       },
       {
         type: 'heading',
@@ -797,8 +923,14 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'Timeline & Follow-Up — What to Expect After You Submit'
       },
       {
-        type: 'paragraph',
-        text: 'Acknowledge receipt of your reply (e-file or physical). Officer may accept or ask for further documents/clarification. If satisfied, assessment proceeds. If not, they may estimate and propose additions — then you can file reply/appeal steps. Keep copies of everything — e-mail confirmations, courier receipts.'
+        type: 'unorderedList',
+        items: [
+          'Acknowledge receipt of your reply (e-file or physical)',
+          'Officer may accept or ask for further documents/clarification',
+          'If satisfied, assessment proceeds',
+          'If not, they may estimate and propose additions — then you can file reply/appeal steps',
+          'Keep copies of everything — e-mail confirmations, courier receipts'
+        ]
       },
       {
         type: 'heading',
@@ -806,8 +938,13 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'When Should You Consult a Chartered Accountant or Tax Lawyer?'
       },
       {
-        type: 'paragraph',
-        text: 'If the estimated addition proposed by ITD is large (e.g., several lakhs). If you lack adequate supporting proof for major cash flows. If the officer proposes penalties or framing of concealment. If you prefer a professional to draft and send the reply and represent before the officer.'
+        type: 'unorderedList',
+        items: [
+          'If the estimated addition proposed by ITD is large (e.g., several lakhs)',
+          'If you lack adequate supporting proof for major cash flows',
+          'If the officer proposes penalties or framing of concealment',
+          'If you prefer a professional to draft and send the reply and represent before the officer'
+        ]
       },
       {
         type: 'heading',
@@ -821,7 +958,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Yes. Under Section 142, ITD can ask for proof of income and expenses.'
+        text: '**Yes.** Under **Section 142**, ITD can ask for proof of income and expenses.'
       },
       {
         type: 'heading',
@@ -839,7 +976,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'No. Notices usually target mismatch signals — lifestyle vs declared income.'
+        text: '**No.** Notices usually target mismatch signals — lifestyle vs declared income.'
       },
       {
         type: 'heading',
@@ -848,7 +985,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'Yes. You can write to the concerned officer requesting an extension — usually granted for valid reasons.'
+        text: '**Yes.** You can write to the concerned officer requesting an extension — usually granted for valid reasons.'
       },
       {
         type: 'heading',
@@ -857,7 +994,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'paragraph',
-        text: 'The exponential rise of digital payments has made spending patterns easier to analyse — which is why matching your declared income and lifestyle matters. Clear records, basic bookkeeping and timely professional advice solve most issues. Take action now: gather bank statements, UPI records and receipts for the period mentioned in your notice. Draft a clear, factual reply using the template above and consult your CA if the numbers are large.'
+        text: 'The exponential rise of digital payments has made spending patterns easier to analyse — which is why matching your declared income and lifestyle matters. **Clear records, basic bookkeeping and timely professional advice solve most issues.** Take action now: gather bank statements, UPI records and receipts for the period mentioned in your notice. Draft a clear, factual reply using the template above and consult your CA if the numbers are large.'
       }
     ]),
     publishedDate: '2025-01-20T10:00:00Z',
