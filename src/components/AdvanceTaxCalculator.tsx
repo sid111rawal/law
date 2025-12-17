@@ -94,8 +94,8 @@ export default function AdvanceTaxCalculator() {
 
     if (incomeValue === 0) return null;
 
-    // Apply standard deduction if salaried
-    if (salaried) {
+    // Apply standard deduction if salaried (only for old regime)
+    if (salaried && regime === 'old') {
       deductionsValue += 75000;
     }
 
@@ -108,8 +108,11 @@ export default function AdvanceTaxCalculator() {
       }
     }
 
-    // Taxable income
-    const taxableIncome = Math.max(0, incomeValue - deductionsValue);
+    // Taxable income - deductions only apply in Old Regime
+    // In New Regime, deductions are not allowed, so ignore deductionsValue
+    const taxableIncome = regime === 'new' 
+      ? incomeValue 
+      : Math.max(0, incomeValue - deductionsValue);
 
     // Tax computation
     let baseTax = regime === 'new' ? taxNewFY25(taxableIncome) : taxOldFY25(taxableIncome);
@@ -249,15 +252,23 @@ export default function AdvanceTaxCalculator() {
               {/* Total Deductions */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Total Deductions (80C/80D etc.) (₹)
+                  Total Deductions (80C/80D etc.) (₹) {regime === 'new' && <span className="text-xs text-gray-500">(Not applicable in New Regime)</span>}
                 </label>
                 <input
                   type="number"
                   value={deductions}
                   onChange={(e) => setDeductions(e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C9A34A] focus:border-transparent text-lg"
+                  disabled={regime === 'new'}
+                  className={`w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C9A34A] focus:border-transparent text-lg ${
+                    regime === 'new' ? 'bg-gray-100 cursor-not-allowed opacity-60' : ''
+                  }`}
                   placeholder="e.g. 150000"
                 />
+                {regime === 'new' && (
+                  <p className="text-xs text-gray-500 mt-1">
+                    Deductions are not allowed in New Regime. This field is disabled.
+                  </p>
+                )}
               </div>
 
               {/* Tax Regime */}
@@ -292,7 +303,7 @@ export default function AdvanceTaxCalculator() {
               {/* Salaried Checkbox */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Are you salaried (apply standard deduction ₹75,000)?
+                  Are you salaried (apply standard deduction ₹75,000)? {regime === 'new' && <span className="text-xs text-gray-500">(Only for Old Regime)</span>}
                 </label>
                 <div className="flex items-center gap-3">
                   <input
@@ -300,12 +311,20 @@ export default function AdvanceTaxCalculator() {
                     id="salaried"
                     checked={salaried}
                     onChange={(e) => setSalaried(e.target.checked)}
-                    className="w-5 h-5 text-[#C9A34A] border-gray-300 rounded focus:ring-[#C9A34A]"
+                    disabled={regime === 'new'}
+                    className={`w-5 h-5 text-[#C9A34A] border-gray-300 rounded focus:ring-[#C9A34A] ${
+                      regime === 'new' ? 'opacity-50 cursor-not-allowed' : ''
+                    }`}
                   />
-                  <label htmlFor="salaried" className="text-sm text-gray-600">
+                  <label htmlFor="salaried" className={`text-sm ${regime === 'new' ? 'text-gray-400' : 'text-gray-600'}`}>
                     Apply standard deduction
                   </label>
                 </div>
+                {regime === 'new' && (
+                  <p className="text-xs text-gray-500 mt-1">
+                    Standard deduction is not available in New Regime.
+                  </p>
+                )}
               </div>
 
               {/* Previous Advance Tax Paid */}
@@ -414,14 +433,6 @@ export default function AdvanceTaxCalculator() {
                             <div className="flex justify-between items-center py-2 border-b border-gray-200">
                               <span className="text-sm text-gray-600">Estimated Interest:</span>
                               <span className="font-semibold text-orange-600">{formatCurrency(result.interestEstimate)}</span>
-                            </div>
-                            <div className="flex justify-between items-center py-2 bg-orange-50 rounded px-2">
-                              <span className="text-sm font-semibold text-slate">Total Shortfall + Interest:</span>
-                              <span className="text-lg font-bold text-orange-600">
-                                {formatCurrency(
-                                  result.shortfalls.june15 + result.shortfalls.sept15 + result.shortfalls.dec15 + result.shortfalls.mar15 + result.interestEstimate
-                                )}
-                              </span>
                             </div>
                           </div>
                         </div>
