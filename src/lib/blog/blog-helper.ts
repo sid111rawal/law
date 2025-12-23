@@ -20,6 +20,56 @@ export function createRichTextContent(paragraphs: string[]): Document {
   };
 }
 
+// Helper function to parse markdown-style bold (**text**) into rich text content nodes
+function parseBoldText(text: string): any[] {
+  if (!text || !text.includes('**')) {
+    return [{
+      nodeType: 'text',
+      value: text || '',
+      marks: [],
+      data: {}
+    }];
+  }
+  
+  // Split by bold markers, handling multiple bold sections
+  // This regex matches **text** (non-greedy to handle multiple instances)
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  const content: any[] = [];
+  
+  parts.forEach(part => {
+    if (!part) return; // Skip empty parts
+    
+    if (part.startsWith('**') && part.endsWith('**') && part.length > 4) {
+      // Bold text - remove the ** markers
+      const boldText = part.slice(2, -2);
+      if (boldText) {
+        content.push({
+          nodeType: 'text',
+          value: boldText,
+          marks: [{ type: 'bold' }],
+          data: {}
+        });
+      }
+    } else {
+      // Regular text (even if empty, we want to preserve spacing)
+      content.push({
+        nodeType: 'text',
+        value: part,
+        marks: [],
+        data: {}
+      });
+    }
+  });
+  
+  // If no content was created, return the original text
+  return content.length > 0 ? content : [{
+    nodeType: 'text',
+    value: text,
+    marks: [],
+    data: {}
+  }];
+}
+
 // Helper function to create rich text content with headings for table of contents
 export function createRichTextWithHeadings(contentBlocks: Array<{
   type: 'heading' | 'paragraph' | 'image' | 'orderedList' | 'unorderedList';
@@ -74,12 +124,7 @@ export function createRichTextWithHeadings(contentBlocks: Array<{
             content: [{
               nodeType: BLOCKS.PARAGRAPH,
               data: {},
-              content: [{
-                nodeType: 'text',
-                value: item,
-                marks: [],
-                data: {}
-              }]
+              content: parseBoldText(item) // Use parseBoldText for list items
             }]
           }))
         };
@@ -93,49 +138,23 @@ export function createRichTextWithHeadings(contentBlocks: Array<{
             content: [{
               nodeType: BLOCKS.PARAGRAPH,
               data: {},
-              content: [{
-                nodeType: 'text',
-                value: item,
-                marks: [],
-                data: {}
-              }]
+              content: parseBoldText(item) // Use parseBoldText for list items
             }]
           }))
         };
       } else {
-        // Handle paragraph - support markdown-style **bold** syntax
+        // Handle paragraph - support markdown-style **bold** syntax and tables
         const text = block.text || '';
         
-        // Check for markdown-style bold (**text**)
-        if (text.includes('**')) {
-          const parts = text.split(/(\*\*[^*]+\*\*)/g);
-          const content: any[] = [];
-          
-          parts.forEach(part => {
-            if (part.startsWith('**') && part.endsWith('**')) {
-              // Bold text
-              const boldText = part.slice(2, -2);
-              content.push({
-                nodeType: 'text',
-                value: boldText,
-                marks: [{ type: 'bold' }],
-                data: {}
-              });
-            } else if (part.trim()) {
-              // Regular text
-              content.push({
-                nodeType: 'text',
-                value: part,
-                marks: [],
-                data: {}
-              });
-            }
-          });
-          
+        // Check if this is a table (markdown table format)
+        if (text.includes(' | ') && (text.includes('---') || text.includes('|'))) {
+          // Store table as paragraph with special marker for renderer
           return {
             nodeType: BLOCKS.PARAGRAPH,
-            data: {},
-            content: content.length > 0 ? content : [{
+            data: {
+              isTable: true
+            },
+            content: [{
               nodeType: 'text',
               value: text,
               marks: [],
@@ -144,15 +163,11 @@ export function createRichTextWithHeadings(contentBlocks: Array<{
           };
         }
         
+        // Regular paragraph with potential bold text
         return {
           nodeType: BLOCKS.PARAGRAPH,
           data: {},
-          content: [{
-            nodeType: 'text',
-            value: text,
-            marks: [],
-            data: {}
-          }]
+          content: parseBoldText(text)
         };
       }
     })
