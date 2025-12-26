@@ -109,10 +109,10 @@ export const gstCompliancePosts: ContentfulBlogPost[] = [
     ]),
     publishedDate: '2025-12-23T10:00:00Z',
     category: 'GST Compliance',
-    excerpt: 'Filing GSTR-9 correctly is critical because it is a non-revisable, summary return that consolidates an entire year\'s GST data. Learn what happens if GSTR-9 is filed wrongly and how to handle schema validation errors.',
+    excerpt: 'GSTR-9 cannot be revised after filing. Learn what happens if GSTR-9 is wrongly filed, how to fix schema validation errors, and steps to avoid penalties, notices, and interest charges.',
     featured: false,
     author: '',
-    tags: ['GSTR-9', 'GST Filing', 'GST Compliance', 'Tax Returns', 'Schema Validation']
+    tags: ['GSTR-9', 'GST Filing', 'GST Compliance', 'Tax Returns', 'Schema Validation', 'GSTR-9 Errors', 'GST Annual Return', 'GST Penalties']
   }),
   createBlogPost({
     id: 'gst-post-2',
@@ -448,10 +448,10 @@ export const gstCompliancePosts: ContentfulBlogPost[] = [
     ]),
     publishedDate: '2025-12-24T10:00:00Z',
     category: 'GST Compliance',
-    excerpt: 'GSTR‑9 is the annual GST return that consolidates the entire year\'s supplies, tax liability and Input Tax Credit (ITC). Learn how to file GSTR‑9 using the GST portal step-by-step.',
+    excerpt: 'Complete step-by-step guide to file GSTR-9 annual return on GST portal. Learn prerequisites, filing process, reconciliation steps, and how to avoid late fees and errors.',
     featured: false,
     author: '',
-    tags: ['GSTR-9', 'GST Filing', 'GST Portal', 'Annual Return', 'GST Compliance', 'Tax Returns']
+    tags: ['GSTR-9', 'GST Filing', 'GST Portal', 'Annual Return', 'GST Compliance', 'Tax Returns', 'GSTR-9 Filing Guide', 'GST Annual Return Filing']
   })
 ];
 

@@ -102,7 +102,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const headings = extractHeadings(fields.content);
 
   // Generate structured data for the blog post
-  const structuredData = generateJsonLd({
+  const blogPostStructuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": fields.title,
@@ -138,13 +138,49 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         "height": 630
       }
     })
-  });
+  };
+
+  // Generate breadcrumb structured data
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": seoConfig.site.url
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blogs",
+        "item": `${seoConfig.site.url}/resources/blogs`
+      },
+      ...(fields.category ? [{
+        "@type": "ListItem",
+        "position": 3,
+        "name": fields.category,
+        "item": `${seoConfig.site.url}/resources/blogs/category/${fields.category.toLowerCase().replace(/\s+/g, '-')}`
+      }] : []),
+      {
+        "@type": "ListItem",
+        "position": fields.category ? 4 : 3,
+        "name": fields.title,
+        "item": `${seoConfig.site.url}/resources/blogs/${fields.slug}`
+      }
+    ]
+  };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: structuredData }}
+        dangerouslySetInnerHTML={{ __html: generateJsonLd(blogPostStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: generateJsonLd(breadcrumbStructuredData) }}
       />
       <div className="min-h-screen bg-gray-50">
       {/* Page Header */}

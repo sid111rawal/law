@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import MobileBottomNav from "@/components/MobileBottomNav";
@@ -45,6 +46,7 @@ export default function RootLayout({
         <MobileBottomNav />
         <WhatsAppButton />
         <CookieConsent />
+        <Analytics />
       </body>
     </html>
   );
