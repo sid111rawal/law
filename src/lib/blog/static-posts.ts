@@ -3,12 +3,14 @@ import { ContentfulBlogPost } from '@/lib/contentful/types';
 import { taxPlanningPosts } from './categories/tax-planning';
 import { businessFormationPosts } from './categories/business-formation';
 import { digitalEconomyPosts } from './categories/digital-economy';
+import { gstCompliancePosts } from './categories/gst-compliance';
 
 // Combine all blog posts from different categories
 export const staticBlogPosts: ContentfulBlogPost[] = [
   ...taxPlanningPosts,
   ...businessFormationPosts,
-  ...digitalEconomyPosts
+  ...digitalEconomyPosts,
+  ...gstCompliancePosts
 ];
 
 // Get all static blog posts
