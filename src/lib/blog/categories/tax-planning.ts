@@ -1016,5 +1016,1050 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       'tax notice checklist',
       'Section 142(1)'
     ]
+  }),
+  createBlogPost({
+    id: 'tax-post-5',
+    title: 'How to Respond to a Defective Income Tax Return Notice u/s 139(9)',
+    slug: 'how-to-respond-to-defective-income-tax-return-notice-section-139-9',
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'A defective return notice under Section 139(9) is issued when the Income Tax Department identifies errors or inconsistencies in your filed Income Tax Return (ITR). This notice acts as a warning mechanism, giving taxpayers an opportunity to correct mistakes and ensure accurate reporting before facing penalties or other consequences.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What is a Defective Return Notice u/s 139(9)?'
+      },
+      {
+        type: 'paragraph',
+        text: 'A defective return occurs when the Income Tax Department detects errors, omissions, or inconsistencies in your filed ITR. These could include missing information, conflicting details compared to data available with the department, incorrect basic details, or mistakes in tax calculation.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Under Section 139(9) of the Income Tax Act, 1961, the department issues a notice to give you a chance to correct these mistakes and ensure your ITR reflects accurate and complete information.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How is the Defective Return Notice Delivered?'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'The Income Tax Department sends the notice u/s 139(9) to your registered email ID',
+          'The email subject will be: \'Communication under section 139(9) for PAN [Your PAN] for the Assessment Year [AY]\'',
+          'The defective return notice is attached as a password-protected PDF',
+          'Password format: PAN in lowercase followed by date of birth in DDMMYYYY format',
+          'Example: If PAN is MNOPQ1212C and DOB is 12/10/1987, password is: mnopq1212c12101987'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Response Time Limit'
+      },
+      {
+        type: 'paragraph',
+        text: 'Taxpayers have 15 days from the date of issue of the notice to respond. If you need more time, you can request an extension from the Assessing Officer.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Common Reasons for Defective Return Notice'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '1. Incomplete Income Tax Return'
+      },
+      {
+        type: 'paragraph',
+        text: 'If your ITR lacks necessary details in annexures, statements, or mandatory columns, such as income from all sources not being mentioned, it may be marked as defective.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '2. Missing Tax Payment Information'
+      },
+      {
+        type: 'paragraph',
+        text: 'If taxes have been paid but their details are omitted in the ITR, including information about TDS, TCS, advance tax, or self-assessment tax, a notice may be issued.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '3. TDS and Income Mismatch'
+      },
+      {
+        type: 'paragraph',
+        text: 'When TDS is claimed but the corresponding income is not offered for tax in the ITR. For example, if you have earned interest income from term deposits and tax has been deducted by the bank, both interest income and tax deducted should be reported in the ITR.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '4. Income Tax Audit Concerns'
+      },
+      {
+        type: 'paragraph',
+        text: 'If an audit is required under section 44AB, the complete audit report including profit and loss account, balance sheet, and auditor\'s report should be submitted. Incomplete or missing audit reports can trigger a defective return notice.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '5. Presumptive Taxation Inaccuracies'
+      },
+      {
+        type: 'paragraph',
+        text: 'In cases of presumptive taxation, providing inaccurate computation of presumptive income, non-disclosure of relevant details, or mismatched gross receipts can lead to a defective return notice.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '6. Tax Payment Discrepancies'
+      },
+      {
+        type: 'paragraph',
+        text: 'If taxes are partially paid or the paid amount doesn\'t align with the tax liability in the ITR, a defective return notice may be issued.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '7. Incorrect Details in ITR'
+      },
+      {
+        type: 'paragraph',
+        text: 'Filing an ITR with incorrect details regarding turnover, income limits, or inappropriate reporting for a specific head of income can lead to a defective return notice.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: '8. Name Mismatch'
+      },
+      {
+        type: 'paragraph',
+        text: 'When the name mentioned in the ITR does not match the name on the PAN card, the return may be marked as defective.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Respond to Defective Return Notice u/s 139(9)'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 1: Understand the Defect'
+      },
+      {
+        type: 'paragraph',
+        text: 'Carefully read the notice to understand the specific defect or error pointed out by the Income Tax Department. The notice will clearly mention what needs to be corrected.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 2: Gather Required Documents'
+      },
+      {
+        type: 'paragraph',
+        text: 'Collect all relevant documents such as Form 16, Form 26AS, bank statements, investment proofs, and any other documents needed to rectify the defect.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 3: Revise Your Return'
+      },
+      {
+        type: 'paragraph',
+        text: 'Log in to the Income Tax e-filing portal and revise your return addressing all the defects mentioned in the notice. Make sure to correct all errors and provide complete information.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 4: Submit the Revised Return'
+      },
+      {
+        type: 'paragraph',
+        text: 'After making corrections, submit the revised return within 15 days. The system will generate a new acknowledgment number for the revised return.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Consequences of Not Responding'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you fail to respond to the defective notice within the 15-day time limit, the return already filed would be treated as invalid. This results in:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Late filing penalty under Section 234F',
+          'Delay in processing of refund',
+          'Denial of carry-forward of losses',
+          'Interest on tax liability under Section 234A, 234B, and 234C',
+          'Potential scrutiny or assessment proceedings'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Important Points to Remember'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'You cannot file a fresh return as a response to the notice - you must revise the existing return',
+          'The response must be submitted online through the e-filing portal',
+          'You can authorize another person (CA or tax professional) to respond on your behalf',
+          'Keep all supporting documents ready before revising the return',
+          'Ensure all corrections are made accurately to avoid further notices'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Seeking Professional Help'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you find it challenging to understand or respond to the defective return notice, it\'s advisable to seek help from a qualified Chartered Accountant or tax professional. They can help you identify the issues, gather necessary documents, and file a proper response within the deadline.'
+      }
+    ]),
+    publishedDate: '2025-12-23T10:00:00Z',
+    category: 'Tax Planning',
+    excerpt: 'Complete guide to responding to defective return notice u/s 139(9). Learn common reasons, 15-day response deadline, step-by-step process to revise ITR, and consequences of non-compliance.',
+    featured: false,
+    author: '',
+    tags: ['Section 139(9)', 'Defective Return', 'Income Tax Notice', 'ITR Revision', 'Tax Compliance', 'Income Tax Return', 'Tax Notice Response', 'ITR Filing', 'Tax Planning']
+  }),
+  createBlogPost({
+    id: 'tax-post-6',
+    title: 'How to File ITR-2 Form for Income from Capital Gains',
+    slug: 'how-to-file-itr-2-form-for-income-from-capital-gains',
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'ITR-2 is the Income Tax Return form for individuals and Hindu Undivided Families (HUFs) who have income from capital gains, house property, or other sources but do not have income from business or profession. This comprehensive guide will help you understand when to use ITR-2 and how to file it correctly, especially for capital gains income.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Who Should File ITR-2?'
+      },
+      {
+        type: 'paragraph',
+        text: 'ITR-2 is applicable for individuals and HUFs who have:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Income from salary or pension',
+          'Income from house property (one or more)',
+          'Income from capital gains (short-term or long-term)',
+          'Income from other sources (interest, dividends, etc.)',
+          'Foreign income and assets',
+          'Agricultural income exceeding Rs. 5,000',
+          'Total income exceeding Rs. 50 lakh'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Note: ITR-2 cannot be used if you have income from business or profession. In such cases, you need to file ITR-3 or ITR-4.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Understanding Capital Gains for ITR-2'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Types of Capital Gains'
+      },
+      {
+        type: 'paragraph',
+        text: 'Capital gains arise when you sell or transfer a capital asset. There are two types:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Short-Term Capital Gains (STCG): Gains from assets held for less than 36 months (or 24 months for immovable property, 12 months for listed securities)',
+          'Long-Term Capital Gains (LTCG): Gains from assets held for more than the specified period'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Common Capital Assets'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Immovable property (house, land, building)',
+          'Shares and securities',
+          'Mutual funds',
+          'Bonds and debentures',
+          'Jewellery and precious metals',
+          'Paintings, sculptures, and other works of art'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Step-by-Step Guide to File ITR-2 for Capital Gains'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 1: Gather Required Documents'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'PAN card',
+          'Aadhaar card',
+          'Form 16 (if salaried)',
+          'Form 26AS',
+          'Bank statements',
+          'Capital gains statements from broker (for shares/securities)',
+          'Sale deed and purchase documents (for property)',
+          'Investment proofs for exemptions (Section 54, 54F, etc.)',
+          'TDS certificates (if any)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 2: Login to Income Tax e-Filing Portal'
+      },
+      {
+        type: 'paragraph',
+        text: 'Visit www.incometax.gov.in and log in using your PAN, password, and OTP sent to your registered mobile number.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 3: Select ITR-2 Form'
+      },
+      {
+        type: 'paragraph',
+        text: 'Navigate to e-File > Income Tax Return. Select Assessment Year and ITR-2 form. Click on \'Prepare and Submit Online\' or download the offline utility.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 4: Fill Personal Information'
+      },
+      {
+        type: 'paragraph',
+        text: 'Enter your personal details including name, PAN, address, email, and mobile number. Verify that all details match your PAN card.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 5: Report Salary Income (if applicable)'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you have salary income, enter details from Form 16 including gross salary, deductions, and TDS. The form will auto-calculate taxable salary.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 6: Report House Property Income'
+      },
+      {
+        type: 'paragraph',
+        text: 'Enter details of all properties owned, including self-occupied and let-out properties. Provide annual rent, municipal taxes, and interest on home loan (if applicable).'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 7: Report Capital Gains Income'
+      },
+      {
+        type: 'paragraph',
+        text: 'This is the crucial section for capital gains. You need to provide:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Details of each capital asset sold/transferred',
+          'Date of purchase and sale',
+          'Sale consideration',
+          'Cost of acquisition (indexed for long-term gains)',
+          'Expenses on transfer',
+          'Capital gains (short-term or long-term)',
+          'Exemptions claimed (Section 54, 54F, 54EC, etc.)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 8: Report Other Sources Income'
+      },
+      {
+        type: 'paragraph',
+        text: 'Enter income from interest, dividends, family pension, or any other sources. Include TDS details if applicable.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 9: Claim Deductions'
+      },
+      {
+        type: 'paragraph',
+        text: 'Enter deductions under Chapter VI-A (Section 80C, 80D, 80G, etc.) with supporting documents.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 10: Calculate Tax Liability'
+      },
+      {
+        type: 'paragraph',
+        text: 'The form will auto-calculate your tax liability based on income slabs. Review the calculation carefully.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 11: Pay Tax (if applicable)'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you have tax liability after considering TDS and advance tax, pay the balance tax online through the e-filing portal before filing the return.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 12: Verify and Submit'
+      },
+      {
+        type: 'paragraph',
+        text: 'Review all details carefully, verify calculations, and submit the return. You will receive an acknowledgment number (ITR-V) which needs to be e-verified within 120 days.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Important Points for Capital Gains in ITR-2'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Indexation Benefit'
+      },
+      {
+        type: 'paragraph',
+        text: 'For long-term capital gains, you can claim indexation benefit to adjust the cost of acquisition for inflation. Use the Cost Inflation Index (CII) provided by the Income Tax Department.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Exemptions Available'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Section 54: Exemption on sale of residential property if proceeds invested in another residential property',
+          'Section 54F: Exemption on sale of any asset (except residential property) if invested in residential property',
+          'Section 54EC: Exemption on investment in specified bonds (NHAI, REC bonds)',
+          'Section 54B: Exemption on sale of agricultural land'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'TDS on Capital Gains'
+      },
+      {
+        type: 'paragraph',
+        text: 'If TDS has been deducted on capital gains (like TDS on property sale u/s 194IA), ensure it is reflected in Form 26AS and claimed in your return.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Common Mistakes to Avoid'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Not reporting all capital gains transactions',
+          'Incorrect calculation of holding period',
+          'Missing indexation benefit for long-term gains',
+          'Not claiming eligible exemptions',
+          'Mismatch between Form 26AS and return',
+          'Incorrect cost of acquisition'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'E-Verification of ITR-2'
+      },
+      {
+        type: 'paragraph',
+        text: 'After filing ITR-2, you must e-verify it within 120 days using any of these methods:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Aadhaar OTP',
+          'Net banking',
+          'Bank account number and IFSC',
+          'Demat account',
+          'Send signed ITR-V to CPC Bangalore by post'
+        ]
+      }
+    ]),
+    publishedDate: '2025-12-20T10:00:00Z',
+    category: 'Tax Planning',
+    excerpt: 'Complete guide to file ITR-2 for capital gains income. Learn who should file ITR-2, step-by-step process, exemptions, indexation, and common mistakes to avoid while reporting capital gains.',
+    featured: false,
+    author: '',
+    tags: ['ITR-2', 'Capital Gains', 'Income Tax Return', 'Tax Filing', 'Long Term Capital Gains', 'Short Term Capital Gains', 'ITR Filing', 'Tax Planning', 'Property Sale']
+  }),
+  createBlogPost({
+    id: 'tax-post-7',
+    title: 'How to Download and Fill Form 26QB for TDS on Property Purchase',
+    slug: 'how-to-download-and-fill-form-26qb-for-tds-on-property-purchase',
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'Form 26QB is used for payment of Tax Deducted at Source (TDS) on the purchase of immovable property. As per Section 194IA of the Income Tax Act, the buyer is required to deduct TDS at 1% on the sale consideration if it exceeds Rs. 50 lakh. This guide will help you understand how to download, fill, and submit Form 26QB correctly.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What is Form 26QB?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Form 26QB is an online form used for payment of TDS on the purchase of immovable property (other than agricultural land). It must be filed by the buyer within 30 days from the end of the month in which the property is purchased or the payment is made, whichever is earlier.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'When is Form 26QB Required?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Form 26QB is required when:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'You are purchasing immovable property (residential or commercial)',
+          'The sale consideration exceeds Rs. 50 lakh',
+          'You are making payment to the seller (full or part payment)',
+          'The property is located in India (other than agricultural land)'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Note: TDS is applicable even if the payment is made in installments, as long as the total consideration exceeds Rs. 50 lakh.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'TDS Rate and Calculation'
+      },
+      {
+        type: 'paragraph',
+        text: 'TDS is deducted at 1% of the sale consideration. However, if the seller does not have a PAN, TDS is deducted at 20%.'
+      },
+      {
+        type: 'paragraph',
+        text: 'Example: If the property is purchased for Rs. 60 lakh, TDS = Rs. 60,00,000 × 1% = Rs. 60,000'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Step-by-Step Guide to Download and Fill Form 26QB'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 1: Login to TRACES Portal'
+      },
+      {
+        type: 'paragraph',
+        text: 'Visit www.tdscpc.gov.in (TRACES - TDS Reconciliation Analysis and Correction Enabling System) and log in using your credentials. If you don\'t have an account, register as a "Taxpayer" using your PAN.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 2: Navigate to Form 26QB'
+      },
+      {
+        type: 'paragraph',
+        text: 'After logging in, go to "Statements/Payments" > "Form 26QB" > "Prepare Online Form 26QB".'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 3: Fill Buyer Details (Part A)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Enter the following details of the buyer:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'PAN of the buyer',
+          'Name of the buyer (as per PAN)',
+          'Address of the buyer',
+          'Email ID and mobile number',
+          'Buyer type (Individual, HUF, Company, etc.)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 4: Fill Seller Details (Part B)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Enter the following details of the seller:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'PAN of the seller (mandatory)',
+          'Name of the seller (as per PAN)',
+          'Address of the seller',
+          'Email ID and mobile number',
+          'Seller type (Individual, HUF, Company, etc.)'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Important: If the seller does not have a PAN, TDS will be deducted at 20% instead of 1%.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 5: Fill Property Details (Part C)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Enter property-related information:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Complete address of the property',
+          'Pin code',
+          'State and district',
+          'Type of property (Residential/Commercial)',
+          'Date of agreement/booking',
+          'Date of possession/registration'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 6: Enter Payment Details (Part D)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Provide payment information:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Total sale consideration',
+          'Amount paid/credited (if part payment)',
+          'Date of payment',
+          'TDS amount (auto-calculated at 1%)',
+          'Interest, if any (for late payment)',
+          'Total amount payable'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 7: Select Payment Method'
+      },
+      {
+        type: 'paragraph',
+        text: 'Choose your payment method:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Net banking',
+          'Debit card',
+          'Credit card',
+          'NEFT/RTGS',
+          'Over the counter (challan)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 8: Make Payment'
+      },
+      {
+        type: 'paragraph',
+        text: 'Complete the payment online. After successful payment, you will receive a confirmation and Form 16B (TDS certificate) will be generated.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 9: Download Form 16B'
+      },
+      {
+        type: 'paragraph',
+        text: 'After payment, download Form 16B (TDS certificate) from the TRACES portal. This certificate should be provided to the seller as proof of TDS deduction.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Important Points to Remember'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Form 26QB must be filed within 30 days from the end of the month in which payment is made',
+          'TDS is deducted at 1% if seller has PAN, and 20% if seller does not have PAN',
+          'The buyer is responsible for deducting and depositing TDS, not the seller',
+          'Form 16B (TDS certificate) must be issued to the seller within 15 days of filing Form 26QB',
+          'Late filing attracts interest and penalty',
+          'TDS is applicable on the entire sale consideration, not just the amount paid'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Penalties for Non-Compliance'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Interest @ 1% per month for delay in deduction',
+          'Interest @ 1.5% per month for delay in payment',
+          'Penalty for non-filing or late filing of Form 26QB',
+          'Disallowance of expenses in case of non-deduction of TDS'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Common Mistakes to Avoid'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Filing Form 26QB after the due date',
+          'Incorrect PAN of buyer or seller',
+          'Wrong property address or details',
+          'Not issuing Form 16B to the seller',
+          'Calculating TDS on partial payment instead of total consideration',
+          'Missing interest calculation for late payment'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Download Form 16B'
+      },
+      {
+        type: 'paragraph',
+        text: 'After filing Form 26QB and making payment:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Login to TRACES portal',
+          'Go to "Downloads" > "Form 16B"',
+          'Select the financial year and enter the acknowledgment number',
+          'Download and verify the certificate',
+          'Provide a copy to the seller'
+        ]
+      }
+    ]),
+    publishedDate: '2025-12-18T10:00:00Z',
+    category: 'Tax Planning',
+    excerpt: 'Complete guide to download and fill Form 26QB for TDS on property purchase. Learn TDS calculation, step-by-step filing process, payment methods, Form 16B download, and penalties for non-compliance.',
+    featured: false,
+    author: '',
+    tags: ['Form 26QB', 'TDS on Property', 'Section 194IA', 'Property Purchase', 'TDS Filing', 'Form 16B', 'Tax Deduction', 'Property Tax', 'Income Tax']
+  }),
+  createBlogPost({
+    id: 'tax-post-8',
+    title: 'How to Download ITR-V Acknowledgement After Filing Income Tax Return',
+    slug: 'how-to-download-itr-v-acknowledgement-after-filing-income-tax-return',
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'ITR-V (Income Tax Return - Verification) is an acknowledgment form that is generated after you file your Income Tax Return. It serves as proof of filing and must be e-verified or physically verified within 120 days of filing. This guide will help you understand how to download ITR-V and complete the verification process.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What is ITR-V?'
+      },
+      {
+        type: 'paragraph',
+        text: 'ITR-V is a one-page acknowledgment form that contains:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Your acknowledgment number',
+          'PAN',
+          'Assessment Year',
+          'Date of filing',
+          'A bar code for verification',
+          'Instructions for verification'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'ITR-V is generated when you file your return without digital signature. It must be verified to complete the filing process.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'When is ITR-V Generated?'
+      },
+      {
+        type: 'paragraph',
+        text: 'ITR-V is generated in the following cases:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'When you file ITR without digital signature',
+          'When you file ITR using e-filing portal without DSC',
+          'When you file ITR using offline utility and upload JSON file'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Note: If you file ITR with digital signature (DSC) or e-verify immediately after filing, ITR-V is not required.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Step-by-Step Guide to Download ITR-V'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 1: Login to Income Tax e-Filing Portal'
+      },
+      {
+        type: 'paragraph',
+        text: 'Visit www.incometax.gov.in and log in using your PAN, password, and OTP sent to your registered mobile number or email.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 2: Navigate to e-File Menu'
+      },
+      {
+        type: 'paragraph',
+        text: 'After logging in, click on "e-File" in the top menu, then select "Income Tax Returns" > "View Filed Returns".'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 3: Select the Assessment Year'
+      },
+      {
+        type: 'paragraph',
+        text: 'You will see a list of all filed returns. Select the Assessment Year for which you want to download ITR-V.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Step 4: Download ITR-V'
+      },
+      {
+        type: 'paragraph',
+        text: 'Click on the "Download" button or "ITR-V" link next to the relevant return. The ITR-V will be downloaded as a PDF file.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Alternative Method: Email Download'
+      },
+      {
+        type: 'paragraph',
+        text: 'ITR-V is also sent to your registered email ID immediately after filing. Check your email inbox (and spam folder) for the email from Income Tax Department with subject "ITR-V for AY [Year]".'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Verify ITR-V'
+      },
+      {
+        type: 'paragraph',
+        text: 'You have 120 days from the date of filing to verify your ITR. There are two methods:'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Method 1: E-Verification (Recommended)'
+      },
+      {
+        type: 'paragraph',
+        text: 'E-verification is the fastest and most convenient method. You can e-verify using:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Aadhaar OTP: Enter Aadhaar number and verify with OTP sent to registered mobile',
+          'Net Banking: Login through your bank\'s net banking facility',
+          'Bank Account Number and IFSC: Verify using bank account details',
+          'Demat Account: Verify using your Demat account credentials',
+          'Bank ATM: Generate EVC through ATM of your bank'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Steps for E-Verification:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Login to e-filing portal',
+          'Go to "e-File" > "Income Tax Returns" > "e-Verify Return"',
+          'Select the return you want to verify',
+          'Choose your preferred e-verification method',
+          'Complete the verification process',
+          'You will receive confirmation once verification is successful'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Method 2: Physical Verification'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you cannot e-verify, you can send a signed ITR-V by post:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Download and print ITR-V',
+          'Sign the ITR-V in blue ink',
+          'Send it by speed post to: Income Tax Department - CPC, Post Bag No. 1, Electronic City Post Office, Bangalore - 560100, Karnataka',
+          'Ensure it reaches within 120 days of filing',
+          'Keep proof of posting (tracking number)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Important Points to Remember'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'ITR-V must be verified within 120 days of filing the return',
+          'If not verified within 120 days, the return will be treated as invalid',
+          'E-verification is instant and recommended over physical verification',
+          'You can download ITR-V multiple times if needed',
+          'ITR-V contains a bar code that should not be tampered with',
+          'Keep a copy of verified ITR-V for your records'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Consequences of Not Verifying ITR-V'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you fail to verify ITR-V within 120 days:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Your return will be treated as never filed',
+          'You may face late filing penalty under Section 234F',
+          'Interest on tax liability will continue to accrue',
+          'You will need to file a belated return',
+          'Refund processing will be delayed',
+          'Carry-forward of losses will not be allowed'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Check ITR-V Verification Status'
+      },
+      {
+        type: 'paragraph',
+        text: 'To check if your ITR-V is verified:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Login to e-filing portal',
+          'Go to "My Account" > "View e-Filed Returns"',
+          'Check the status column - it will show "Verified" if successfully verified',
+          'You can also check under "e-Verify Return" section'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Troubleshooting Common Issues'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'ITR-V Not Received in Email'
+      },
+      {
+        type: 'paragraph',
+        text: 'Check spam/junk folder, verify registered email ID in profile, or download directly from the portal.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Cannot E-Verify'
+      },
+      {
+        type: 'paragraph',
+        text: 'Ensure your Aadhaar is linked to PAN, bank account is pre-validated, or use physical verification method.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'ITR-V Download Link Not Working'
+      },
+      {
+        type: 'paragraph',
+        text: 'Try clearing browser cache, use a different browser, or contact IT helpdesk for assistance.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Best Practices'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'E-verify immediately after filing to avoid forgetting',
+          'Keep a digital copy of ITR-V for records',
+          'Set a reminder for the 120-day deadline',
+          'Verify email and mobile number are updated in your profile',
+          'Use e-verification instead of physical post for faster processing'
+        ]
+      }
+    ]),
+    publishedDate: '2025-12-15T10:00:00Z',
+    category: 'Tax Planning',
+    excerpt: 'Complete guide to download ITR-V acknowledgement after filing ITR. Learn step-by-step download process, e-verification methods, 120-day deadline, physical verification, and consequences of non-verification.',
+    featured: false,
+    author: '',
+    tags: ['ITR-V', 'ITR Acknowledgement', 'Income Tax Return', 'E-Verification', 'ITR Filing', 'Tax Verification', 'Income Tax', 'Tax Compliance', 'ITR Status']
   })
 ];
