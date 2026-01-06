@@ -457,6 +457,7 @@ export const gstCompliancePosts: ContentfulBlogPost[] = [
     id: 'gst-post-3',
     title: 'GST emSigner Setup Guide: System Requirements, Installation & Fixes',
     slug: 'gst-emsigner-setup-guide-system-requirements-installation-fixes',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1767665652/GST-emSigner-Setup-Guide_pcpiay.jpg',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',

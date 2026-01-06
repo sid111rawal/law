@@ -1522,6 +1522,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-7',
     title: 'How to Download and Fill Form 26QB for TDS on Property Purchase',
     slug: 'how-to-download-and-fill-form-26qb-for-tds-on-property-purchase',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1767665652/How-to-Download-and-Fill-Form-26QB-for-TDS-on-Property-Purchase_g5cmew.jpg',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -1795,6 +1796,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-8',
     title: 'How to Download ITR-V Acknowledgement After Filing Income Tax Return',
     slug: 'how-to-download-itr-v-acknowledgement-after-filing-income-tax-return',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1767665652/How-to-Download-ITR-V-Acknowledgement_unqky6.jpg',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -2071,5 +2073,1470 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     featured: false,
     author: '',
     tags: ['ITR-V', 'ITR Acknowledgement', 'Income Tax Return', 'E-Verification', 'ITR Filing', 'Tax Verification', 'Income Tax', 'Tax Compliance', 'ITR Status']
+  }),
+  createBlogPost({
+    id: 'tax-post-9',
+    title: 'Standard Deduction for Salaried Employees: Complete Guide for FY 2025-26',
+    slug: 'standard-deduction-salaried-employees-fy-2025-26',
+    featuredImage: '', // Add image URL here for blog listing page
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'Standard deduction is a crucial tax benefit available to salaried individuals and pensioners in India. This fixed deduction reduces your taxable income without requiring any investment or expense documentation. Understanding how standard deduction works under both old and new tax regimes can help you optimize your tax planning and maximize your take-home salary.'
+      },
+      {
+        type: 'image',
+        imageUrl: '', // Add image URL here for blog post content
+        imageAlt: 'Standard Deduction for Salaried Employees'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What is Standard Deduction?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Standard deduction is a fixed amount that salaried taxpayers can deduct from their gross salary income before calculating taxable income. Unlike other deductions that require proof of expenses or investments, standard deduction is automatically available to all salaried individuals and pensioners without any documentation requirements.'
+      },
+      {
+        type: 'paragraph',
+        text: 'This deduction was reintroduced in Budget 2018-19, replacing the earlier transport allowance and medical reimbursement exemptions. The standard deduction simplifies tax filing by eliminating the need to maintain receipts for small expenses while providing tax relief to middle-class salaried employees.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Standard Deduction Amount for FY 2025-26'
+      },
+      {
+        type: 'paragraph',
+        text: 'The standard deduction amount varies based on the tax regime you choose:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Old Tax Regime:** Rs. 50,000 per financial year',
+          '**New Tax Regime:** Rs. 75,000 per financial year (increased from Rs. 50,000 in Budget 2024)'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'This increase in the new tax regime was introduced to make it more attractive and provide additional tax relief to taxpayers opting for the simplified tax structure.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Who Can Claim Standard Deduction?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Standard deduction is available to:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'All salaried individuals receiving income under the head "Salaries"',
+          'Pensioners receiving pension from former employers',
+          'Individuals with income from salary, regardless of the amount'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: '**Important Note:** Standard deduction is NOT available for:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Income from business or profession',
+          'Freelancing income',
+          'Income from other sources (unless it\'s pension)',
+          'Self-employed individuals'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How Standard Deduction Works'
+      },
+      {
+        type: 'paragraph',
+        text: 'Standard deduction is deducted from your gross salary income. Here\'s how it works:'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Calculation Example'
+      },
+      {
+        type: 'paragraph',
+        text: 'Let\'s say your gross salary is Rs. 10,00,000 for FY 2025-26:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Gross Salary: Rs. 10,00,000',
+          'Less: Standard Deduction (Old Regime): Rs. 50,000',
+          'Taxable Salary: Rs. 9,50,000'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'Under the new tax regime, you would get Rs. 75,000 as standard deduction, making your taxable salary Rs. 9,25,000.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Standard Deduction in Multiple Employment Scenarios'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you have changed jobs during the financial year or have multiple employers, standard deduction is calculated on your total salary income from all employers combined. You get only one standard deduction of Rs. 50,000 (old regime) or Rs. 75,000 (new regime) for the entire year, not per employer.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Standard Deduction for Pensioners'
+      },
+      {
+        type: 'paragraph',
+        text: 'Pension received from former employers is taxable under the head "Salaries" and is eligible for standard deduction. Pensioners can claim the same standard deduction amount as salaried individuals - Rs. 50,000 under old regime or Rs. 75,000 under new regime.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Standard Deduction vs Other Allowances'
+      },
+      {
+        type: 'paragraph',
+        text: 'When standard deduction was reintroduced in 2018-19, it replaced:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Transport allowance (up to Rs. 1,600 per month)',
+          'Medical reimbursement (up to Rs. 15,000 per year)'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'You cannot claim both standard deduction and these allowances. Standard deduction is a consolidated benefit that replaces these exemptions.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Tax Benefits of Standard Deduction'
+      },
+      {
+        type: 'paragraph',
+        text: 'The standard deduction provides significant tax benefits:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Reduces Taxable Income:** Directly lowers your taxable salary income',
+          '**No Documentation Required:** Unlike HRA or LTA, no receipts or proofs needed',
+          '**Automatic Benefit:** Available to all salaried individuals without any conditions',
+          '**Simplifies Tax Filing:** Reduces paperwork and makes ITR filing easier'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Claim Standard Deduction in ITR'
+      },
+      {
+        type: 'paragraph',
+        text: 'Standard deduction is automatically considered when filing your Income Tax Return:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'In Form 16, your employer already deducts standard deduction from your salary',
+          'While filing ITR, ensure your salary income matches Form 16',
+          'The standard deduction is already reflected in your taxable salary in Form 16',
+          'No separate claim or declaration is required in ITR'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Key Points to Remember'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Standard deduction is available only for salary income and pension',
+          'The amount is fixed and doesn\'t depend on actual expenses',
+          'You get one standard deduction per financial year, regardless of number of employers',
+          'Standard deduction is higher (Rs. 75,000) in the new tax regime from FY 2024-25',
+          'No supporting documents are required to claim this deduction',
+          'Standard deduction is shown in Form 16 issued by your employer'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Conclusion'
+      },
+      {
+        type: 'paragraph',
+        text: 'Standard deduction is a valuable tax benefit that simplifies tax filing while providing relief to salaried individuals and pensioners. With the increased deduction of Rs. 75,000 in the new tax regime, taxpayers have an additional incentive to opt for the simplified tax structure. Understanding how standard deduction works can help you make informed decisions about tax planning and maximize your take-home income.'
+      }
+    ]),
+    publishedDate: '2025-12-20T10:00:00Z',
+    category: 'Tax Planning',
+    excerpt: 'Complete guide to standard deduction for salaried employees in FY 2025-26. Learn about standard deduction amounts in old and new tax regimes, eligibility, calculation, and how to claim it in ITR filing.',
+    featured: false,
+    author: '',
+    tags: ['Standard Deduction', 'Salary Income', 'Tax Deduction', 'Old Tax Regime', 'New Tax Regime', 'Tax Planning', 'Income Tax', 'Salaried Employees', 'Pension', 'Tax Benefits']
+  }),
+  createBlogPost({
+    id: 'tax-post-10',
+    title: 'Section 44AB Tax Audit: Complete Guide on Due Dates, Thresholds, and Compliance',
+    slug: 'section-44ab-tax-audit-due-dates-thresholds-compliance',
+    featuredImage: '', // Add image URL here for blog listing page
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'Section 44AB of the Income Tax Act mandates tax audit for certain taxpayers whose turnover or gross receipts exceed specified limits. Understanding tax audit requirements, due dates, and compliance procedures is essential for businesses and professionals to avoid penalties and ensure smooth tax filing. This comprehensive guide covers everything you need to know about tax audit under Section 44AB.'
+      },
+      {
+        type: 'image',
+        imageUrl: '', // Add image URL here for blog post content
+        imageAlt: 'Section 44AB Tax Audit Guide'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What is Tax Audit Under Section 44AB?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Tax audit is an examination of books of account and other documents maintained by a taxpayer to verify the accuracy of financial statements and ensure compliance with income tax laws. Under Section 44AB, certain taxpayers are required to get their accounts audited by a Chartered Accountant and submit the audit report along with their income tax return.'
+      },
+      {
+        type: 'paragraph',
+        text: 'The primary objective of tax audit is to ensure that taxpayers maintain proper books of account, claim deductions correctly, and comply with income tax provisions. It helps the Income Tax Department verify the accuracy of income and deductions claimed by taxpayers.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Who is Required to Get Tax Audit Done?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Tax audit is mandatory for the following categories of taxpayers:'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Business Entities'
+      },
+      {
+        type: 'paragraph',
+        text: 'A person carrying on business is required to get tax audit done if:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Total sales, turnover, or gross receipts exceed Rs. 1 crore in the financial year (Rs. 10 crore if cash receipts and payments are less than 5% of total receipts and payments)',
+          'Profits declared are less than 8% of turnover or gross receipts (or less than 6% for digital receipts)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Professionals'
+      },
+      {
+        type: 'paragraph',
+        text: 'A person carrying on profession is required to get tax audit done if:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Gross receipts exceed Rs. 50 lakh in the financial year',
+          'Profits declared are less than 50% of gross receipts'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Tax Audit Threshold Limits for FY 2025-26'
+      },
+      {
+        type: 'paragraph',
+        text: 'The threshold limits for tax audit are:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Business:** Rs. 1 crore (or Rs. 10 crore if cash transactions are less than 5%)',
+          '**Profession:** Rs. 50 lakh',
+          '**Presumptive Taxation (Section 44AD):** If turnover exceeds Rs. 2 crore and profit is less than 8% (or 6% for digital receipts)',
+          '**Presumptive Taxation (Section 44ADA):** If gross receipts exceed Rs. 75 lakh and profit is less than 50%'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Due Date for Tax Audit'
+      },
+      {
+        type: 'paragraph',
+        text: 'The due date for completing tax audit and filing the audit report is:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**September 30th** of the assessment year (i.e., September 30, 2026 for FY 2025-26)',
+          'This is the same date as the due date for filing income tax return for taxpayers requiring tax audit',
+          'The audit report must be submitted electronically along with the ITR'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: '**Important:** If the due date falls on a holiday, the next working day is considered as the due date.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Tax Audit Report (Form 3CA/3CB and 3CD)'
+      },
+      {
+        type: 'paragraph',
+        text: 'The tax audit report consists of two parts:'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Form 3CA/3CB'
+      },
+      {
+        type: 'paragraph',
+        text: 'This is the main audit report:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Form 3CA:** For taxpayers who are already required to get their accounts audited under any other law (like Companies Act)',
+          '**Form 3CB:** For taxpayers who are not required to get accounts audited under any other law'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Form 3CD'
+      },
+      {
+        type: 'paragraph',
+        text: 'This is a statement of particulars that must be furnished along with Form 3CA/3CB. It contains detailed information about:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Nature of business or profession',
+          'Accounting policies and methods',
+          'Inventory valuation',
+          'Depreciation claimed',
+          'Deductions and exemptions',
+          'Related party transactions',
+          'Tax payments and TDS details'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Who Can Conduct Tax Audit?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Tax audit can only be conducted by a Chartered Accountant (CA) who:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Is in practice and holds a valid certificate of practice from ICAI',
+          'Is not disqualified from conducting audit',
+          'Is not related to the taxpayer in a way that compromises independence'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Penalties for Non-Compliance'
+      },
+      {
+        type: 'paragraph',
+        text: 'Failure to comply with tax audit requirements attracts penalties:'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Section 271B Penalty'
+      },
+      {
+        type: 'paragraph',
+        text: 'If a taxpayer who is required to get tax audit done fails to do so, a penalty of:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**0.5% of total sales, turnover, or gross receipts**, or',
+          '**Rs. 1,50,000**, whichever is lower'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: 'This penalty can be avoided if the taxpayer can prove reasonable cause for the failure.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Section 271BA Penalty'
+      },
+      {
+        type: 'paragraph',
+        text: 'If the tax audit report is not filed by the due date, a penalty of Rs. 1,50,000 may be levied.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Exemptions from Tax Audit'
+      },
+      {
+        type: 'paragraph',
+        text: 'Tax audit is not required in the following cases:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Taxpayers opting for presumptive taxation under Section 44AD, 44ADA, or 44AE (subject to conditions)',
+          'Businesses with turnover up to Rs. 1 crore (or Rs. 10 crore with less than 5% cash transactions)',
+          'Professionals with gross receipts up to Rs. 50 lakh',
+          'New businesses in their first year of operation (if turnover is below threshold)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Documents Required for Tax Audit'
+      },
+      {
+        type: 'paragraph',
+        text: 'The following documents are typically required for tax audit:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Books of account (cash book, ledger, journal, etc.)',
+          'Bank statements and reconciliation statements',
+          'Purchase and sales registers',
+          'Stock records and inventory statements',
+          'Vouchers and supporting documents for expenses',
+          'TDS certificates and Form 26AS',
+          'Previous year\'s tax audit report (if applicable)',
+          'Financial statements (P&L account, balance sheet)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Process of Tax Audit'
+      },
+      {
+        type: 'paragraph',
+        text: 'The tax audit process involves:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Appointment of CA:** Engage a qualified Chartered Accountant to conduct the audit',
+          '**Documentation:** Provide all necessary books of account and documents',
+          '**Audit Process:** CA examines books, verifies transactions, and checks compliance',
+          '**Report Preparation:** CA prepares Form 3CA/3CB and Form 3CD',
+          '**Digital Signature:** CA digitally signs the audit report',
+          '**Filing:** Submit the audit report electronically along with ITR'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Key Points to Remember'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Tax audit is mandatory for businesses with turnover exceeding Rs. 1 crore (or Rs. 10 crore with less than 5% cash)',
+          'Tax audit is mandatory for professionals with gross receipts exceeding Rs. 50 lakh',
+          'Due date for tax audit is September 30th of the assessment year',
+          'Only a Chartered Accountant can conduct tax audit',
+          'Penalty for non-compliance can be up to 0.5% of turnover or Rs. 1,50,000',
+          'Tax audit report must be filed electronically along with ITR',
+          'Maintain proper books of account throughout the year to facilitate smooth audit'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Conclusion'
+      },
+      {
+        type: 'paragraph',
+        text: 'Tax audit under Section 44AB is a crucial compliance requirement for businesses and professionals exceeding specified thresholds. Timely completion of tax audit, proper maintenance of books of account, and filing the audit report by the due date helps avoid penalties and ensures smooth tax compliance. Engaging a qualified CA and maintaining proper documentation throughout the year can make the tax audit process seamless and hassle-free.'
+      }
+    ]),
+    publishedDate: '2025-12-22T10:00:00Z',
+    category: 'Tax Planning',
+    excerpt: 'Complete guide to Section 44AB tax audit requirements. Learn about tax audit thresholds, due dates, audit report forms, penalties for non-compliance, and how to ensure proper tax audit compliance for your business.',
+    featured: false,
+    author: '',
+    tags: ['Tax Audit', 'Section 44AB', 'Tax Compliance', 'Chartered Accountant', 'Tax Audit Report', 'Form 3CA', 'Form 3CB', 'Form 3CD', 'Business Tax', 'Tax Penalties']
+  }),
+  createBlogPost({
+    id: 'tax-post-11',
+    title: 'Long-Term Capital Gains (LTCG) Tax: Rates, Calculation, Exemptions, and Tax Planning',
+    slug: 'long-term-capital-gains-ltcg-tax-rates-calculation-exemptions',
+    featuredImage: '', // Add image URL here for blog listing page
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'Long-Term Capital Gains (LTCG) arise when you sell capital assets held for more than the specified holding period. Understanding LTCG tax rates, calculation methods, available exemptions, and tax planning strategies is crucial for investors to optimize their returns and minimize tax liability. This comprehensive guide covers everything you need to know about LTCG taxation in India.'
+      },
+      {
+        type: 'image',
+        imageUrl: '', // Add image URL here for blog post content
+        imageAlt: 'Long-Term Capital Gains Tax Guide'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What are Long-Term Capital Gains?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Long-Term Capital Gains are profits earned from the sale of capital assets that have been held for a period exceeding the specified holding period. The holding period varies depending on the type of asset. LTCG are taxed at concessional rates compared to short-term capital gains, making long-term investments more tax-efficient.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Holding Period for Long-Term Capital Assets'
+      },
+      {
+        type: 'paragraph',
+        text: 'The holding period to qualify as long-term varies by asset type:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Listed Equity Shares & Equity-Oriented Mutual Funds:** More than 12 months',
+          '**Unlisted Shares:** More than 24 months',
+          '**Debt Mutual Funds:** More than 36 months',
+          '**Real Estate/Property:** More than 24 months',
+          '**Gold, Bonds, Other Assets:** More than 36 months'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'LTCG Tax Rates for FY 2025-26'
+      },
+      {
+        type: 'paragraph',
+        text: 'The tax rates for long-term capital gains depend on the type of asset:'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Listed Equity Shares and Equity-Oriented Mutual Funds'
+      },
+      {
+        type: 'paragraph',
+        text: 'LTCG on listed equity shares and equity-oriented mutual funds:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Up to Rs. 1 lakh:** Exempt from tax',
+          '**Above Rs. 1 lakh:** Taxed at 10% (without indexation benefit)',
+          '**No surcharge or cess** on LTCG from equity shares/equity funds'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Unlisted Shares and Other Assets'
+      },
+      {
+        type: 'paragraph',
+        text: 'LTCG on unlisted shares and other capital assets:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Taxed at **20% with indexation benefit**, or',
+          'Taxed at **10% without indexation** (whichever is lower)',
+          'Surcharge and cess apply as per income tax slab'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Debt Mutual Funds and Bonds'
+      },
+      {
+        type: 'paragraph',
+        text: 'LTCG on debt mutual funds and bonds (held for more than 36 months):'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Taxed at **20% with indexation benefit**',
+          'Surcharge and cess apply as per income tax slab'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Calculate Long-Term Capital Gains'
+      },
+      {
+        type: 'paragraph',
+        text: 'The formula for calculating LTCG is:'
+      },
+      {
+        type: 'paragraph',
+        text: '**LTCG = Sale Price - (Indexed Cost of Acquisition + Indexed Cost of Improvement + Transfer Expenses)**'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'For Equity Shares and Equity Mutual Funds'
+      },
+      {
+        type: 'paragraph',
+        text: 'LTCG = Sale Price - Purchase Price - Transfer Expenses'
+      },
+      {
+        type: 'paragraph',
+        text: '**Note:** Indexation is not available for equity shares and equity mutual funds.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'For Other Assets (with Indexation)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Indexed Cost of Acquisition = (Cost of Acquisition × CII of Year of Sale) / (CII of Year of Purchase)'
+      },
+      {
+        type: 'paragraph',
+        text: 'Indexed Cost of Improvement = (Cost of Improvement × CII of Year of Sale) / (CII of Year of Improvement)'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Exemptions Available for LTCG'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Section 54 - Sale of Residential Property'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you sell a residential property and purchase another residential property:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Exemption:** LTCG up to the amount invested in new property',
+          '**Time Limit:** Purchase within 1 year before or 2 years after sale, or construct within 3 years',
+          '**Conditions:** New property should not be sold within 3 years'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Section 54EC - Investment in Specified Bonds'
+      },
+      {
+        type: 'paragraph',
+        text: 'Investment in specified bonds (REC, NHAI, etc.) to save LTCG tax:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Exemption:** Up to Rs. 50 lakh per financial year',
+          '**Time Limit:** Investment within 6 months of sale',
+          '**Lock-in Period:** 5 years'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Section 54F - Sale of Any Asset (Except Residential Property)'
+      },
+      {
+        type: 'paragraph',
+        text: 'If you sell any long-term capital asset (except residential property) and purchase/construct residential property:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Exemption:** Proportionate exemption based on investment in new property',
+          '**Time Limit:** Purchase within 1 year before or 2 years after sale, or construct within 3 years',
+          '**Condition:** Should not own more than one residential property (other than new one)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Section 54B - Sale of Agricultural Land'
+      },
+      {
+        type: 'paragraph',
+        text: 'Exemption available if agricultural land is sold and another agricultural land is purchased within 2 years.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Section 54EE - Investment in Startups'
+      },
+      {
+        type: 'paragraph',
+        text: 'Investment in units of specified funds for startups to save LTCG tax (subject to conditions).'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Tax Planning Strategies for LTCG'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Hold assets for long-term:** Plan sales to qualify for long-term status and benefit from lower tax rates',
+          '**Utilize annual exemption:** For equity shares, utilize the Rs. 1 lakh annual exemption limit',
+          '**Invest in tax-saving bonds:** Use Section 54EC to save tax on property sale gains',
+          '**Reinvest in property:** Use Section 54/54F to save tax by reinvesting in residential property',
+          '**Time your sales:** Spread capital gains across multiple years to optimize tax liability',
+          '**Consider indexation:** For non-equity assets, indexation significantly reduces tax liability'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'TDS on Long-Term Capital Gains'
+      },
+      {
+        type: 'paragraph',
+        text: 'TDS is applicable on LTCG in certain cases:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Sale of property:** Buyer must deduct TDS at 1% (if consideration exceeds Rs. 50 lakh)',
+          '**Sale of unlisted shares:** TDS at 10% if sale consideration exceeds Rs. 1 lakh',
+          '**Mutual fund redemptions:** No TDS on redemption of mutual funds'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Filing LTCG in Income Tax Return'
+      },
+      {
+        type: 'paragraph',
+        text: 'While filing ITR, you need to:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Report LTCG in Schedule CG (Capital Gains)',
+          'Mention date of purchase and sale',
+          'Calculate indexed cost (if applicable)',
+          'Claim exemptions (if any)',
+          'Pay advance tax if LTCG tax liability exceeds Rs. 10,000'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Key Points to Remember'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'LTCG on equity shares/equity funds above Rs. 1 lakh is taxed at 10%',
+          'LTCG on other assets is taxed at 20% with indexation benefit',
+          'Indexation helps reduce tax by adjusting purchase cost for inflation',
+          'Multiple exemptions available under Sections 54, 54EC, 54F, etc.',
+          'TDS may be applicable on sale of property and unlisted shares',
+          'Advance tax is required if LTCG tax exceeds Rs. 10,000',
+          'Proper documentation of purchase and sale is essential for claiming exemptions'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Conclusion'
+      },
+      {
+        type: 'paragraph',
+        text: 'Understanding LTCG taxation is essential for effective tax planning and wealth creation. By holding investments for the long term, utilizing available exemptions, and planning sales strategically, you can significantly reduce your tax liability on capital gains. Consulting with a tax advisor can help you optimize your capital gains tax and make informed investment decisions.'
+      }
+    ]),
+    publishedDate: '2025-12-24T10:00:00Z',
+    category: 'Tax Planning',
+    excerpt: 'Complete guide to Long-Term Capital Gains (LTCG) tax in India. Learn about LTCG tax rates, calculation methods, indexation, exemptions under Sections 54, 54EC, 54F, and tax planning strategies for capital gains.',
+    featured: false,
+    author: '',
+    tags: ['Long Term Capital Gains', 'LTCG', 'Capital Gains Tax', 'Tax Planning', 'Indexation', 'Section 54', 'Section 54EC', 'Equity Shares', 'Mutual Funds', 'Tax Exemptions']
+  }),
+  createBlogPost({
+    id: 'tax-post-12',
+    title: 'Short-Term Capital Gains (STCG) Tax: Rates, Calculation, and Tax Planning Strategies',
+    slug: 'short-term-capital-gains-stcg-tax-rates-calculation-strategies',
+    featuredImage: '', // Add image URL here for blog listing page
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'Short-Term Capital Gains (STCG) occur when you sell capital assets within the specified holding period. Unlike long-term capital gains, STCG are generally taxed at higher rates and don\'t offer indexation benefits. Understanding STCG tax rates, calculation methods, and planning strategies is crucial for traders and investors to optimize their tax liability and maximize returns.'
+      },
+      {
+        type: 'image',
+        imageUrl: '', // Add image URL here for blog post content
+        imageAlt: 'Short-Term Capital Gains Tax Guide'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What are Short-Term Capital Gains?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Short-Term Capital Gains are profits earned from the sale of capital assets that have been held for a period less than or equal to the specified holding period. The holding period to qualify as short-term varies depending on the type of asset. STCG are typically taxed at higher rates compared to long-term capital gains, making them less tax-efficient for investors.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Holding Period for Short-Term Capital Assets'
+      },
+      {
+        type: 'paragraph',
+        text: 'Assets are considered short-term if held for:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Listed Equity Shares & Equity-Oriented Mutual Funds:** 12 months or less',
+          '**Unlisted Shares:** 24 months or less',
+          '**Debt Mutual Funds:** 36 months or less',
+          '**Real Estate/Property:** 24 months or less',
+          '**Gold, Bonds, Other Assets:** 36 months or less'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'STCG Tax Rates for FY 2025-26'
+      },
+      {
+        type: 'paragraph',
+        text: 'The tax rates for short-term capital gains vary significantly based on the asset type:'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Listed Equity Shares and Equity-Oriented Mutual Funds'
+      },
+      {
+        type: 'paragraph',
+        text: 'STCG on listed equity shares and equity-oriented mutual funds:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Taxed at **15% flat rate** (irrespective of income tax slab)',
+          'No surcharge applicable',
+          'Health and education cess @ 4% applies',
+          'This is a special rate under Section 111A'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Unlisted Shares and Other Assets'
+      },
+      {
+        type: 'paragraph',
+        text: 'STCG on unlisted shares and other capital assets:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Taxed as per **normal income tax slab rates**',
+          'Added to total income and taxed accordingly',
+          'Surcharge and cess apply as per income tax slab',
+          'No indexation benefit available'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Debt Mutual Funds and Bonds'
+      },
+      {
+        type: 'paragraph',
+        text: 'STCG on debt mutual funds and bonds (held for 36 months or less):'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Taxed as per **normal income tax slab rates**',
+          'Added to total income',
+          'Surcharge and cess apply as per income tax slab',
+          'No indexation benefit available'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Calculate Short-Term Capital Gains'
+      },
+      {
+        type: 'paragraph',
+        text: 'The formula for calculating STCG is simpler than LTCG:'
+      },
+      {
+        type: 'paragraph',
+        text: '**STCG = Sale Price - (Cost of Acquisition + Cost of Improvement + Transfer Expenses)**'
+      },
+      {
+        type: 'paragraph',
+        text: '**Important:** Indexation benefit is NOT available for short-term capital gains. You use the actual cost of acquisition without any inflation adjustment.'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Calculation Example'
+      },
+      {
+        type: 'paragraph',
+        text: 'Example: You purchased equity shares for Rs. 1,00,000 and sold them after 6 months for Rs. 1,30,000:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Sale Price: Rs. 1,30,000',
+          'Less: Purchase Price: Rs. 1,00,000',
+          'Less: Brokerage/Expenses: Rs. 1,000',
+          'STCG: Rs. 29,000',
+          'Tax @ 15%: Rs. 4,350'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'STCG vs Business Income'
+      },
+      {
+        type: 'paragraph',
+        text: 'It\'s important to distinguish between STCG and business income:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**STCG:** Occasional trading, investment intent, held as capital asset',
+          '**Business Income:** Regular trading, profit motive, held as stock-in-trade',
+          'Business income is taxed as per normal slab rates and allows business expenses deduction',
+          'STCG from equity shares is taxed at flat 15% under Section 111A'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Exemptions and Deductions for STCG'
+      },
+      {
+        type: 'paragraph',
+        text: 'Unlike LTCG, STCG have limited exemptions:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**No Section 54 exemption:** STCG from property sale cannot be exempted by purchasing another property',
+          '**No Section 54EC benefit:** Investment in specified bonds is not available for STCG',
+          '**No indexation:** Cost of acquisition cannot be indexed for inflation',
+          '**Set-off against capital losses:** STCG can be set off against both STCG and LTCG losses'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Set-Off and Carry Forward of Capital Losses'
+      },
+      {
+        type: 'paragraph',
+        text: 'Short-term capital losses can be utilized as follows:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Set-off against STCG:** Short-term capital losses can be set off against short-term capital gains in the same year',
+          '**Set-off against LTCG:** Short-term capital losses can also be set off against long-term capital gains',
+          '**Carry forward:** Unabsorbed short-term capital losses can be carried forward for 8 assessment years',
+          '**Carry forward condition:** Losses can only be set off against capital gains (not other income)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Tax Planning Strategies for STCG'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Hold for long-term:** Convert STCG to LTCG by holding assets beyond the holding period',
+          '**Offset with losses:** Set off STCG against capital losses to reduce tax liability',
+          '**Time your sales:** Plan sales to utilize basic exemption limit and lower tax slabs',
+          '**Consider tax slabs:** For non-equity assets, STCG is added to income - plan to stay in lower tax brackets',
+          '**Equity advantage:** STCG from equity shares at 15% may be better than adding to income in higher tax brackets',
+          '**Avoid frequent trading:** Frequent buying and selling may be treated as business income'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'TDS on Short-Term Capital Gains'
+      },
+      {
+        type: 'paragraph',
+        text: 'TDS may be applicable on STCG in certain cases:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Sale of property:** Buyer must deduct TDS at 1% if consideration exceeds Rs. 50 lakh',
+          '**Sale of unlisted shares:** TDS at 10% if sale consideration exceeds Rs. 1 lakh',
+          '**Mutual fund redemptions:** No TDS on redemption of mutual funds',
+          '**Stock market transactions:** No TDS on sale of listed equity shares through stock exchange'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Filing STCG in Income Tax Return'
+      },
+      {
+        type: 'paragraph',
+        text: 'While filing ITR, you need to:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Report STCG in Schedule CG (Capital Gains)',
+          'Mention date of purchase and sale',
+          'Calculate actual cost (no indexation)',
+          'Set off capital losses (if any)',
+          'For equity shares, report under Section 111A',
+          'Pay advance tax if STCG tax liability exceeds Rs. 10,000'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Key Differences: STCG vs LTCG'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Tax Rate:** STCG from equity taxed at 15%, LTCG above Rs. 1 lakh at 10%',
+          '**Indexation:** Not available for STCG, available for LTCG on non-equity assets',
+          '**Exemptions:** Limited exemptions for STCG, multiple exemptions available for LTCG',
+          '**Holding Period:** Shorter holding period for STCG, longer for LTCG',
+          '**Tax Efficiency:** LTCG generally more tax-efficient than STCG'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Key Points to Remember'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'STCG on equity shares/equity funds is taxed at flat 15% under Section 111A',
+          'STCG on other assets is taxed as per normal income tax slab rates',
+          'Indexation benefit is NOT available for short-term capital gains',
+          'STCG can be set off against both short-term and long-term capital losses',
+          'Unabsorbed losses can be carried forward for 8 years',
+          'TDS may be applicable on sale of property and unlisted shares',
+          'Advance tax is required if STCG tax exceeds Rs. 10,000',
+          'Frequent trading may be treated as business income instead of capital gains'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Conclusion'
+      },
+      {
+        type: 'paragraph',
+        text: 'Short-term capital gains are generally less tax-efficient compared to long-term capital gains. However, understanding the tax implications, utilizing loss set-offs, and planning sales strategically can help minimize your tax liability. For equity investments, the 15% flat rate on STCG may sometimes be more favorable than adding gains to income in higher tax brackets. Consulting with a tax advisor can help you optimize your capital gains tax strategy.'
+      }
+    ]),
+    publishedDate: '2025-12-26T10:00:00Z',
+    category: 'Tax Planning',
+    excerpt: 'Complete guide to Short-Term Capital Gains (STCG) tax in India. Learn about STCG tax rates, calculation methods, set-off of losses, differences from LTCG, and tax planning strategies for short-term capital gains.',
+    featured: false,
+    author: '',
+    tags: ['Short Term Capital Gains', 'STCG', 'Capital Gains Tax', 'Section 111A', 'Tax Planning', 'Equity Shares', 'Mutual Funds', 'Tax Rates', 'Capital Losses', 'Tax Compliance']
+  }),
+  createBlogPost({
+    id: 'tax-post-13',
+    title: 'Advance Tax Payment: Due Dates, Calculation, Applicability, and Compliance Guide',
+    slug: 'advance-tax-payment-due-dates-calculation-applicability',
+    featuredImage: '', // Add image URL here for blog listing page
+    content: createRichTextWithHeadings([
+      {
+        type: 'paragraph',
+        text: 'Advance tax is a system where taxpayers pay their income tax liability in installments during the financial year, rather than paying the entire amount at the end. Understanding advance tax due dates, calculation methods, applicability, and compliance requirements is essential to avoid interest penalties and ensure smooth tax compliance. This comprehensive guide covers everything you need to know about advance tax in India.'
+      },
+      {
+        type: 'image',
+        imageUrl: '', // Add image URL here for blog post content
+        imageAlt: 'Advance Tax Payment Guide'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What is Advance Tax?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Advance tax, also known as "pay-as-you-earn" tax, is the payment of income tax in installments during the financial year based on estimated income. Instead of paying the entire tax liability at the time of filing the return, taxpayers are required to pay tax in advance as they earn income throughout the year.'
+      },
+      {
+        type: 'paragraph',
+        text: 'The advance tax system helps the government receive tax revenue throughout the year and ensures taxpayers don\'t face a large tax burden at the end of the financial year. It also helps taxpayers manage their cash flow better by spreading tax payments across the year.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Who is Liable to Pay Advance Tax?'
+      },
+      {
+        type: 'paragraph',
+        text: 'Advance tax is applicable to all taxpayers whose estimated tax liability for the financial year exceeds Rs. 10,000. This includes:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Salaried individuals with income from other sources (interest, capital gains, etc.)',
+          'Self-employed professionals and freelancers',
+          'Business owners and traders',
+          'Senior citizens (aged 60-79) without business income are exempt',
+          'Super senior citizens (aged 80+) are exempt from advance tax'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Advance Tax Due Dates for FY 2025-26'
+      },
+      {
+        type: 'paragraph',
+        text: 'Advance tax is payable in four installments during the financial year:'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'For Individuals, HUFs, and Non-Corporate Taxpayers'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**15th June:** 15% of estimated tax liability',
+          '**15th September:** 45% of estimated tax liability (cumulative)',
+          '**15th December:** 75% of estimated tax liability (cumulative)',
+          '**15th March:** 100% of estimated tax liability (cumulative)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'For Corporate Taxpayers'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**15th June:** 15% of estimated tax liability',
+          '**15th September:** 45% of estimated tax liability (cumulative)',
+          '**15th December:** 75% of estimated tax liability (cumulative)',
+          '**15th March:** 100% of estimated tax liability (cumulative)'
+        ]
+      },
+      {
+        type: 'paragraph',
+        text: '**Note:** If the due date falls on a holiday, the next working day is considered as the due date.'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Calculate Advance Tax'
+      },
+      {
+        type: 'paragraph',
+        text: 'To calculate advance tax, you need to:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Estimate your total income for the financial year',
+          'Calculate tax liability on estimated income',
+          'Deduct TDS and TCS already deducted',
+          'The balance is your advance tax liability',
+          'Pay in installments as per due dates'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Calculation Example'
+      },
+      {
+        type: 'paragraph',
+        text: 'Example: Estimated tax liability for FY 2025-26 is Rs. 1,00,000, TDS already deducted is Rs. 20,000:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Total Tax Liability: Rs. 1,00,000',
+          'Less: TDS: Rs. 20,000',
+          'Advance Tax Payable: Rs. 80,000',
+          '15th June: Rs. 12,000 (15%)',
+          '15th September: Rs. 36,000 (45% - Rs. 12,000 already paid)',
+          '15th December: Rs. 24,000 (75% - Rs. 36,000 already paid)',
+          '15th March: Rs. 20,000 (100% - Rs. 60,000 already paid)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Income Subject to Advance Tax'
+      },
+      {
+        type: 'paragraph',
+        text: 'Advance tax is applicable on all types of income:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Salary income (if tax liability exceeds Rs. 10,000 after TDS)',
+          'Income from business or profession',
+          'Income from house property',
+          'Capital gains (short-term and long-term)',
+          'Income from other sources (interest, dividends, etc.)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Exemptions from Advance Tax'
+      },
+      {
+        type: 'paragraph',
+        text: 'The following taxpayers are exempt from paying advance tax:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Senior Citizens (60-79 years):** Without business or profession income',
+          '**Super Senior Citizens (80+ years):** Completely exempt',
+          '**Salaried Employees:** If entire tax is covered by TDS',
+          '**Taxpayers with tax liability less than Rs. 10,000:** For the financial year'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'How to Pay Advance Tax'
+      },
+      {
+        type: 'paragraph',
+        text: 'Advance tax can be paid through various methods:'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Online Payment Methods'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Income Tax Portal:** Pay directly through the e-filing portal',
+          '**Net Banking:** Through authorized banks',
+          '**Debit Card:** Using debit card on the tax portal',
+          '**UPI:** Using UPI payment methods'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Offline Payment Methods'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Challan 280:** Download and pay at authorized bank branches',
+          '**Over the Counter:** At designated bank branches'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Interest on Late Payment of Advance Tax'
+      },
+      {
+        type: 'paragraph',
+        text: 'Failure to pay advance tax or paying less than required attracts interest:'
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Section 234B - Interest for Non-Payment/Short Payment'
+      },
+      {
+        type: 'paragraph',
+        text: 'If advance tax paid is less than 90% of assessed tax:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Interest @ 1% per month on the shortfall',
+          'Calculated from April 1st of assessment year to date of payment',
+          'Maximum interest period: 3 months'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 3,
+        text: 'Section 234C - Interest for Deferred Installments'
+      },
+      {
+        type: 'paragraph',
+        text: 'If advance tax is not paid on time or paid less than required in any installment:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Interest @ 1% per month on the shortfall',
+          'Calculated for 3 months from due date of each installment',
+          'Applies to each delayed installment separately'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Revision of Advance Tax Estimate'
+      },
+      {
+        type: 'paragraph',
+        text: 'Taxpayers can revise their advance tax estimate if income changes during the year:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Revise estimate if actual income differs significantly from estimated income',
+          'Pay additional advance tax in subsequent installments',
+          'No penalty for revision, but interest may apply if revised estimate is still short'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Advance Tax for Capital Gains'
+      },
+      {
+        type: 'paragraph',
+        text: 'Special provisions for advance tax on capital gains:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'If capital gains arise during the year, advance tax should be paid in the remaining installments',
+          'For capital gains arising in March, entire tax can be paid by March 15th',
+          'No interest penalty if advance tax is paid within the same financial year'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Filing Advance Tax in Income Tax Return'
+      },
+      {
+        type: 'paragraph',
+        text: 'While filing ITR, you need to:'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Report advance tax paid in Schedule IT (Taxes Paid)',
+          'Mention dates and amounts of each installment',
+          'Claim credit for advance tax paid',
+          'Pay balance tax (if any) along with interest (if applicable)',
+          'Claim refund (if advance tax paid exceeds actual tax liability)'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Key Points to Remember'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          'Advance tax is mandatory if tax liability exceeds Rs. 10,000',
+          'Pay in 4 installments: 15% by June 15, 45% by Sept 15, 75% by Dec 15, 100% by March 15',
+          'Senior citizens (60-79) without business income are exempt',
+          'Super senior citizens (80+) are completely exempt',
+          'Late payment attracts interest @ 1% per month under Sections 234B and 234C',
+          'Can revise advance tax estimate if income changes during the year',
+          'Advance tax can be paid online through the income tax portal or offline through challan',
+          'Keep records of all advance tax payments for ITR filing'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Benefits of Paying Advance Tax'
+      },
+      {
+        type: 'unorderedList',
+        items: [
+          '**Avoid Interest Penalties:** Timely payment avoids interest under Sections 234B and 234C',
+          '**Better Cash Flow Management:** Spreads tax payments across the year',
+          '**Compliance:** Ensures smooth tax compliance and avoids last-minute hassles',
+          '**Peace of Mind:** No worry about large tax payments at year-end',
+          '**Refund Processing:** If excess tax paid, refund is processed faster'
+        ]
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'Conclusion'
+      },
+      {
+        type: 'paragraph',
+        text: 'Advance tax is an important compliance requirement for taxpayers with significant tax liability. Understanding due dates, calculation methods, and payment procedures helps avoid interest penalties and ensures smooth tax compliance. Regular monitoring of income and timely payment of advance tax installments can help you stay compliant and manage your tax obligations effectively throughout the year.'
+      }
+    ]),
+    publishedDate: '2025-12-28T10:00:00Z',
+    category: 'Tax Planning',
+    excerpt: 'Complete guide to advance tax payment in India. Learn about advance tax due dates, calculation methods, applicability, payment procedures, interest on late payment, and how to ensure compliance with advance tax requirements.',
+    featured: false,
+    author: '',
+    tags: ['Advance Tax', 'Tax Payment', 'Section 234B', 'Section 234C', 'Tax Compliance', 'Tax Planning', 'Income Tax', 'Tax Due Dates', 'Tax Installments', 'Tax Interest']
   })
 ];
