@@ -463,6 +463,11 @@ export const gstCompliancePosts: ContentfulBlogPost[] = [
         text: 'emSigner for GST is a web-based software used for digitally signing documents online on the GST portal. This comprehensive guide will walk you through the system requirements, step-by-step installation process, and common fixes for emSigner to help you seamlessly sign your GST returns and documents electronically.'
       },
       {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1767665652/GST-emSigner-Setup-Guide_pcpiay.jpg',
+        imageAlt: 'GST emSigner Setup Guide'
+      },
+      {
         type: 'heading',
         level: 2,
         text: 'What Is emSigner In GST And Its Uses?'

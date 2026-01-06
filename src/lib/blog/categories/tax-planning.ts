@@ -1577,6 +1577,11 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         text: 'Step-by-Step Guide to Download and Fill Form 26QB'
       },
       {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1767665652/How-to-Download-and-Fill-Form-26QB-for-TDS-on-Property-Purchase_g5cmew.jpg',
+        imageAlt: 'How to Download and Fill Form 26QB for TDS on Property Purchase'
+      },
+      {
         type: 'heading',
         level: 3,
         text: 'Step 1: Login to TRACES Portal'
@@ -1844,6 +1849,11 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         type: 'heading',
         level: 2,
         text: 'Step-by-Step Guide to Download ITR-V'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1767665652/How-to-Download-ITR-V-Acknowledgement_unqky6.jpg',
+        imageAlt: 'How to Download ITR-V Acknowledgement'
       },
       {
         type: 'heading',
