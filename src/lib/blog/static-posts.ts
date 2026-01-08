@@ -4,13 +4,15 @@ import { taxPlanningPosts } from './categories/tax-planning';
 import { businessFormationPosts } from './categories/business-formation';
 import { digitalEconomyPosts } from './categories/digital-economy';
 import { gstCompliancePosts } from './categories/gst-compliance';
+import { personalFinancePosts } from './categories/personal-finance';
 
 // Combine all blog posts from different categories
 export const staticBlogPosts: ContentfulBlogPost[] = [
   ...taxPlanningPosts,
   ...businessFormationPosts,
   ...digitalEconomyPosts,
-  ...gstCompliancePosts
+  ...gstCompliancePosts,
+  ...personalFinancePosts
 ];
 
 // Get all static blog posts
