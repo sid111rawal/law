@@ -2078,7 +2078,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-9',
     title: 'Standard Deduction for Salaried Employees: Complete Guide for FY 2025-26',
     slug: 'standard-deduction-salaried-employees-fy-2025-26',
-    featuredImage: '', // Add image URL here for blog listing page
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768254073/Standard_Deduction_for_Salaried_Employees_ke0cwp.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -2086,7 +2086,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'image',
-        imageUrl: '', // Add image URL here for blog post content
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768254073/Standard_Deduction_for_Salaried_Employees_ke0cwp.png',
         imageAlt: 'Standard Deduction for Salaried Employees'
       },
       {
