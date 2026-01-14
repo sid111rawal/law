@@ -7,10 +7,16 @@ export const gstCompliancePosts: ContentfulBlogPost[] = [
     id: 'gst-post-1',
     title: 'What Happens if GSTR-9 is Wrongly Filed? Can GSTR-9 Be Revised After Filing?',
     slug: 'what-happens-if-gstr-9-is-wrongly-filed-can-gstr-9-be-revised-after-filing',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431360/What_Happens_if_GSTR-9_is_Wrongly_Filed_teixue.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
         text: 'Filing GSTR-9 correctly is critical because it is a non-revisable, summary return that consolidates an entire year\'s GST data. If GSTR-9 is filed wrongly, whether due to schema validation errors, wrong figures or missed disclosures, it can lead to mistakes, penalties, interest exposure and additional cash outflows. In this article, we\'ll delve into what happens if you file a GSTR-9 incorrectly. Also, we\'ll discuss why the schema validation error code appears while filing GSTR-9 and give you solutions if schema validation failed in GSTR 9.'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431360/What_Happens_if_GSTR-9_is_Wrongly_Filed_teixue.png',
+        imageAlt: 'What Happens if GSTR-9 is Wrongly Filed'
       },
       {
         type: 'heading',
@@ -118,10 +124,16 @@ export const gstCompliancePosts: ContentfulBlogPost[] = [
     id: 'gst-post-2',
     title: 'How to file GSTR-9 Annual Return on GST Portal',
     slug: 'how-to-file-gstr-9-annual-return-on-gst-portal',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/How_to_file_GSTR-9_Annual_Return_on_GST_Portal_xgiijf.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
         text: 'GSTR‑9 is the annual GST return that consolidates the entire year\'s supplies, tax liability and Input Tax Credit (ITC), and must be filed online on the GST portal. This guide explains, in a step‑by‑step manner, how to file GSTR‑9 using the GST portal and offline utility so that taxpayers avoid errors, late fees and rework.'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/How_to_file_GSTR-9_Annual_Return_on_GST_Portal_xgiijf.png',
+        imageAlt: 'How to file GSTR-9 Annual Return on GST Portal'
       },
       {
         type: 'heading',

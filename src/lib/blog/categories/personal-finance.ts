@@ -422,7 +422,7 @@ export const personalFinancePosts: ContentfulBlogPost[] = [
     id: 'finance-post-2',
     title: 'Voter ID Online Registration: Complete Guide to Register to Vote in India (2026)',
     slug: 'voter-id-online-registration-complete-guide-register-vote-india-2026',
-    featuredImage: '', // Add image URL here for blog listing page
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Voter_ID_Online_Registration_Complete_Guide_to_Register_to_Vote_in_India_wacyj6.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -430,7 +430,7 @@ export const personalFinancePosts: ContentfulBlogPost[] = [
       },
       {
         type: 'image',
-        imageUrl: '', // Add image URL here for blog post content
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Voter_ID_Online_Registration_Complete_Guide_to_Register_to_Vote_in_India_wacyj6.png',
         imageAlt: 'Voter ID Online Registration Guide'
       },
       {
@@ -754,7 +754,7 @@ export const personalFinancePosts: ContentfulBlogPost[] = [
     id: 'finance-post-3',
     title: 'Wrong UPI Transaction: How to Get Refund for Money Sent to Wrong Account (2026 Guide)',
     slug: 'wrong-upi-transaction-refund-money-sent-wrong-account-2026-guide',
-    featuredImage: '', // Add image URL here for blog listing page
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Wrong_UPI_Transaction_How_to_Get_Refund_for_Money_Sent_to_Wrong_Account_hld71w.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -762,7 +762,7 @@ export const personalFinancePosts: ContentfulBlogPost[] = [
       },
       {
         type: 'image',
-        imageUrl: '', // Add image URL here for blog post content
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Wrong_UPI_Transaction_How_to_Get_Refund_for_Money_Sent_to_Wrong_Account_hld71w.png',
         imageAlt: 'Wrong UPI Transaction Refund Guide'
       },
       {
@@ -1065,7 +1065,7 @@ export const personalFinancePosts: ContentfulBlogPost[] = [
     id: 'finance-post-4',
     title: 'Auto Sweep Facility: How It Works, Benefits, and Interest Rates (2026 Guide)',
     slug: 'auto-sweep-facility-how-it-works-benefits-interest-rates-2026-guide',
-    featuredImage: '', // Add image URL here for blog listing page
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Auto_Sweep_Facility_How_It_Works_Benefits_and_Interest_Rates_2026_Guide_hyltpl.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -1073,7 +1073,7 @@ export const personalFinancePosts: ContentfulBlogPost[] = [
       },
       {
         type: 'image',
-        imageUrl: '', // Add image URL here for blog post content
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Auto_Sweep_Facility_How_It_Works_Benefits_and_Interest_Rates_2026_Guide_hyltpl.png',
         imageAlt: 'Auto Sweep Facility Guide'
       },
       {
@@ -1394,7 +1394,7 @@ export const personalFinancePosts: ContentfulBlogPost[] = [
     id: 'finance-post-5',
     title: 'Voter ID Address Change: How to Update Address Online Using Form 8 (2026 Guide)',
     slug: 'voter-id-address-change-update-address-online-form-8-2026-guide',
-    featuredImage: '', // Add image URL here for blog listing page
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Voter_ID_Address_Change_How_to_Update_Address_Online_Using_Form_8_2026_Guide_sguk9w.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -1402,7 +1402,7 @@ export const personalFinancePosts: ContentfulBlogPost[] = [
       },
       {
         type: 'image',
-        imageUrl: '', // Add image URL here for blog post content
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Voter_ID_Address_Change_How_to_Update_Address_Online_Using_Form_8_2026_Guide_sguk9w.png',
         imageAlt: 'Voter ID Address Change Guide'
       },
       {
@@ -1734,7 +1734,7 @@ export const personalFinancePosts: ContentfulBlogPost[] = [
     id: 'finance-post-6',
     title: 'Union Bank Savings Account Opening: Online and Offline Process (2026 Guide)',
     slug: 'union-bank-savings-account-opening-online-offline-process-2026-guide',
-    featuredImage: '', // Add image URL here for blog listing page
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Union_Bank_Savings_Account_Opening_Online_and_Offline_Process_2026_Guide_e1udn2.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -1742,7 +1742,7 @@ export const personalFinancePosts: ContentfulBlogPost[] = [
       },
       {
         type: 'image',
-        imageUrl: '', // Add image URL here for blog post content
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Union_Bank_Savings_Account_Opening_Online_and_Offline_Process_2026_Guide_e1udn2.png',
         imageAlt: 'Union Bank Savings Account Opening Guide'
       },
       {

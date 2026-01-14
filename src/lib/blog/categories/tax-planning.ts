@@ -1021,10 +1021,21 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-5',
     title: 'How to Respond to a Defective Income Tax Return Notice u/s 139(9)',
     slug: 'how-to-respond-to-defective-income-tax-return-notice-section-139-9',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/How_to_Respond_to_a_Defective_Income_Tax_Return_Notice_us_139_9_wd7pc6.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
         text: 'A defective return notice under Section 139(9) is issued when the Income Tax Department identifies errors or inconsistencies in your filed Income Tax Return (ITR). This notice acts as a warning mechanism, giving taxpayers an opportunity to correct mistakes and ensure accurate reporting before facing penalties or other consequences.'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/How_to_Respond_to_a_Defective_Income_Tax_Return_Notice_us_139_9_wd7pc6.png',
+        imageAlt: 'How to Respond to Defective Income Tax Return Notice'
+      },
+      {
+        type: 'heading',
+        level: 2,
+        text: 'What is a Defective Return Notice?'
       },
       {
         type: 'heading',
@@ -1236,10 +1247,17 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-6',
     title: 'How to File ITR-2 Form for Income from Capital Gains',
     slug: 'how-to-file-itr-2-form-for-income-from-capital-gains',
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431376/How_to_File_ITR-2_Form_for_Income_from_Capital_Gains_nhvbpd.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
         text: 'ITR-2 is the Income Tax Return form for individuals and Hindu Undivided Families (HUFs) who have income from capital gains, house property, or other sources but do not have income from business or profession. This comprehensive guide will help you understand when to use ITR-2 and how to file it correctly, especially for capital gains income.'
+      },
+      {
+        type: 'image',
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431376/How_to_File_ITR-2_Form_for_Income_from_Capital_Gains_nhvbpd.png',
+        imageAlt: 'How to File ITR-2 Form for Income from Capital Gains'
+      },
       },
       {
         type: 'heading',
@@ -2293,7 +2311,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-10',
     title: 'Section 44AB Tax Audit: Complete Guide on Due Dates, Thresholds, and Compliance',
     slug: 'section-44ab-tax-audit-due-dates-thresholds-compliance',
-    featuredImage: '', // Add image URL here for blog listing page
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431360/Section_44AB_Tax_Audit_dhmt6t.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -2301,7 +2319,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'image',
-        imageUrl: '', // Add image URL here for blog post content
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431360/Section_44AB_Tax_Audit_dhmt6t.png',
         imageAlt: 'Section 44AB Tax Audit Guide'
       },
       {
@@ -2596,7 +2614,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-11',
     title: 'Long-Term Capital Gains (LTCG) Tax: Rates, Calculation, Exemptions, and Tax Planning',
     slug: 'long-term-capital-gains-ltcg-tax-rates-calculation-exemptions',
-    featuredImage: '', // Add image URL here for blog listing page
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431360/Long_Term_Capital_Gains_LTCG_Tax_Rates_Calculation_Exemptions_and_Tax_trq87b.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -2604,7 +2622,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'image',
-        imageUrl: '', // Add image URL here for blog post content
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431360/Long_Term_Capital_Gains_LTCG_Tax_Rates_Calculation_Exemptions_and_Tax_trq87b.png',
         imageAlt: 'Long-Term Capital Gains Tax Guide'
       },
       {
@@ -2897,7 +2915,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-12',
     title: 'Short-Term Capital Gains (STCG) Tax: Rates, Calculation, and Tax Planning Strategies',
     slug: 'short-term-capital-gains-stcg-tax-rates-calculation-strategies',
-    featuredImage: '', // Add image URL here for blog listing page
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Short_Term_Capital_Gains_STCG_Tax_Rates_Calculation_and_Tax_Planning_Strategies_jsdoqr.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -2905,7 +2923,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'image',
-        imageUrl: '', // Add image URL here for blog post content
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Short_Term_Capital_Gains_STCG_Tax_Rates_Calculation_and_Tax_Planning_Strategies_jsdoqr.png',
         imageAlt: 'Short-Term Capital Gains Tax Guide'
       },
       {
@@ -3197,7 +3215,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
     id: 'tax-post-13',
     title: 'Advance Tax Payment: Due Dates, Calculation, Applicability, and Compliance Guide',
     slug: 'advance-tax-payment-due-dates-calculation-applicability',
-    featuredImage: '', // Add image URL here for blog listing page
+    featuredImage: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Advance_Tax_Payment_Due_Dates_Calculation_Applicability_and_Compliance_Guide_chqakn.png',
     content: createRichTextWithHeadings([
       {
         type: 'paragraph',
@@ -3205,7 +3223,7 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
       },
       {
         type: 'image',
-        imageUrl: '', // Add image URL here for blog post content
+        imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431359/Advance_Tax_Payment_Due_Dates_Calculation_Applicability_and_Compliance_Guide_chqakn.png',
         imageAlt: 'Advance Tax Payment Guide'
       },
       {
