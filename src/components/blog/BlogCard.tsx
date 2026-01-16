@@ -22,12 +22,14 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
       featured ? 'lg:col-span-2' : ''
     }`}>
       {featuredImage && (
-        <div className={`relative ${featured ? 'h-64' : 'h-48'} overflow-hidden`}>
+        <div className="relative overflow-hidden bg-gray-100">
           <Image
             src={getContentfulImageUrl(featuredImage, 600, featured ? 256 : 192)}
             alt={title}
-            fill
-            className="object-cover hover:scale-105 transition-transform duration-300"
+            width={600}
+            height={featured ? 256 : 192}
+            className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300"
+            unoptimized
           />
           {category && (
             <div className="absolute top-4 left-4">

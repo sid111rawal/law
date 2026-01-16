@@ -1258,7 +1258,6 @@ export const taxPlanningPosts: ContentfulBlogPost[] = [
         imageUrl: 'https://res.cloudinary.com/ddxgw6emd/image/upload/v1768431376/How_to_File_ITR-2_Form_for_Income_from_Capital_Gains_nhvbpd.png',
         imageAlt: 'How to File ITR-2 Form for Income from Capital Gains'
       },
-      },
       {
         type: 'heading',
         level: 2,

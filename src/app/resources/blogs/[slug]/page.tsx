@@ -224,12 +224,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Featured Image */}
       {fields.featuredImage && (
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-full rounded-lg overflow-hidden shadow-lg bg-gray-100">
             <Image
               src={getContentfulImageUrl(fields.featuredImage, 1200, 400)}
               alt={fields.title}
-              fill
-              className="object-cover"
+              width={1200}
+              height={400}
+              className="w-full h-auto object-contain"
+              unoptimized
             />
           </div>
         </div>

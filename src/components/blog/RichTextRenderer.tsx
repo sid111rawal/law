@@ -53,15 +53,17 @@ const renderOptions = {
         
         if (url) {
           return (
-            <div className="my-6">
-              <Image
-                src={url}
-                alt={alt}
-                width={800}
-                height={600}
-                className="rounded-lg shadow-md w-full h-auto"
-                unoptimized
-              />
+            <div className="my-6 w-full">
+              <div className="relative w-full rounded-lg overflow-hidden shadow-md bg-gray-100">
+                <Image
+                  src={url}
+                  alt={alt}
+                  width={800}
+                  height={600}
+                  className="w-full h-auto object-contain rounded-lg"
+                  unoptimized
+                />
+              </div>
             </div>
           );
         }
@@ -177,14 +179,16 @@ const renderOptions = {
       if (!file) return null;
       
       return (
-        <div className="my-6">
-          <Image
-            src={getContentfulImageUrl({ fields: { file } }, 800, 600)}
-            alt={title || 'Blog image'}
-            width={800}
-            height={600}
-            className="rounded-lg shadow-md w-full h-auto"
-          />
+        <div className="my-6 w-full">
+          <div className="relative w-full rounded-lg overflow-hidden shadow-md bg-gray-100">
+            <Image
+              src={getContentfulImageUrl({ fields: { file } }, 800, 600)}
+              alt={title || 'Blog image'}
+              width={800}
+              height={600}
+              className="w-full h-auto object-contain rounded-lg"
+            />
+          </div>
         </div>
       );
     },
